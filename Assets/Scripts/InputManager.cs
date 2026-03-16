@@ -7,13 +7,17 @@ public class InputManager : MonoBehaviour
     private PlayerInput.OnFootActions onfoot;
 
     private PlayerMovement movement;
+    private CamLook cam;
 
     private void Awake()
     {
         playerInput = new PlayerInput();
         onfoot = playerInput.OnFoot;
         movement = GetComponent<PlayerMovement>();
+        cam = GetComponent<CamLook>();
         onfoot.Jump.performed += ctx => movement.Jump(); // ctx is callback context
+        onfoot.Sprint.performed += ctx => movement.Sprint();
+        onfoot.Crouch.performed += ctx => movement.Crouch();
     }
 
     private void OnEnable()
@@ -30,6 +34,11 @@ public class InputManager : MonoBehaviour
     {
         // tell the playermovement to move using the value from the movement action
         movement.ProcessMove(onfoot.Movement.ReadValue<Vector2>());
+    }
+
+    private void LateUpdate()
+    {
+        cam.ProcessLook(onfoot.Look.ReadValue<Vector2>());
     }
 
 }
