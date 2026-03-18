@@ -142,6 +142,10 @@ MonoBehaviour:
   speed: 5
   gravity: -9.8
   jumpHeight: 0.75
+  sprinting: 0
+  lerpCrouch: 0
+  crouching: 0
+  crouchTimer: 0
 --- !u!1 &7605072845403307578
 GameObject:
   m_ObjectHideFlags: 0
