@@ -12,7 +12,7 @@ public class PlayerUI : MonoBehaviour
 
     public void UpdateText(string promptMessage)
     {
-        // promptText = promptMessage;
+      promptText.text = promptMessage;
     }
 
 
