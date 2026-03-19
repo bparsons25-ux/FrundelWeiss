@@ -8,6 +8,10 @@ public class CamLook : MonoBehaviour
     public float xSensitivity = 30f;
     public float ySenstivity = 30f;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     public void ProcessLook(Vector2 input)
     {
         float mouseX = input.x;

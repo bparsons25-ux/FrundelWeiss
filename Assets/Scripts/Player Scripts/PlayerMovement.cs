@@ -14,7 +14,9 @@ public class PlayerMovement : MonoBehaviour
     public bool lerpCrouch;
     public bool crouching;
 
-    public float crouchTimer; 
+    public float crouchTimer;
+
+    [SerializeField] GameObject pauseMenu;
 
     private void Start()
     {
@@ -94,5 +96,13 @@ public class PlayerMovement : MonoBehaviour
         crouching =  !crouching;
         crouchTimer = 0f;
         lerpCrouch = true;
+    }
+
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+ 
     }
 }

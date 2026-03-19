@@ -18,6 +18,7 @@ public class InputManager : MonoBehaviour
         onfoot.Jump.performed += ctx => movement.Jump(); // ctx is callback context
         onfoot.Sprint.performed += ctx => movement.Sprint();
         onfoot.Crouch.performed += ctx => movement.Crouch();
+        onfoot.Pause.performed += ctx => movement.Pause();
     }
 
     private void OnEnable()
