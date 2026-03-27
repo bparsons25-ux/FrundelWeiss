@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,24 +6,21 @@ using UnityEngine.UIElements;
 
 public class FrontDoor : Interactable
 {
+    private bool Fade = false;
+    private float Fadetime = 3f;
+    public GameObject Fadescreen;
 
-    private float ExitFade = 3f;
-    //private bool Fade = false;
-
-    void Leave()
+    protected override void Interact()
     {
-        StartCoroutine(Go());
+        StartCoroutine(leave());
+        
+    }
+
+    IEnumerator leave()
+    {
+        Fade = true;
+        Fadescreen.SetActive(true);
+        yield return new WaitForSeconds(Fadetime);
         SceneManager.LoadSceneAsync(0);
-
     }
-
-    private IEnumerator Go()
-    {
-        //Fade = true;
-        yield return new WaitForSeconds(ExitFade);
-
-
-    }
-
-    
 }
