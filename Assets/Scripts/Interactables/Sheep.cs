@@ -11,6 +11,11 @@ public class Sheep : Interactable
         cam = GetComponent<CamLook>();
     }
 
+    private void Update()
+    {
+        
+    }
+
     protected override void Interact()
     {
         sheepinteract.SetActive(true);
