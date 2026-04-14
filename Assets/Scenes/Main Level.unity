@@ -20270,6 +20270,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18928345, y: 0.21797729, z: 0.123859406}
   m_Center: {x: -0.005048439, y: 0.000000029802322, z: -0.000000027939677}
+--- !u!114 &1406100925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406100919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b35e0c3a40dfad40a494c4e77db1322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1406100926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406100919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000a33183be5ebe429d4737dc8457a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useEvents: 1
+  promptMessage: Press "E" to interact
 --- !u!4 &1420303511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1370235177799199937, guid: 5e15caeb969bd46478345e60297edd8d, type: 3}
@@ -30662,6 +30691,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7997652957859374885, guid: 3b4ffa7957df4d440a5b75fe1511e1f2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406100923}
+    - targetCorrespondingSourceObject: {fileID: 7997652957859374885, guid: 3b4ffa7957df4d440a5b75fe1511e1f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406100926}
+    - targetCorrespondingSourceObject: {fileID: 7997652957859374885, guid: 3b4ffa7957df4d440a5b75fe1511e1f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406100925}
   m_SourcePrefab: {fileID: 100100000, guid: 3b4ffa7957df4d440a5b75fe1511e1f2, type: 3}
 --- !u!1001 &2262092161444905583
 PrefabInstance:

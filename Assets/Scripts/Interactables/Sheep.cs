@@ -3,12 +3,14 @@ using UnityEngine;
 public class Sheep : Interactable
 {
     public GameObject sheepinteract;
-    private CamLook cam;
+    private Camera cam;
+
+    
 
 
     private void Start()
     {
-        cam = GetComponent<CamLook>();
+        cam = GetComponent<CamLook>().cam;
     }
 
     private void Update()
@@ -20,7 +22,7 @@ public class Sheep : Interactable
     {
         sheepinteract.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        cam.gameObject.SetActive(false);
+        
     }
 
 
