@@ -13,6 +13,7 @@ public class FrontDoor : Interactable
     protected override void Interact()
     {
         StartCoroutine(leave());
+        //Cursor.lockState = CursorLockMode.None;
         
     }
 
@@ -20,6 +21,7 @@ public class FrontDoor : Interactable
     {
         Fade = true;
         Fadescreen.SetActive(true);
+        
         yield return new WaitForSeconds(Fadetime);
         SceneManager.LoadSceneAsync(0);
     }
