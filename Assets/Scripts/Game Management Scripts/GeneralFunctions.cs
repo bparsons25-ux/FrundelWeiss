@@ -4,6 +4,9 @@ public class GeneralFunctions : MonoBehaviour
 {
     [SerializeField] CamLook Look;
     [SerializeField] PlayerMovement pm;
+    [SerializeField] private GameOver GameOver;
+
+    [SerializeField] GameObject pauseMenu;
 
     private void Start()
     {
@@ -35,6 +38,14 @@ public class GeneralFunctions : MonoBehaviour
         Look.xSensitivity = 20f;
         Look.ySenstivity = 20f;
       
+
+    }
+
+    public void TriggerGameOver()
+    {
+        pauseMenu.SetActive(false);
+        GameOver.gameIsOver = true;
+
 
     }
 

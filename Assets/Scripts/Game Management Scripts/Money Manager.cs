@@ -10,8 +10,9 @@ public class MoneyManager : MonoBehaviour
     public TextMeshProUGUI moneyText;
 
     [SerializeField] PlayerMovement pm;
+    [SerializeField] Countdown countdown;
 
-    int money = 0;
+    int money = 150;
 
     private void Awake()
     {
@@ -22,6 +23,22 @@ public class MoneyManager : MonoBehaviour
     {
         money = PlayerPrefs.GetInt("money", 0);
         moneyText.text = "$" + money.ToString();
+    }
+
+    void Update()
+    {
+        if (money < 0)
+        {
+            money = 0;
+            countdown.gameObject.SetActive(true);
+            moneyText.color = Color.red;
+        }
+
+        else if (money > 0)
+        {
+            countdown.gameObject.SetActive(false);
+            moneyText.color = Color.white;
+        }
     }
 
     public void AddMoneySmall()
