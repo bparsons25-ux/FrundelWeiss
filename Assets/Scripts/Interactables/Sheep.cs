@@ -25,6 +25,11 @@ public class Sheep : Interactable
         
     }
 
+    public void Leave()
+    {
+        sheepinteract.SetActive(false);
+    }
+
 
 
 
