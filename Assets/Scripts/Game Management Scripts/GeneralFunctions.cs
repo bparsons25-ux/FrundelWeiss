@@ -49,4 +49,16 @@ public class GeneralFunctions : MonoBehaviour
 
     }
 
+    public void PlayerFreeze()
+    {
+        //pm.speed = 0f;
+        //pm.jumpHeight = 0f;
+    }
+
+    public void PlayerFree()
+    {
+        //pm.speed = 10f;
+        //pm.jumpHeight = 0.75f;
+    }
+
 }
