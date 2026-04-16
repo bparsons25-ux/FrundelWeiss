@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class sheepInfomation : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class sheepInfomation : MonoBehaviour
     public bool sheepAlive;
     public float sheepHungerPercent;
     public int sheepPosition;
+    public int sheepCount;
+
+    public Transform deathPosition;
+    public GameObject deadsheepPrefab;
+
+    // [SerializeField] GameObject harvestButton;
+    // [SerializeField] GameObject FeedButton;
 
     [SerializeField] bool isChild;
     [SerializeField] bool isAdult;
@@ -24,6 +32,8 @@ public class sheepInfomation : MonoBehaviour
         sheepAlive = true;
         sheepHungerPercent = 50f;
         isChild = true;
+
+        
     }
 
     public void Update()
@@ -36,12 +46,12 @@ public class sheepInfomation : MonoBehaviour
 
         else if (sheepAlive == false)
         {
-            // get sheep pos.
+            
             Destroy(gameObject);
-            // spawn sheep corpse
+            Instantiate(deadsheepPrefab, deathPosition.position, transform.rotation);
             // decrease sheep number
             
-            // spawns dead sheep in spot of current sheep (Get sheep pos. destroys current object. spawns dead sheep.)
+            
         }
 
         if (sheepAge > 300f)
@@ -70,12 +80,14 @@ public class sheepInfomation : MonoBehaviour
         {
             sheepAlive = false;
         }
+
+        if (sheepHungerPercent > 100f)
+        {
+            sheepHungerPercent = 100f;
+
+        }
     }
 
-    public void feedSheep()
-    {
-        // subtract 25 money from player
-        // 
-    }
+
 
 }

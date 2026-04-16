@@ -13983,6 +13983,7 @@ MonoBehaviour:
   moneyText: {fileID: 320658333}
   pm: {fileID: 1285594718137133583}
   countdown: {fileID: 947302446}
+  shinfo: {fileID: 4659808029277692801}
   money: 150
 --- !u!114 &921462643
 MonoBehaviour:
@@ -21654,7 +21655,19 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 921462643}
         m_TargetAssemblyTypeName: GeneralFunctions, Assembly-CSharp
-        m_MethodName: MouseLock
+        m_MethodName: MouseUnlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462643}
+        m_TargetAssemblyTypeName: GeneralFunctions, Assembly-CSharp
+        m_MethodName: CamLock
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24724,11 +24737,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1627337709}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 921462642}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: taxes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1627337709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30627,7 +30652,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2059070835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 921462642}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: PayForFood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2059070835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32378,10 +32415,13 @@ MonoBehaviour:
   sheepAlive: 0
   sheepHungerPercent: 0
   sheepPosition: 0
+  sheepCount: 0
+  deathPosition: {fileID: 131235201}
+  deadsheepPrefab: {fileID: 2917909170443929054, guid: a592d477d4b9651459d3dff800be6956, type: 3}
   isChild: 0
   isAdult: 0
   isElder: 0
-  mon: {fileID: 0}
+  mon: {fileID: 921462642}
   organ: {fileID: 0}
 --- !u!4 &7407306737213376451 stripped
 Transform:

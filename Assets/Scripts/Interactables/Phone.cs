@@ -10,10 +10,14 @@ public class Phone : Interactable
     [SerializeField] float taxCountdown;
 
     [SerializeField] bool taxPaid;
-    [SerializeField] bool taxEvaded; 
+    [SerializeField] bool taxEvaded;
+
+    // [SerializeField] GameObject Button;
 
     [SerializeField] MoneyManager mon;
     [SerializeField] Countdown count;
+
+    
 
 
 
@@ -28,7 +32,7 @@ public class Phone : Interactable
     {
         taxPaid = true;
         taxCooldown = 300f;
-        Button button = GetComponent<Button>();
+       
     }
 
 
@@ -68,6 +72,7 @@ public class Phone : Interactable
 
     public void payTax()
     {
+        mon.taxes(); 
         taxPaid = true;
         taxEvaded = false;
         mon.LoseMoneyLarge();

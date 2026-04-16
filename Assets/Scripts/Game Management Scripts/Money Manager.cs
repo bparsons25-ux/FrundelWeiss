@@ -11,7 +11,9 @@ public class MoneyManager : MonoBehaviour
 
     [SerializeField] PlayerMovement pm;
     [SerializeField] Countdown countdown;
-    
+
+    [SerializeField] sheepInfomation shinfo;
+
 
     public int money = 150;
 
@@ -73,7 +75,16 @@ public class MoneyManager : MonoBehaviour
         PlayerPrefs.SetInt("money", money);
     }
 
-    
+    public void PayForFood()
+    {
+        shinfo.sheepHungerPercent += 25f;
+        money -= 25;
+    }
+
+    public void taxes()
+    {
+        money -= 150;
+    }
 
 
 
