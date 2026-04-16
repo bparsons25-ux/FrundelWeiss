@@ -11,8 +11,9 @@ public class MoneyManager : MonoBehaviour
 
     [SerializeField] PlayerMovement pm;
     [SerializeField] Countdown countdown;
+    
 
-    int money = 150;
+    public int money = 150;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class MoneyManager : MonoBehaviour
 
         else if (money > 0)
         {
+            countdown.remainingTime = 180f;
             countdown.gameObject.SetActive(false);
             moneyText.color = Color.white;
         }
@@ -71,6 +73,7 @@ public class MoneyManager : MonoBehaviour
         PlayerPrefs.SetInt("money", money);
     }
 
+    
 
 
 
