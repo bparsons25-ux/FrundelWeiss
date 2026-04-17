@@ -20666,7 +20666,7 @@ GameObject:
   - component: {fileID: 1347867740}
   m_Layer: 6
   m_Name: Bank Vault
-  m_TagString: Untagged
+  m_TagString: MovableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -32125,7 +32125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4619955194227411986, guid: 9ff201ff19d06064e8a29cf3e96d7ff3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6704485
+      value: 3.34
       objectReference: {fileID: 0}
     - target: {fileID: 4619955194227411986, guid: 9ff201ff19d06064e8a29cf3e96d7ff3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32158,6 +32158,14 @@ PrefabInstance:
     - target: {fileID: 4619955194227411986, guid: 9ff201ff19d06064e8a29cf3e96d7ff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907527310133938054, guid: 9ff201ff19d06064e8a29cf3e96d7ff3, type: 3}
+      propertyPath: m_ClearFlags
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916041699816948249, guid: 9ff201ff19d06064e8a29cf3e96d7ff3, type: 3}
+      propertyPath: m_CameraType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

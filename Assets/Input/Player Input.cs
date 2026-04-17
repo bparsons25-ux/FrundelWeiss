@@ -162,6 +162,24 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pick Up"",
+                    ""type"": ""Button"",
+                    ""id"": ""292cb877-66a4-49c8-856d-bf0f9559cfdb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Drop / Throw"",
+                    ""type"": ""Button"",
+                    ""id"": ""a7e53d23-bc1a-4e5d-bb3a-c1f06bb3daec"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -404,6 +422,50 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Leave"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""43dbe17b-25ba-496f-9305-cd6cdb03e723"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pick Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1613b444-bd79-4435-810b-54e4894045a7"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pick Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6d11a2d6-3f60-4ea9-9de3-e8e8efcacee6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop / Throw"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6c5949eb-facc-4944-8ac8-1b63dd3caee8"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop / Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -938,6 +1000,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFoot_Interact = m_OnFoot.FindAction("Interact", throwIfNotFound: true);
         m_OnFoot_Pause = m_OnFoot.FindAction("Pause", throwIfNotFound: true);
         m_OnFoot_Leave = m_OnFoot.FindAction("Leave", throwIfNotFound: true);
+        m_OnFoot_PickUp = m_OnFoot.FindAction("Pick Up", throwIfNotFound: true);
+        m_OnFoot_DropThrow = m_OnFoot.FindAction("Drop / Throw", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1039,6 +1103,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Interact;
     private readonly InputAction m_OnFoot_Pause;
     private readonly InputAction m_OnFoot_Leave;
+    private readonly InputAction m_OnFoot_PickUp;
+    private readonly InputAction m_OnFoot_DropThrow;
     /// <summary>
     /// Provides access to input actions defined in input action map "OnFoot".
     /// </summary>
@@ -1082,6 +1148,14 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "OnFoot/Leave".
         /// </summary>
         public InputAction @Leave => m_Wrapper.m_OnFoot_Leave;
+        /// <summary>
+        /// Provides access to the underlying input action "OnFoot/PickUp".
+        /// </summary>
+        public InputAction @PickUp => m_Wrapper.m_OnFoot_PickUp;
+        /// <summary>
+        /// Provides access to the underlying input action "OnFoot/DropThrow".
+        /// </summary>
+        public InputAction @DropThrow => m_Wrapper.m_OnFoot_DropThrow;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1132,6 +1206,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Leave.started += instance.OnLeave;
             @Leave.performed += instance.OnLeave;
             @Leave.canceled += instance.OnLeave;
+            @PickUp.started += instance.OnPickUp;
+            @PickUp.performed += instance.OnPickUp;
+            @PickUp.canceled += instance.OnPickUp;
+            @DropThrow.started += instance.OnDropThrow;
+            @DropThrow.performed += instance.OnDropThrow;
+            @DropThrow.canceled += instance.OnDropThrow;
         }
 
         /// <summary>
@@ -1167,6 +1247,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Leave.started -= instance.OnLeave;
             @Leave.performed -= instance.OnLeave;
             @Leave.canceled -= instance.OnLeave;
+            @PickUp.started -= instance.OnPickUp;
+            @PickUp.performed -= instance.OnPickUp;
+            @PickUp.canceled -= instance.OnPickUp;
+            @DropThrow.started -= instance.OnDropThrow;
+            @DropThrow.performed -= instance.OnDropThrow;
+            @DropThrow.canceled -= instance.OnDropThrow;
         }
 
         /// <summary>
@@ -1458,6 +1544,20 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnLeave(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Pick Up" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPickUp(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Drop / Throw" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDropThrow(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

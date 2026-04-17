@@ -10,6 +10,7 @@ public class InputManager : MonoBehaviour
     private CamLook cam;
     private OrganHarvesting organ;
 
+
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -21,6 +22,7 @@ public class InputManager : MonoBehaviour
         onfoot.Crouch.performed += ctx => movement.Crouch();
         onfoot.Pause.performed += ctx => movement.Pause();
         onfoot.Leave.performed += ctx => organ.Leave();
+
     }
 
     private void OnEnable()
