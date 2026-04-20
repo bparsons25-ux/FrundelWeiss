@@ -5,11 +5,15 @@ using UnityEngine.UI;
 
 public class sheepInfomation : MonoBehaviour
 {
+
+    [ Header ("Sheep Stats")]
     public float sheepAge;
     public bool sheepAlive;
     public float sheepHungerPercent;
     public int sheepPosition;
     public int sheepCount;
+
+    [ Header ("Sheep Death Postioning")]
 
     public Transform deathPosition;
     public GameObject deadsheepPrefab;
@@ -17,9 +21,13 @@ public class sheepInfomation : MonoBehaviour
     // [SerializeField] GameObject harvestButton;
     // [SerializeField] GameObject FeedButton;
 
+    [ Header ("Sheep Age Settings")]
+
     [SerializeField] bool isChild;
     [SerializeField] bool isAdult;
     [SerializeField] bool isElder;
+
+    [Header ("Script References")]
 
     [SerializeField] private MoneyManager mon;
     [SerializeField] private OrganHarvesting organ;

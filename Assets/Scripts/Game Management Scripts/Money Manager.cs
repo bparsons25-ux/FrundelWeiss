@@ -9,9 +9,10 @@ public class MoneyManager : MonoBehaviour
     public static MoneyManager instance;
     public TextMeshProUGUI moneyText;
 
+    [Header ("Script References")]
+
     [SerializeField] PlayerMovement pm;
     [SerializeField] Countdown countdown;
-
     [SerializeField] sheepInfomation shinfo;
 
 
