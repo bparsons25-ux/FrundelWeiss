@@ -11,6 +11,13 @@ public class OrganHarvestingMode : MonoBehaviour
     public float maxHarvestingTime;
     public static bool isHarvesting;
 
+    [Header("Booleans")]
+
+    public bool isHarevstingHeart;
+    public bool isHarevstingLeftKidney;
+    public bool isHarevstingRightKidney;
+    public bool isHarevstingLiver;
+
     [Header("Maximum Organ Harvesting Countdowns")]
 
     public float maxHeartHarevstingTime = 50f ;
@@ -23,7 +30,7 @@ public class OrganHarvestingMode : MonoBehaviour
     public float currentHeartHarevstingTime = 50f;
     public float currentLeftKidneyHarvestingTime = 20f;
     public float currentRightKidneyHarvestingTime = 20f;
-    public float currentLiverKidneyHarvestingTime = 30f;
+    public float currentLiverHarvestingTime = 30f;
 
 
     [Header("Object References")]
@@ -47,6 +54,13 @@ public class OrganHarvestingMode : MonoBehaviour
     [SerializeField] private Image leftKidneyHarvestingFill;
     [SerializeField] private Image rightKidneyHarvestingFill;
 
+    [Header("Organ Harvesting Bars")]
+
+    public GameObject liverHarvestingBar;
+    public GameObject heartHarvestingBar;
+    public GameObject leftKidneyHarvestingBar;
+    public GameObject rightKidneyHarvestingBar;
+
     [Header("Spawning Organs")]
 
     public Transform heartPos;
@@ -61,13 +75,11 @@ public class OrganHarvestingMode : MonoBehaviour
     public Transform rightKidneypos;
     public GameObject rightKidneyPrefab;
 
-
-    private void Awake()
+    private void Start()
     {
-        isHarvesting = true;
-        timeBeforeDeath = 60f;
-
+        sInfo = GetComponent<sheepInfomation>();
     }
+
 
     public void Update()
     {
@@ -75,11 +87,11 @@ public class OrganHarvestingMode : MonoBehaviour
         {
             timeBeforeDeath -= Time.deltaTime;
             UpdateDeathBar();
-            harvestingUserInterface.gameObject.SetActive(true);
+            
             
         }
 
-        if (timeBeforeDeath == 0 )
+        if (timeBeforeDeath == 0)
         {
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
@@ -93,6 +105,74 @@ public class OrganHarvestingMode : MonoBehaviour
             sInfo.sheepAlive = false;
         }
 
+        // Heart Methods
+
+        if (isHarevstingHeart == true)
+        {
+            currentHeartHarevstingTime -= Time.deltaTime;
+            UpdateHeartBar();
+        }
+
+        if (currentHeartHarevstingTime == 0)
+        {
+            currentHeartHarevstingTime = 0;
+            isHarevstingHeart = false;
+            heartHarvestingBar.gameObject.SetActive(false);
+            Instantiate(heartPrefab, heartPos.position, transform.rotation);
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        // Liver Methods
+
+        if (isHarevstingLiver == true)
+        {
+            currentLiverHarvestingTime -= Time.deltaTime;
+            UpdateLiverBar();
+        }
+
+        if (currentLiverHarvestingTime == 0)
+        {
+            currentLiverHarvestingTime = 0;
+            isHarevstingHeart = false;
+            liverHarvestingBar.gameObject.SetActive(false);
+            Instantiate(liverPrefab, liverPos.position, transform.rotation);
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        // Left Kidney Methods
+
+
+        if (isHarevstingLeftKidney == true)
+        {
+            currentLeftKidneyHarvestingTime -= Time.deltaTime;
+            UpdateLeftKidneyBar();
+        }
+
+        if (currentLeftKidneyHarvestingTime == 0)
+        {
+            currentLeftKidneyHarvestingTime = 0;
+            isHarevstingLeftKidney = false;
+            leftKidneyHarvestingBar.gameObject.SetActive(false);
+            Instantiate(leftKidneyPrefab, leftKidneypos.position, transform.rotation);
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        // Right Kidney Methods
+
+        if (isHarevstingRightKidney == true)
+        {
+            currentRightKidneyHarvestingTime -= Time.deltaTime;
+            UpdateRightKidneyBar();
+        }
+
+        if (currentRightKidneyHarvestingTime == 0)
+        {
+            currentRightKidneyHarvestingTime = 0;
+            isHarevstingRightKidney = false;
+            rightKidneyHarvestingBar.gameObject.SetActive(false);
+            Instantiate(rightKidneyPrefab, rightKidneypos.position, transform.rotation);
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     private void UpdateDeathBar()
@@ -118,27 +198,52 @@ public class OrganHarvestingMode : MonoBehaviour
 
     private void UpdateLiverBar()
     {
-        liverHarvestingFill.fillAmount = currentLiverKidneyHarvestingTime / maxLiverKidneyHarvestingTime; 
+        liverHarvestingFill.fillAmount = currentLiverHarvestingTime / maxLiverKidneyHarvestingTime; 
     }
 
-    private void ExtractHeart()
+    public void ExtractHeart()
     {
         // step 1. Remove Organ, Step 2. Start Countdown, Step 3 - Activate Bar , Step 4 - Lock the mouse , Step 5. when Countdown ends - spawn in organ prefab and deactivate countdown bar , Step 6 - unlock mouse.  
+        HeartButton.gameObject.SetActive(false);
+        heartHarvestingBar.gameObject.SetActive(true);
+        isHarevstingHeart = true;
+        Cursor.lockState = CursorLockMode.Locked;
+
     }
 
-    private void ExtractLeftKidney()
+    public void ExtractLeftKidney()
     {
         // step 1. Remove Organ, Step 2. Start Countdown, Step 3 - Activate Bar , Step 4 - Lock the mouse , Step 5. when Countdown ends - spawn in organ prefab and deactivate countdown bar , Step 6 - unlock mouse.
+        LeftKidneyButton.gameObject.SetActive(false);
+        leftKidneyHarvestingBar.gameObject.SetActive(true);
+        isHarevstingLeftKidney = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void ExtractRightKidney()
+    public void ExtractRightKidney()
     {
         // step 1. Remove Organ, Step 2. Start Countdown, Step 3 - Activate Bar , Step 4 - Lock the mouse , Step 5. when Countdown ends - spawn in organ prefab and deactivate countdown bar , Step 6 - unlock mouse.
+        RightKidneyButton.gameObject.SetActive(false);
+        rightKidneyHarvestingBar.gameObject.SetActive(true);
+        isHarevstingRightKidney = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void ExtractLiver()
+    public void ExtractLiver()
     {
         // step 1. Remove Organ, Step 2. Start Countdown, Step 3 - Activate Bar , Step 4 - Lock the mouse , Step 5. when Countdown ends - spawn in organ prefab and deactivate countdown bar , Step 6 - unlock mouse.
+        LiverButton.gameObject.SetActive(false);
+        liverHarvestingBar.gameObject.SetActive(true);
+        isHarevstingLiver = true;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void StartHarvesting()
+    {
+        isHarvesting = true;
+        timeBeforeDeath = 60f;
+        harvestingUserInterface.gameObject.SetActive(true);
+        Debug.Log("Called Organ Harvest");
     }
 
 

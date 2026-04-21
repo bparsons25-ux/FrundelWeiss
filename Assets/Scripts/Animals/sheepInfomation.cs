@@ -41,6 +41,10 @@ public class sheepInfomation : MonoBehaviour
         sheepHungerPercent = 50f;
         isChild = true;
 
+        organ = GetComponent<OrganHarvesting>();
+        mon = GetComponent<MoneyManager>();
+
+
         
     }
 
