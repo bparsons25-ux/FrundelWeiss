@@ -86,11 +86,19 @@ public class OrganHarvestingMode : MonoBehaviour
             sInfo.sheepAlive = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isHarvesting = false;
+            harvestingUserInterface.gameObject.SetActive(false);
+            sInfo.sheepAlive = false;
+        }
+
     }
 
     private void UpdateDeathBar()
     {
         deathbarFill.fillAmount = timeBeforeDeath / maxDeathTime;
+
     }
 
     private void UpdateLeftKidneyBar()
