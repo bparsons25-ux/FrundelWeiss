@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
@@ -32,6 +33,10 @@ public class sheepInfomation : MonoBehaviour
     [SerializeField] private MoneyManager mon;
     [SerializeField] private OrganHarvesting organ;
 
+    [Header("Text References")]
+    public TextMeshProUGUI ageText;
+    public TextMeshProUGUI hungerText;
+
 
 
     public void Start()
@@ -44,7 +49,8 @@ public class sheepInfomation : MonoBehaviour
         organ = GetComponent<OrganHarvesting>();
         mon = GetComponent<MoneyManager>();
 
-
+        ageText.text = "Age:" + sheepAge.ToString();
+        hungerText.text = "Hunger" + sheepHungerPercent.ToString();
         
     }
 
@@ -53,7 +59,11 @@ public class sheepInfomation : MonoBehaviour
         if (sheepAlive == true)
         {
             sheepAge += Time.deltaTime;
+            ageText.text = "Age:" + sheepAge.ToString();
+
             sheepHungerPercent -= Time.deltaTime * 0.5f; // Hunger bar goes down by 0.5 / second 
+            hungerText.text = "Hunger" + sheepHungerPercent.ToString();
+
         }
 
         else if (sheepAlive == false)
