@@ -12,6 +12,11 @@ public class PickUpRaycastScript : MonoBehaviour
 
     [SerializeField][Min(1)] private float hitRange;
 
+    [SerializeField] private Transform pickUpParent;
+
+    [SerializeField] private GameObject inHandItem;
+
+
 
     private RaycastHit hit;
 
@@ -23,6 +28,11 @@ public class PickUpRaycastScript : MonoBehaviour
         {
             hit.collider.GetComponent<Highlight>()?.ToggleHighlight(false);
             pickUpUI.SetActive(false);
+        }
+
+        if (inHandItem != null)
+        {
+            return;
         }
 
         if (Physics.Raycast(playerCamTransform.position, playerCamTransform.forward, out hit, hitRange, movableLayerMask))
@@ -39,6 +49,14 @@ public class PickUpRaycastScript : MonoBehaviour
         if(hit.collider != null)
         {
             Debug.Log(hit.collider.name);
+            if (hit.collider.GetComponent<Organ>())
+            {
+                Debug.Log("It's a Organ Mate...");
+                inHandItem = hit.collider.gameObject;
+                inHandItem.transform.position = Vector3.zero;
+                inHandItem.transform.rotation = Quaternion.identity;
+                inHandItem.transform.SetParent(pickUpParent.transform, false);
+            }
         }
     }
 
