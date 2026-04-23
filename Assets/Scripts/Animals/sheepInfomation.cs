@@ -13,6 +13,7 @@ public class sheepInfomation : MonoBehaviour
     public float sheepHungerPercent;
     public int sheepPosition;
     public int sheepCount;
+    public bool sheepActive;
 
     [ Header ("Sheep Death Postioning")]
 
@@ -45,6 +46,7 @@ public class sheepInfomation : MonoBehaviour
         sheepAlive = true;
         sheepHungerPercent = 50f;
         isChild = true;
+        sheepActive = false;
 
         organ = GetComponent<OrganHarvesting>();
         mon = GetComponent<MoneyManager>();
@@ -110,6 +112,9 @@ public class sheepInfomation : MonoBehaviour
         }
     }
 
-
+    public void feedSheep()
+    {
+        sheepHungerPercent += 40f;
+    }
 
 }

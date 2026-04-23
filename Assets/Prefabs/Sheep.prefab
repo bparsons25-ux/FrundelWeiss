@@ -382,7 +382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2464151633031254270}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1550098146283435006}
+        m_TargetAssemblyTypeName: sheepInfomation, Assembly-CSharp
+        m_MethodName: feedSheep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &781462669457884374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,10 +1331,6 @@ MonoBehaviour:
   heartHarvestingBar: {fileID: 3468205255122820998}
   leftKidneyHarvestingBar: {fileID: 5270728698142859087}
   rightKidneyHarvestingBar: {fileID: 6067851954443003993}
-  heartPrefab: {fileID: 2177625037626153442, guid: 186f1bbfeb25b654db11fc3bc69240b7, type: 3}
-  liverPrefab: {fileID: 4733176619889632447, guid: 119e4d5e993ab1e4dbba77ef483408d5, type: 3}
-  leftKidneyPrefab: {fileID: 4241843533408233781, guid: 88fee1c1c9bc143458381185517e9c38, type: 3}
-  rightKidneyPrefab: {fileID: 3809975104281328863, guid: 6f4460b9c94c7b449b220fe503a7de49, type: 3}
 --- !u!1 &3347482378058009501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,6 +4205,7 @@ MonoBehaviour:
   sheepHungerPercent: 0
   sheepPosition: 0
   sheepCount: 0
+  sheepActive: 0
   deathPosition: {fileID: 8680005094059731839}
   deadsheepPrefab: {fileID: 2917909170443929054, guid: a592d477d4b9651459d3dff800be6956, type: 3}
   isChild: 0

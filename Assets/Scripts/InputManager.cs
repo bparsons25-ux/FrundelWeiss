@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour
         onfoot.Sprint.performed += ctx => movement.Sprint();
         onfoot.Crouch.performed += ctx => movement.Crouch();
         onfoot.Pause.performed += ctx => movement.Pause();
-        onfoot.Leave.performed += ctx => organ.Leave();
+
 
     }
 

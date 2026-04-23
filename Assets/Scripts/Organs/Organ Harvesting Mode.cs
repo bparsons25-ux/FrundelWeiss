@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,6 +40,7 @@ public class OrganHarvestingMode : MonoBehaviour
     public GameObject harvestingUserInterface;
     [SerializeField] sheepInfomation sInfo;
 
+
     [Header("User Interface Objects")]
 
     public GameObject HeartButton;
@@ -63,26 +65,21 @@ public class OrganHarvestingMode : MonoBehaviour
 
     [Header("Spawning Organs")]
 
-    private GameObject heartPos;
-    public GameObject heartPrefab;
+    public static bool isSpawningHeart;
+    public static bool isSpawningLiver;
+    public static bool isSpawningLeftKidney;
+    public static bool isSpawningRightKidney;
 
-    private GameObject liverPos;
-    public GameObject liverPrefab;
-
-    private GameObject leftKidneypos;
-    public GameObject leftKidneyPrefab;
-
-    private GameObject rightKidneypos;
-    public GameObject rightKidneyPrefab;
-
-    private void Awake()
+    public void Start()
     {
-
-        heartPos = GameObject.Find("Heart Organ Pos.");
-        liverPos = GameObject.Find("Liver Organ Pos.");
-        leftKidneypos = GameObject.Find("Left Kidney Organ Pos.");
-        rightKidneypos = GameObject.Find("Right Kidney Pos.");
+        if (isHarvesting == true)
+        {
+            sInfo.sheepHungerPercent = 120;
+        }
     }
+
+
+
 
 
     public void Update()
@@ -95,11 +92,12 @@ public class OrganHarvestingMode : MonoBehaviour
             
         }
 
-        if (timeBeforeDeath == 0)
+        if (timeBeforeDeath < 0)
         {
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
             sInfo.sheepAlive = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -122,12 +120,9 @@ public class OrganHarvestingMode : MonoBehaviour
             currentHeartHarevstingTime = 0;
             isHarevstingHeart = false;
             heartHarvestingBar.gameObject.SetActive(false);
-            sInfo.sheepAlive = false;
             Cursor.lockState = CursorLockMode.None;
             Debug.Log("Heart Harvested!");
-            Instantiate(heartPrefab, heartPos.transform.position, transform.rotation);
-            Debug.Log(heartPos.transform.position);
-            
+            isSpawningHeart = true;
         }
 
         // Liver Methods
@@ -141,11 +136,13 @@ public class OrganHarvestingMode : MonoBehaviour
         if (currentLiverHarvestingTime < 0)
         {
             currentLiverHarvestingTime = 0;
-            isHarevstingHeart = false;
+            isHarevstingLiver = false;
             liverHarvestingBar.gameObject.SetActive(false);
             Debug.Log("Liver Harvested");
             Cursor.lockState = CursorLockMode.None;
-            Instantiate(liverPrefab, liverPos.transform.position, transform.rotation);
+            isSpawningLiver = true;
+            
+
             
         }
 
@@ -165,7 +162,8 @@ public class OrganHarvestingMode : MonoBehaviour
             leftKidneyHarvestingBar.gameObject.SetActive(false);
             Debug.Log("Left Kidney Harvested!");
             Cursor.lockState = CursorLockMode.None;
-            Instantiate(leftKidneyPrefab, leftKidneypos.transform.position, transform.rotation);
+            isSpawningLeftKidney = true;
+
             
         }
 
@@ -184,7 +182,9 @@ public class OrganHarvestingMode : MonoBehaviour
             rightKidneyHarvestingBar.gameObject.SetActive(false);
             Debug.Log("Right Kidney Harvested!");
             Cursor.lockState = CursorLockMode.None;
-            Instantiate(rightKidneyPrefab, rightKidneypos.transform.position, transform.rotation);
+            isSpawningRightKidney = true;
+           
+
             
         }
     }
