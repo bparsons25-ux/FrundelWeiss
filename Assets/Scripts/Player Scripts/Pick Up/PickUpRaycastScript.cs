@@ -49,20 +49,50 @@ public class PickUpRaycastScript : MonoBehaviour
         if(hit.collider != null)
         {
             Debug.Log(hit.collider.name);
-            if (hit.collider.GetComponent<Organ>())
+            Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+            if (hit.collider.GetComponent<Organ>()) // close up hand held 
             {
-                Debug.Log("It's a Organ Mate...");
+             Debug.Log("It's food!");
+
+             inHandItem = hit.collider.gameObject;
+             inHandItem.transform.position = Vector3.zero;
+             inHandItem.transform.rotation = Quaternion.identity;
+             inHandItem.transform.SetParent(pickUpParent.transform, false);
+
+                if (rb != null)
+                {
+                    rb.isKinematic = true;
+                }
+
+                return;
+            }
+
+            if (hit.collider.GetComponent<Jar>()) // far away moving hold
+            {
+                Debug.Log("Bosh it's a Jar...");
                 inHandItem = hit.collider.gameObject;
-                inHandItem.transform.position = Vector3.zero;
-                inHandItem.transform.rotation = Quaternion.identity;
-                inHandItem.transform.SetParent(pickUpParent.transform, false);
+                inHandItem.transform.SetParent(pickUpParent.transform, true);
+                if (rb != null)
+                {
+                    rb.isKinematic = true;
+                }
+                return;
             }
         }
     }
 
     public void Drop()
     {
-        
+        if (inHandItem != null)
+        {
+            inHandItem.transform.SetParent(null);
+            inHandItem = null;
+            Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.isKinematic = false;
+            }
+        }
     }
 
     public void Use()
