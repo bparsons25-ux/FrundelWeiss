@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     private PlayerMovement movement;
     private CamLook cam;
     private OrganHarvesting organ;
+    private PickUpRaycastScript ray;
 
 
     private void Awake()
@@ -16,11 +17,15 @@ public class InputManager : MonoBehaviour
         playerInput = new PlayerInput();
         onfoot = playerInput.OnFoot;
         movement = GetComponent<PlayerMovement>();
+        ray = GetComponent<PickUpRaycastScript>();
         cam = GetComponent<CamLook>();
         onfoot.Jump.performed += ctx => movement.Jump(); // ctx is callback context
         onfoot.Sprint.performed += ctx => movement.Sprint();
         onfoot.Crouch.performed += ctx => movement.Crouch();
         onfoot.Pause.performed += ctx => movement.Pause();
+        onfoot.PickUp.performed += ctx => ray.PickUp();
+        onfoot.Drop.performed += ctx => ray.Drop();
+        onfoot.Use.performed += ctx => ray.Use();
 
 
     }
