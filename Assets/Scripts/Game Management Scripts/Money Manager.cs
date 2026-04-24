@@ -16,24 +16,27 @@ public class MoneyManager : MonoBehaviour
     [SerializeField] sheepInfomation shinfo;
 
 
-    public int money = 150;
+    public int money;
 
     private void Awake()
     {
+        
         instance = this;
     }
 
     void Start()
     {
-        money = PlayerPrefs.GetInt("money", 0);
+        
+        money = PlayerPrefs.GetInt("money", 150);
         moneyText.text = "$" + money.ToString();
+
     }
 
     void Update()
     {
         if (money < 0)
         {
-            money = 0;
+            
             countdown.gameObject.SetActive(true);
             moneyText.color = Color.red;
         }
