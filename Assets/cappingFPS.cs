@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class cappingFPS : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public enum limits
     {
-        
+        nolimit = 0,
+        limit30 = 30,
+        limit60 = 60,
+        limit120 = 120,
+        limit240 = 240,
     }
 
-    // Update is called once per frame
-    void Update()
+    public limits limit;
+
+    private void Awake()
     {
-        
+        Application.targetFrameRate = (int)limit;
     }
+
 }

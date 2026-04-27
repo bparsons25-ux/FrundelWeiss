@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class sheepSpawning : MonoBehaviour
@@ -20,33 +21,35 @@ public class sheepSpawning : MonoBehaviour
 
     [Header("Sheep Position References")]
 
-    [SerializeField] private Transform sheep1Pos;
-    [SerializeField] private Transform sheep2Pos;
-    [SerializeField] private Transform sheep3Pos;
-    [SerializeField] private Transform sheep4Pos;
-    [SerializeField] private Transform sheep5Pos;
-    [SerializeField] private Transform sheep6Pos;
-    [SerializeField] private Transform sheep7Pos;
-    [SerializeField] private Transform sheep8Pos;
-    [SerializeField] private Transform sheep9Pos;
-    [SerializeField] private Transform sheep10Pos;
-    [SerializeField] private Transform sheep11Pos;
-    [SerializeField] private Transform sheep12Pos;
+    [SerializeField] private GameObject blankSheep1pos;
+    [SerializeField] private GameObject blankSheep2pos;
+    [SerializeField] private GameObject blankSheep3pos;
+    [SerializeField] private GameObject blankSheep4pos;
+    [SerializeField] private GameObject blankSheep5pos;
+    [SerializeField] private GameObject blankSheep6pos;
+    [SerializeField] private GameObject blankSheep7pos;
+    [SerializeField] private GameObject blankSheep8pos;
+    [SerializeField] private GameObject blankSheep9pos;
+    [SerializeField] private GameObject blankSheep10pos;
+    [SerializeField] private GameObject blankSheep11pos;
+    [SerializeField] private GameObject blankSheep12pos;
 
     [Header("Dead Sheep Position References")]
 
-    [SerializeField] private Transform deadSheep1Pos;
-    [SerializeField] private Transform deadSheep2Pos;
-    [SerializeField] private Transform deadSheep3Pos;
-    [SerializeField] private Transform deadSheep4Pos;
-    [SerializeField] private Transform deadSheep5Pos;
-    [SerializeField] private Transform deadSheep6Pos;
-    [SerializeField] private Transform deadSheep7Pos;
-    [SerializeField] private Transform deadSheep8Pos;
-    [SerializeField] private Transform deadSheep9Pos;
-    [SerializeField] private Transform deadSheep10Pos;
-    [SerializeField] private Transform deadSheep11Pos;
-    [SerializeField] private Transform deadSheep12Pos;
+    [SerializeField] private GameObject deadSheep1;
+    [SerializeField] private GameObject deadSheep2;
+    [SerializeField] private GameObject deadSheep3;
+    [SerializeField] private GameObject deadSheep4;
+    [SerializeField] private GameObject deadSheep5;
+    [SerializeField] private GameObject deadSheep6;
+    [SerializeField] private GameObject deadSheep7;
+    [SerializeField] private GameObject deadSheep8;
+    [SerializeField] private GameObject deadSheep9;
+    [SerializeField] private GameObject deadSheep10;
+    [SerializeField] private GameObject deadSheep11;
+    [SerializeField] private GameObject deadSheep12;
+
+
 
     [Header("Sheep boolean Checks")]
     public bool sheepOneIsActive;
@@ -76,10 +79,18 @@ public class sheepSpawning : MonoBehaviour
     public bool deadSheepElevenIsActive;
     public bool deadSheepTweleveIsActive;
 
+
+
+
+
     [Header("Sheep Value Positions")]
 
     public int sheepCount;
     public float speed = 10f;
+
+    [Header("Script References")]
+
+    [SerializeField] private MoneyManager moneyManager;
 
     private void Start()
     {
@@ -95,6 +106,8 @@ public class sheepSpawning : MonoBehaviour
         sheepTenIsActive = false;
         sheepElevenIsActive = false;    
         sheepTweleveIsActive = false;
+
+        
     }
 
 
@@ -102,131 +115,141 @@ public class sheepSpawning : MonoBehaviour
 
     private void Update()
     {
-        if (sheepOneIsActive == true)
+
+        // if sheep are active statements 
+
+
+
+       if (sheepOneIsActive == true)
         {
-            Vector3 oneSpawn = sheep1Pos.transform.position;
-            Vector3 onePos = Vector3.MoveTowards(transform.position, sheep1Pos.transform.position, speed * Time.deltaTime);
-            transform.position = onePos;
+            sheep1.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepTwoIsActive == true)
         {
-            Vector3 twoSpawn = sheep2Pos.transform.position;
-            Vector3 twoPos = Vector3.MoveTowards(transform.position, sheep2Pos.transform.position, speed * Time.deltaTime);
-            transform.position = twoPos;
+            sheep2.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepThreeIsActive == true)
         {
-            Vector3 threeSpawn = sheep3Pos.transform.position;
-            Vector3 threePos = Vector3.MoveTowards(transform.position, sheep3Pos.transform.position, speed * Time.deltaTime);
-            transform.position = threePos;
+            sheep3.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepFourIsActive == true)
         {
-            Vector3 fourSpawn = sheep4Pos.transform.position;
-            Vector3 fourPos = Vector3.MoveTowards(transform.position, sheep4Pos.transform.position, speed * Time.deltaTime);
-            transform.position = fourPos;
+            sheep4.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepFiveIsActive == true)
         {
-            Vector3 fiveSpawn = sheep5Pos.transform.position;
-            Vector3 fivePos = Vector3.MoveTowards(transform.position, sheep5Pos.transform.position, speed * Time.deltaTime);
-            transform.position = fivePos;
+            sheep5.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepSixIsActive == true)
         {
-            Vector3 sixSpawn = sheep6Pos.transform.position;
-            Vector3 sixPos = Vector3.MoveTowards(transform.position, sheep6Pos.transform.position, speed * Time.deltaTime);
-            transform.position = sixPos;
+            sheep6.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepSevenIsActive == true)
         {
-            Vector3 sevenSpawn = sheep7Pos.transform.position;
-            Vector3 sevenPos = Vector3.MoveTowards(transform.position, sheep7Pos.transform.position, speed * Time.deltaTime);
-            transform.position = sevenPos;
+            sheep7.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepEightIsActive == true)
         {
-            Vector3 eightSpawn = sheep8Pos.transform.position;
-            Vector3 eightPos = Vector3.MoveTowards(transform.position, sheep8Pos.transform.position, speed * Time.deltaTime);
-            transform.position = eightPos;
+            sheep8.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepNineIsActive == true)
         {
-            Vector3 nineSpawn = sheep9Pos.transform.position;
-            Vector3 ninePos = Vector3.MoveTowards(transform.position, sheep9Pos.transform.position, speed * Time.deltaTime);
-            transform.position = ninePos;
+            sheep9.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepTenIsActive == true)
         {
-            Vector3 tenSpawn = sheep10Pos.transform.position;
-            Vector3 tenPos = Vector3.MoveTowards(transform.position, sheep10Pos.transform.position, speed * Time.deltaTime);
-            transform.position = tenPos;
+            sheep10.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepElevenIsActive == true)
         {
-            Vector3 elevenSpawn = sheep11Pos.transform.position;
-            Vector3 elevenPos = Vector3.MoveTowards(transform.position, sheep11Pos.transform.position, speed * Time.deltaTime);
-            transform.position = elevenPos;
+            sheep11.GetComponent<sheepInfomation>().enabled = true;
         }
 
         if (sheepTweleveIsActive == true)
         {
-            Vector3 tweleveSpawn = sheep12Pos.transform.position;
-            Vector3 twelevePos = Vector3.MoveTowards(transform.position, sheep12Pos.transform.position, speed * Time.deltaTime);
-            transform.position = twelevePos;
+            sheep12.GetComponent<sheepInfomation>().enabled = true;
         }
 
 
 
+        // if sheep are inactive statements
 
 
 
+        if (sheepOneIsActive == false)
+        {
+            sheep1.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepTwoIsActive == false)
+        {
+            sheep2.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepThreeIsActive == false)
+        {
+            sheep3.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepFourIsActive == false)
+        {
+            sheep4.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepFiveIsActive == false)
+        {
+            sheep5.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepSixIsActive == false)
+        {
+            sheep6.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepSevenIsActive == false)
+        {
+            sheep7.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepEightIsActive == false)
+        {
+            sheep8.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepNineIsActive == false)
+        {
+            sheep9.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepTenIsActive == false)
+        {
+            sheep10.GetComponent<sheepInfomation>().enabled = false;
+        }
 
+        if (sheepElevenIsActive == false)
+        {
+            sheep11.GetComponent<sheepInfomation>().enabled = false;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if (sheepTweleveIsActive == false)
+        {
+            sheep12.GetComponent<sheepInfomation>().enabled = false;
+        }
     }
+
+
+
+
 
 
 

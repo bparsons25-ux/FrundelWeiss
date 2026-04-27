@@ -32,7 +32,8 @@ public class sheepInfomation : MonoBehaviour
     [Header ("Script References")]
 
     [SerializeField] private MoneyManager mon;
-    [SerializeField] private OrganHarvesting organ;
+
+
 
     [Header("Text References")]
     public TextMeshProUGUI ageText;
@@ -48,8 +49,6 @@ public class sheepInfomation : MonoBehaviour
         isChild = true;
         sheepActive = false;
 
-        organ = GetComponent<OrganHarvesting>();
-        mon = GetComponent<MoneyManager>();
 
         ageText.text = "Age:" + sheepAge.ToString();
         hungerText.text = "Hunger" + sheepHungerPercent.ToString();
@@ -110,11 +109,20 @@ public class sheepInfomation : MonoBehaviour
             sheepHungerPercent = 100f;
 
         }
+
+
+
+    
+
+
     }
 
     public void feedSheep()
     {
-        sheepHungerPercent += 40f;
+        mon.money -= 25;
+        sheepHungerPercent += 25f;
+        mon.moneyText.text = "$" + mon.money.ToString();
+        PlayerPrefs.SetInt("money", mon.money);
     }
 
 }

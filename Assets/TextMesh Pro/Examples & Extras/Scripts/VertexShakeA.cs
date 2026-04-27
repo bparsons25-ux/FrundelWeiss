@@ -25,12 +25,12 @@ namespace TMPro.Examples
         void OnEnable()
         {
             // Subscribe to event fired when text object has been regenerated.
-            TMPro_EventManager.TEXT_CHANGED_EVENT.Add(ON_TEXT_CHANGED);
+            //TMPro_EventManager.TEXT_CHANGED_EVENT.Add(ON_TEXT_CHANGED);
         }
 
         void OnDisable()
         {
-            TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
+            //TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
         }
 
 
@@ -42,7 +42,7 @@ namespace TMPro.Examples
 
         void ON_TEXT_CHANGED(Object obj)
         {
-            if (obj = m_TextComponent)
+            //if (obj = m_TextComponent)
                 hasTextChanged = true;
         }
 
