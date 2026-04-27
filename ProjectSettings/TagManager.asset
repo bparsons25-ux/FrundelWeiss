@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - MovableObject
+  - Heart
+  - Liver
+  - leftKidney
+  - rightKidney
   layers:
   - Default
   - TransparentFX

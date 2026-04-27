@@ -6,11 +6,24 @@ public class GeneralFunctions : MonoBehaviour
     [SerializeField] PlayerMovement pm;
     [SerializeField] private GameOver GameOver;
 
+    [SerializeField] private GameObject player;
+
     [SerializeField] GameObject pauseMenu;
+
+    [SerializeField] private GameObject heart;
+    [SerializeField] private GameObject liver;
+    [SerializeField] private GameObject leftKidney;
+    [SerializeField] private GameObject rightkidney;
+
+    [SerializeField] private Transform playerCamPos;
+
+    [SerializeField] private CharacterController controller;
 
     private void Start()
     {
         pm  = GetComponent<PlayerMovement>();
+        controller = player.GetComponent<CharacterController>();
+
     }
 
 
@@ -51,14 +64,13 @@ public class GeneralFunctions : MonoBehaviour
 
     public void PlayerFreeze()
     {
-        //pm.speed = 0f;
-        //pm.jumpHeight = 0f;
+        controller.enabled = false;
     }
 
     public void PlayerFree()
     {
-        //pm.speed = 10f;
-        //pm.jumpHeight = 0.75f;
+        controller.enabled = true;
     }
+
 
 }

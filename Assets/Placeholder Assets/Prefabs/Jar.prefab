@@ -12,12 +12,15 @@ GameObject:
   - component: {fileID: 5756483009268154400}
   - component: {fileID: 407109032993602488}
   - component: {fileID: -1187489169117643678}
-  m_Layer: 0
+  - component: {fileID: 4824477735026139848}
+  - component: {fileID: 4909790683521819513}
+  - component: {fileID: 2976957069211410471}
+  m_Layer: 8
   m_Name: Jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6835365316818432014
 Transform:
@@ -29,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.829306, y: 1.54, z: 5.886755}
-  m_LocalScale: {x: 53.76455, y: 53.76455, z: 53.76455}
+  m_LocalScale: {x: 40.93364, y: 40.93364, z: 40.93364}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,3 +111,55 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.022073973, y: 0.031309567, z: 0.022074137}
   m_Center: {x: 0.00000001071021, y: 0, z: -0.000000016763806}
+--- !u!114 &4824477735026139848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878249842983230636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6379d8e573da84593d4bda33af3041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <KeepWorldPosition>k__BackingField: 0
+--- !u!114 &4909790683521819513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878249842983230636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &2976957069211410471
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878249842983230636}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
