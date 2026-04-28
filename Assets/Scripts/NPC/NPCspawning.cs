@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NPCspawning : MonoBehaviour
@@ -9,10 +11,13 @@ public class NPCspawning : MonoBehaviour
     public float timeToNextSpawn;
     public float timesinceLastSpawn;
 
-    public float minSpawnTime = 120f;
-    public float maxSpawnTime = 180f;
+    public float minSpawnTime = 30f;
+    public float maxSpawnTime = 60f;
 
     public bool canSpawnNPC;
+
+    [SerializeField] private GameObject BlankNPC;
+    private EmptyNPC emptyNPC;
 
     // 60 = 1 min
     // 90 = 1.5 min
@@ -30,6 +35,8 @@ public class NPCspawning : MonoBehaviour
     private void Start()
     {
         timeToNextSpawn = Random.Range(minSpawnTime, maxSpawnTime); // Returns a Random Time for the enemies to Spawn
+        canSpawnNPC = true; 
+        emptyNPC = BlankNPC.GetComponent<EmptyNPC>();
     }
 
     private void Update()
@@ -42,16 +49,38 @@ public class NPCspawning : MonoBehaviour
 
             Instantiate(npcsToSpawn[selection], spawnPos.position, transform.rotation ); // note: MAKE THE SPAWN POS OBJECT FACE FORWARDS
 
-            timeToNextSpawn = Random.Range(minSpawnTime, maxSpawnTime );
+            
             canSpawnNPC = false;
-            timesinceLastSpawn = 0.0f;
+            
         }
+
     }
 
-    private void OnceSold()
+    public void OnceSold()
     {
         canSpawnNPC = true;
+        timeToNextSpawn = Random.Range(minSpawnTime, maxSpawnTime);
+        timesinceLastSpawn = 0.0f;
     }
+
+    public void BoostTime()
+    {
+        timesinceLastSpawn = timeToNextSpawn;
+        timeToNextSpawn += Time.deltaTime;
+    }
+
+    public void DestroyBlank()
+    {
+        if (emptyNPC.isBlank == true)
+        {
+            Destroy(emptyNPC.gameObject);
+            emptyNPC.isBlank = false;
+            BoostTime();
+            Debug.Log("Blank Object Destroyed");
+        }
+    }
+    
+   
 
 
 

@@ -88,6 +88,8 @@ public class MoneyManager : MonoBehaviour
     public void taxes()
     {
         money -= 150;
+        moneyText.text = "$" + money.ToString();
+        PlayerPrefs.SetInt("money", money);
     }
 
 

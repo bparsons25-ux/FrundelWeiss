@@ -100,6 +100,7 @@ public class OrganHarvestingMode : MonoBehaviour
             sInfo.sheepAlive = false;
             Cursor.lockState = CursorLockMode.Locked;
             func.CamUnlock();
+            func.PlayerFree();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -108,6 +109,7 @@ public class OrganHarvestingMode : MonoBehaviour
             harvestingUserInterface.gameObject.SetActive(false);
             sInfo.sheepAlive = false;
             func.CamUnlock();
+            func.PlayerFree();
         }
 
         // Heart Methods

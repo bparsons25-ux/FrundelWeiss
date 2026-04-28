@@ -1528,6 +1528,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1688573423}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1585,6 +1605,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 390662895}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2792,6 +2832,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 2037268972}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2929,6 +2989,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4142120846249829452, guid: 567c5f8b6dda0bd42a0e003b35552b85, type: 3}
   m_PrefabInstance: {fileID: 263876826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &279856384 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1214519926}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &293277096
 GameObject:
@@ -4425,6 +4490,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d940688d83d00a47936fd112ade6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &390662895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 113311636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &392283939
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,6 +4638,11 @@ BoxCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4142120846249829452, guid: 567c5f8b6dda0bd42a0e003b35552b85, type: 3}
   m_PrefabInstance: {fileID: 2262092161444905583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &417933730 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1180966214}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &418028581
 PrefabInstance:
@@ -6850,6 +6925,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 803437074}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8316,6 +8411,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58eaadd2ac32e514ca592573309e81c3, type: 3}
   m_PrefabInstance: {fileID: 681313836}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &685916612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1630554956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &693831596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9181,6 +9281,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724791615}
   m_Mesh: {fileID: 9042771077998628582, guid: abb34e2ac81b21144a8e14b3f5fa42e9, type: 3}
+--- !u!4 &725383016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1846657249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &738156956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9233,6 +9338,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1111395639}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9453,6 +9578,11 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1370235177799199937, guid: 5e15caeb969bd46478345e60297edd8d, type: 3}
   m_PrefabInstance: {fileID: 738217028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &756828518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1449363269}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &757953442
 PrefabInstance:
@@ -10631,6 +10761,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797999151}
   m_CullTransparentMesh: 1
+--- !u!4 &803437074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 595717672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806040111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10683,6 +10818,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 2031485138}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12185,17 +12340,16 @@ MonoBehaviour:
   - {fileID: 2375426493798006421, guid: a04e602d22eaae1489c7f58ff1b5bdfb, type: 3}
   - {fileID: 4026086584782447393, guid: f547ae958b9eab740aaad091c76213ec, type: 3}
   - {fileID: 3409903507020390249, guid: d6cc07a14fb1dd04abef49e724b15243, type: 3}
-  - {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
-  - {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
-  - {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
   - {fileID: 2375426493798006421, guid: a04e602d22eaae1489c7f58ff1b5bdfb, type: 3}
   - {fileID: 3409903507020390249, guid: d6cc07a14fb1dd04abef49e724b15243, type: 3}
+  - {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
   spawnPos: {fileID: 1978445259}
   timeToNextSpawn: 0
   timesinceLastSpawn: 0
-  minSpawnTime: 120
-  maxSpawnTime: 180
+  minSpawnTime: 30
+  maxSpawnTime: 60
   canSpawnNPC: 0
+  BlankNPC: {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
 --- !u!1001 &925614246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13027,6 +13181,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4142120846249829452, guid: 567c5f8b6dda0bd42a0e003b35552b85, type: 3}
   m_PrefabInstance: {fileID: 975482237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &996466149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1966761848}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1001303711
 GameObject:
@@ -14370,6 +14529,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1370235177799199937, guid: 5e15caeb969bd46478345e60297edd8d, type: 3}
   m_PrefabInstance: {fileID: 319907391}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1111395639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 738156956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1115834257
 GameObject:
   m_ObjectHideFlags: 0
@@ -15277,6 +15441,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1739362023}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15825,6 +16009,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 417933730}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16405,6 +16609,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 279856384}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18025,6 +18249,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305120902}
   m_CullTransparentMesh: 1
+--- !u!4 &1307140072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 2775974448846893633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320366660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff22e33fe4e7c2141b62ae1f1baba554, type: 3}
@@ -18250,6 +18479,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff22e33fe4e7c2141b62ae1f1baba554, type: 3}
   m_PrefabInstance: {fileID: 1337594887}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1341605339 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1971376366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342101034
 GameObject:
   m_ObjectHideFlags: 0
@@ -18434,7 +18668,7 @@ Transform:
   m_GameObject: {fileID: 1347867735}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.00000004470348, z: -0, w: 1}
-  m_LocalPosition: {x: 17.00348, y: 1.1825469, z: -11.9307995}
+  m_LocalPosition: {x: 17.00348, y: 1.64, z: -11.9307995}
   m_LocalScale: {x: 1.4209415, y: 1.4209415, z: 1.4209415}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18567,7 +18801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1347867735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc17deeeb5d8350469037145d169f2b2, type: 3}
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1364804162
@@ -19173,6 +19407,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1730261201}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19697,6 +19951,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 756828518}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21195,6 +21469,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1578127513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1772874250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1580942069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22094,6 +22373,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 685916612}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22226,6 +22525,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22712,6 +23015,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663762746}
   m_Mesh: {fileID: 9042771077998628582, guid: abb34e2ac81b21144a8e14b3f5fa42e9, type: 3}
+--- !u!4 &1688573423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 105828607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1695192901
 GameObject:
   m_ObjectHideFlags: 0
@@ -22902,6 +23210,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 2058755044}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23344,6 +23672,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724525745}
   m_Mesh: {fileID: 9042771077998628582, guid: abb34e2ac81b21144a8e14b3f5fa42e9, type: 3}
+--- !u!4 &1730261201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1404574607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732283331
 GameObject:
   m_ObjectHideFlags: 0
@@ -23419,6 +23752,11 @@ RectTransform:
   m_AnchoredPosition: {x: -449.9, y: -252}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1739362023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1131886703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1742131695 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 600759783350758923, guid: ea020f2c15e466d4aaaeb5fbaa8c771e, type: 3}
@@ -24074,6 +24412,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1578127513}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25066,6 +25424,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 725383016}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26379,6 +26757,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 996466149}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26514,6 +26912,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1341605339}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27213,6 +27631,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030103314}
   m_Mesh: {fileID: 9042771077998628582, guid: abb34e2ac81b21144a8e14b3f5fa42e9, type: 3}
+--- !u!4 &2031485138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 806040111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2033359568
 GameObject:
   m_ObjectHideFlags: 0
@@ -27326,6 +27749,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036697700}
   m_CullTransparentMesh: 1
+--- !u!4 &2037268972 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 213541623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2048112357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27542,6 +27970,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e15caeb969bd46478345e60297edd8d, type: 3}
+--- !u!4 &2058755044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 394445639337748140, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+  m_PrefabInstance: {fileID: 1707720235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2059070832
 GameObject:
   m_ObjectHideFlags: 0
@@ -28813,6 +29246,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jar
       objectReference: {fileID: 0}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: jarPos
+      value: 
+      objectReference: {fileID: 1307140072}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: heartJar
+      value: 
+      objectReference: {fileID: 8326609337293903826, guid: aa5bc731a9f229d4f8770b2ebf03191e, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: liverJar
+      value: 
+      objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: leftKidenyJar
+      value: 
+      objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: rightKidneyJar
+      value: 
+      objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29233,6 +29686,7 @@ AudioListener:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 921462644}
   - {fileID: 6148697382142815519}
   - {fileID: 581666977}
   - {fileID: 1347867736}
@@ -29243,7 +29697,6 @@ SceneRoots:
   - {fileID: 1654577353}
   - {fileID: 381637372}
   - {fileID: 935561394}
-  - {fileID: 921462644}
   - {fileID: 1342101037}
   - {fileID: 88478165}
   - {fileID: 618020450}
