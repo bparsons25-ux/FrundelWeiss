@@ -9,6 +9,7 @@ TagManager:
   - Liver
   - leftKidney
   - rightKidney
+  - Selling Area
   layers:
   - Default
   - TransparentFX

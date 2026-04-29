@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6628355798267837306}
   - component: {fileID: 6135183909621046132}
   - component: {fileID: 8359909236438407585}
+  - component: {fileID: 8442623959728171687}
   m_Layer: 8
   m_Name: Jar
   m_TagString: Untagged
@@ -132,12 +133,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.022073973, y: 0.031309567, z: 0.022074137}
-  m_Center: {x: 0.00000001071021, y: 0, z: -0.000000016763806}
+  m_Size: {x: 0.025, y: 0.032, z: 0.025}
+  m_Center: {x: 0.00000001071021, y: 0, z: 0.00000001676381}
 --- !u!114 &6135183909621046132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +163,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bc21faf44c1004da089cac9bf87f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jarPos: {fileID: 0}
+  heartJar: {fileID: 0}
+  liverJar: {fileID: 0}
+  leftKidenyJar: {fileID: 0}
+  rightKidneyJar: {fileID: 0}
+--- !u!65 &8442623959728171687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051435205955450912}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.022073973, y: 0.031309567, z: 0.022074137}
+  m_Center: {x: 0.00000001071021, y: 0, z: -0.000000016763806}

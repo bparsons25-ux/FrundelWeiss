@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3275373195039852179}
   - component: {fileID: 4975595432935720096}
   - component: {fileID: 4106926658990046939}
-  - component: {fileID: 5831234235654684573}
-  m_Layer: 0
+  - component: {fileID: -593326528233455088}
+  m_Layer: 8
   m_Name: Right Kidney Prefab
   m_TagString: rightKidney
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5831234235654684573
+--- !u!114 &-593326528233455088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,8 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3809975104281328863}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000a33183be5ebe429d4737dc8457a3a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
-  promptMessage: 

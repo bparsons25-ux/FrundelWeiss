@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 3519078167432516275}
   - component: {fileID: 6486097512928505833}
   - component: {fileID: 4487502061399876200}
-  - component: {fileID: 1849008877381718460}
-  - component: {fileID: 168229394922068094}
-  m_Layer: 0
+  - component: {fileID: 2543570687521842908}
+  m_Layer: 8
   m_Name: Heart Prefab
   m_TagString: Heart
   m_Icon: {fileID: 0}
@@ -138,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1849008877381718460
+--- !u!114 &2543570687521842908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,23 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2177625037626153442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000a33183be5ebe429d4737dc8457a3a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 1
-  promptMessage: 
---- !u!114 &168229394922068094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2177625037626153442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b35e0c3a40dfad40a494c4e77db1322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteract:
-    m_PersistentCalls:
-      m_Calls: []

@@ -36,7 +36,7 @@ public class OrganJars : MonoBehaviour
             Instantiate(heartJar, jarPos.position, transform.rotation);
         }
 
-        if (collision.CompareTag("Heart"))
+        if (collision.CompareTag("Liver"))
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);

@@ -15,8 +15,9 @@ public class DebugMenu : MonoBehaviour
         else
         {
             DebugUserinterface.gameObject.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+
         }
+
     }
 
 }

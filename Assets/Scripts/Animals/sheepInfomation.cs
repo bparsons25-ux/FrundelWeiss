@@ -61,7 +61,7 @@ public class sheepInfomation : MonoBehaviour
         {
             sheepAge += Time.deltaTime;
             ageText.text = "Age:" + sheepAge.ToString();
-
+                        
             sheepHungerPercent -= Time.deltaTime * 0.5f; // Hunger bar goes down by 0.5 / second 
             hungerText.text = "Hunger" + sheepHungerPercent.ToString();
 
@@ -109,6 +109,7 @@ public class sheepInfomation : MonoBehaviour
             sheepHungerPercent = 100f;
 
         }
+
 
 
 

@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 6739400232658722120}
   - component: {fileID: 4356010142808425798}
   - component: {fileID: 3764401068506446209}
-  - component: {fileID: 7025284643735636021}
-  - component: {fileID: 2958658055904269826}
-  m_Layer: 0
+  - component: {fileID: -5145099193393548121}
+  m_Layer: 8
   m_Name: Left Kidney Prefab
   m_TagString: leftKidney
   m_Icon: {fileID: 0}
@@ -138,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7025284643735636021
+--- !u!114 &-5145099193393548121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,23 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4241843533408233781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000a33183be5ebe429d4737dc8457a3a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 1
-  promptMessage: 
---- !u!114 &2958658055904269826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4241843533408233781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b35e0c3a40dfad40a494c4e77db1322, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteract:
-    m_PersistentCalls:
-      m_Calls: []

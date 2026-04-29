@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7503579109873201636}
   - component: {fileID: 20867082647806397}
   - component: {fileID: 3488486798453606458}
-  - component: {fileID: 8680936455524057677}
-  m_Layer: 0
+  - component: {fileID: 6556996937983638489}
+  m_Layer: 8
   m_Name: Liver prefab
   m_TagString: Liver
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8680936455524057677
+--- !u!114 &6556996937983638489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,8 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4733176619889632447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000a33183be5ebe429d4737dc8457a3a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useEvents: 0
-  promptMessage: 
