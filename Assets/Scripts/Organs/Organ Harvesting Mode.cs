@@ -71,11 +71,16 @@ public class OrganHarvestingMode : MonoBehaviour
     public static bool isSpawningLeftKidney;
     public static bool isSpawningRightKidney;
 
+    public void Awake()
+    {
+        timeBeforeDeath = 3600f;
+    }
     public void Start()
     {
         if (isHarvesting == true)
         {
             sInfo.sheepHungerPercent = 120;
+
         }
     }
 

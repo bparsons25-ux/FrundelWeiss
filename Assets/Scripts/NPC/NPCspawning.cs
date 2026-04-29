@@ -49,7 +49,7 @@ public class NPCspawning : MonoBehaviour
 
             Instantiate(npcsToSpawn[selection], spawnPos.position, transform.rotation ); // note: MAKE THE SPAWN POS OBJECT FACE FORWARDS
 
-            
+            Debug.Log("NPC Spawned");
             canSpawnNPC = false;
             
         }
@@ -80,6 +80,23 @@ public class NPCspawning : MonoBehaviour
         }
     }
     
+    public void SpawnIncrease()
+    {
+        maxSpawnTime -= 30f;
+    }
+
+    public void SpawnDecrease()
+    {
+        maxSpawnTime += 30f;
+    }
+
+    public void ForceSpawnNPC()
+    {
+        timesinceLastSpawn += 200f;
+        canSpawnNPC = true;
+        Debug.Log("NPC Forced To Spawn");
+
+    }
    
 
 
