@@ -37,6 +37,17 @@ public class GoHomeWaypointMovement : MonoBehaviour
                 }
             }
         }
+
+        if (index == 5)
+        {
+            NPCmovement.isAtDespawn = true;
+        }
+
+        if (index > 0)
+        {
+            NPCmovement.isAtSale = false;
+        }
+
     }
 }
 

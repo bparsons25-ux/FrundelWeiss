@@ -10,6 +10,8 @@ public class WaypointMovement : MonoBehaviour
     int index = 0;
     public bool isLoop = false;
 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,6 +40,16 @@ public class WaypointMovement : MonoBehaviour
                     index = 0;
                 }
             }
+        }
+
+        if (index == 5)
+        {
+            NPCmovement.isAtSale = true;
+        }
+
+        if (index > 0)
+        {
+            NPCmovement.isAtSpawn = false;
         }
     }
 
