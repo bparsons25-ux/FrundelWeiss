@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class FrontDoor : Interactable
 {
-    private bool Fade = false;
+    //private bool Fade = false;
     private float Fadetime = 3f;
     public GameObject Fadescreen;
     [SerializeField] private GeneralFunctions generalFunctions;
@@ -22,7 +22,7 @@ public class FrontDoor : Interactable
 
     IEnumerator leave()
     {
-        Fade = true;
+        //Fade = true;
         Fadescreen.SetActive(true);
         
         yield return new WaitForSeconds(Fadetime);

@@ -14,6 +14,7 @@ public class sheepInfomation : MonoBehaviour
     public int sheepPosition;
     public int sheepCount;
     public bool sheepActive;
+    public GameObject HarvestButton;
 
     [ Header ("Sheep Death Postioning")]
 
@@ -77,7 +78,7 @@ public class sheepInfomation : MonoBehaviour
             
         }
 
-        if (sheepAge > 300f)
+        if (sheepAge > 120f)
         {
             isChild = false;
             // make it so then organs can be harvested harvested 
@@ -85,7 +86,7 @@ public class sheepInfomation : MonoBehaviour
             isAdult = true;
         }
 
-        if (sheepAge > 450f)
+        if (sheepAge > 300f)
         {
             isAdult = false;
             // make it so then organ price decreases (incl. refrence to money script)
@@ -93,7 +94,7 @@ public class sheepInfomation : MonoBehaviour
 
         }
 
-        if (sheepAge > 510f)
+        if (sheepAge > 420f)
         {
             isElder = false;
             sheepAlive = false;
@@ -110,10 +111,27 @@ public class sheepInfomation : MonoBehaviour
 
         }
 
+        if (isChild == true)
+        {
+            HarvestButton.gameObject.GetComponent<Button>().interactable = false;
+        }
+
+        else if (isAdult == true)
+        {
+            HarvestButton.gameObject.GetComponent<Button>().interactable = true;
+        }
+
+        else if (isElder == true)
+        {
+            HarvestButton.gameObject.GetComponent<Button>().interactable = true;
+        }
 
 
 
-    
+
+
+
+
 
 
     }

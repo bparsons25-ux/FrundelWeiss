@@ -1,16 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DeadSheep : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
+        //transform.Rotate(Vector3.right, 90);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider collision)
     {
+        if (collision.CompareTag("pCylinder44"))
+        { 
+            Destroy(gameObject);
+        }
         
+
     }
+
+
 }

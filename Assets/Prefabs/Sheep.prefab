@@ -1416,6 +1416,7 @@ MonoBehaviour:
   sheepPrefab: {fileID: 8304147366700822981}
   harvestingUserInterface: {fileID: 8013495603201522616}
   sInfo: {fileID: 1550098146283435006}
+  func: {fileID: 0}
   HeartButton: {fileID: 1130178173356978915}
   LiverButton: {fileID: 5709024435246486514}
   LeftKidneyButton: {fileID: 4833635940290932189}
@@ -4305,13 +4306,13 @@ MonoBehaviour:
   sheepPosition: 0
   sheepCount: 0
   sheepActive: 0
+  HarvestButton: {fileID: 7963503111843681708}
   deathPosition: {fileID: 8680005094059731839}
   deadsheepPrefab: {fileID: 2917909170443929054, guid: a592d477d4b9651459d3dff800be6956, type: 3}
   isChild: 0
   isAdult: 0
   isElder: 0
   mon: {fileID: 0}
-  organ: {fileID: 0}
   ageText: {fileID: 8247892340803870817}
   hungerText: {fileID: 6941184171059419303}
 --- !u!1 &8355696395737586285

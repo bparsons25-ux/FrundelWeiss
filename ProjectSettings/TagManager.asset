@@ -14,6 +14,7 @@ TagManager:
   - Liver Jar
   - Left Kidney Jar
   - Right Kidney Jar
+  - pCylinder44
   layers:
   - Default
   - TransparentFX

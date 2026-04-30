@@ -54,15 +54,17 @@ public class NPCmovement : MonoBehaviour
 
 
 
-        if (isAtDespawn == true)
+        if (isAtDespawn == true) // executes this once the NPCs movement index has reached 5. 
         {
-            NPCsystem.saleIsDone = true;
-            NPCsystem.hasSold = false;
-            Destroy(gameObject);
+            NPCsystem.saleIsDone = true; // adds the point onto the index at the end of the grid 
+            NPCsystem.hasSold = false; // deactivties the moving back boolean
+            Destroy(gameObject); // Destroys the NPC's Gameobject.
             
         }
 
     }
+
+
 
 
 }

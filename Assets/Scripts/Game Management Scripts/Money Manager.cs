@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 using System.Numerics;
+using UnityEngine.UI;
 
 public class MoneyManager : MonoBehaviour
 {
@@ -11,9 +12,17 @@ public class MoneyManager : MonoBehaviour
 
     [Header ("Script References")]
 
-    [SerializeField] PlayerMovement pm;
     [SerializeField] Countdown countdown;
-    [SerializeField] sheepInfomation shinfo;
+    
+
+    [Header("Taxes")]
+
+    public GameObject taxIndicator;
+    public GameObject taxesbutton;
+    public bool taxesPaid;
+    public float taxCooldown;
+
+    public bool notInDebt;
 
 
     public int money;
@@ -27,16 +36,33 @@ public class MoneyManager : MonoBehaviour
     void Start()
     {
         
-        money = PlayerPrefs.GetInt("money", 150);
+        money = PlayerPrefs.GetInt("money", 500);
         moneyText.text = "$" + money.ToString();
 
+
+        taxCooldown = 180f;
     }
 
     void Update()
     {
+        if (taxCooldown > 0)
+        {
+            taxCooldown -= Time.deltaTime;
+            taxesPaid = true;
+            taxesButtonNotInteract();
+        }
+
+        else if (taxCooldown < 0)
+        {
+            countdown.gameObject.SetActive(true);
+            taxIndicator.gameObject.SetActive(true);
+            taxesButtonInteract();
+            taxesPaid = false;
+        }
+
         if (money < 0)
         {
-            
+           
             countdown.gameObject.SetActive(true);
             moneyText.color = Color.red;
         }
@@ -44,10 +70,26 @@ public class MoneyManager : MonoBehaviour
         else if (money > 0)
         {
             countdown.remainingTime = 180f;
-            countdown.gameObject.SetActive(false);
             moneyText.color = Color.white;
+            notInDebt = true;
         }
+
+        if (taxesPaid = true && notInDebt == true)
+        {
+            
+            countdown.gameObject.SetActive(false);
+        }
+
+        if (taxesPaid == true)
+        {
+
+            taxIndicator.gameObject.SetActive(false);
+        }
+
+        
     }
+
+    
 
     public void AddMoneySmall()
     {
@@ -79,17 +121,23 @@ public class MoneyManager : MonoBehaviour
         PlayerPrefs.SetInt("money", money);
     }
 
-    public void PayForFood()
-    {
-        shinfo.sheepHungerPercent += 25f;
-        money -= 25;
-    }
 
     public void taxes()
     {
         money -= 150;
         moneyText.text = "$" + money.ToString();
         PlayerPrefs.SetInt("money", money);
+
+    }
+
+    public void taxesButtonNotInteract()
+    {
+        taxesbutton.gameObject.GetComponent<Button>().interactable = false;
+    }
+
+    public void taxesButtonInteract()
+    {
+        taxesbutton.gameObject.GetComponent<Button>().interactable = true;
     }
 
 

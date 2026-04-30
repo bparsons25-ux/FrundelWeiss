@@ -16,7 +16,7 @@ public class spawner : MonoBehaviour
     [SerializeField] Transform rightKidneyPos;
     public GameObject rightKidneyPrefab;
 
-    [SerializeField] OrganHarvestingMode organHarvesting;
+    
 
 
 

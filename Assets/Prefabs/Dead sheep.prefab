@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 1703284830926727960}
   - component: {fileID: 6477877758870607947}
   - component: {fileID: 1623632055390150434}
-  m_Layer: 0
+  - component: {fileID: 7728437053042220770}
+  - component: {fileID: 5787375546844543596}
+  m_Layer: 8
   m_Name: Dead sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,3 +110,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7483324, y: 1.0422314, z: 2.406032}
   m_Center: {x: -0.017252037, y: 0.93910074, z: -0.066147715}
+--- !u!114 &7728437053042220770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917909170443929054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5787375546844543596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917909170443929054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830e8f4e851595b479185295f6912b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
