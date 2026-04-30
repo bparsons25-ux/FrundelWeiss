@@ -4,7 +4,7 @@ using TMPro;
 public class Countdown : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] public float remainingTime = 90f;
+    public float remainingTime = 90f;
 
     [SerializeField] GameOver gameOver;
 

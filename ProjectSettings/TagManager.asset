@@ -10,6 +10,10 @@ TagManager:
   - leftKidney
   - rightKidney
   - Selling Area
+  - Heart Jar
+  - Liver Jar
+  - Left Kidney Jar
+  - Right Kidney Jar
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GeneralFunctions : MonoBehaviour
 {
@@ -70,6 +71,16 @@ public class GeneralFunctions : MonoBehaviour
     public void PlayerFree()
     {
         controller.enabled = true;
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 
