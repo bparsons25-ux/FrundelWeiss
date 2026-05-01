@@ -61,7 +61,7 @@ public class NPCsystem : MonoBehaviour
         policeOfficer2IsActive = false;
         spawnCount += 1;
 
-        timeuntilSpawn1 = 60f;
+        timeuntilSpawn1 = 1f;
 
         demoEndCanvas.gameObject.SetActive(false);
 

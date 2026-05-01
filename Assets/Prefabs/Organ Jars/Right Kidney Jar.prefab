@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5999990902579075130}
   m_Layer: 8
   m_Name: Right Kidney Jar
-  m_TagString: Untagged
+  m_TagString: Right Kidney Jar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

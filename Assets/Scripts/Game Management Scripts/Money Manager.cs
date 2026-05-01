@@ -35,8 +35,8 @@ public class MoneyManager : MonoBehaviour
 
     void Start()
     {
-        
-        money = PlayerPrefs.GetInt("money", 500);
+
+        money = 500;
         moneyText.text = "$" + money.ToString();
 
 
@@ -110,7 +110,7 @@ public class MoneyManager : MonoBehaviour
     {
         money -= 50;
         moneyText.text = "$" + money.ToString();
-        PlayerPrefs.SetInt("money", money);
+
     }
 
 
@@ -118,7 +118,7 @@ public class MoneyManager : MonoBehaviour
     {
         money -= 100;
         moneyText.text = "$" + money.ToString();
-        PlayerPrefs.SetInt("money", money);
+
     }
 
 
@@ -126,7 +126,7 @@ public class MoneyManager : MonoBehaviour
     {
         money -= 150;
         moneyText.text = "$" + money.ToString();
-        PlayerPrefs.SetInt("money", money);
+
 
     }
 

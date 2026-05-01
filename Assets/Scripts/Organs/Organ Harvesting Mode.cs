@@ -71,6 +71,8 @@ public class OrganHarvestingMode : MonoBehaviour
     public static bool isSpawningLeftKidney;
     public static bool isSpawningRightKidney;
 
+    public GameObject intercationUser;
+
     public void Awake()
     {
         timeBeforeDeath = 3600f;
@@ -104,6 +106,7 @@ public class OrganHarvestingMode : MonoBehaviour
             harvestingUserInterface.gameObject.SetActive(false);
             sInfo.sheepAlive = false;
             Cursor.lockState = CursorLockMode.Locked;
+            intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
         }
@@ -113,6 +116,8 @@ public class OrganHarvestingMode : MonoBehaviour
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
             sInfo.sheepAlive = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
         }

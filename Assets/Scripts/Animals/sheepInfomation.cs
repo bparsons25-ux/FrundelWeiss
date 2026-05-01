@@ -46,7 +46,7 @@ public class sheepInfomation : MonoBehaviour
     {
         sheepAge = 0f;
         sheepAlive = true;
-        sheepHungerPercent = 50f;
+        sheepHungerPercent = 100f;
         isChild = true;
         sheepActive = false;
 
@@ -63,7 +63,7 @@ public class sheepInfomation : MonoBehaviour
             sheepAge += Time.deltaTime;
             ageText.text = "Age:" + sheepAge.ToString();
                         
-            sheepHungerPercent -= Time.deltaTime * 0.5f; // Hunger bar goes down by 0.5 / second 
+            sheepHungerPercent -= Time.deltaTime * 0.25f; // Hunger bar goes down by 0.25 / second 
             hungerText.text = "Hunger" + sheepHungerPercent.ToString();
 
         }
@@ -71,8 +71,8 @@ public class sheepInfomation : MonoBehaviour
         else if (sheepAlive == false)
         {
             
-            Destroy(gameObject);
-            Instantiate(deadsheepPrefab, deathPosition.position, transform.rotation);
+            //Destroy(gameObject);
+            //Instantiate(deadsheepPrefab, deathPosition.position, transform.rotation);
             // decrease sheep number
             
             
@@ -113,17 +113,17 @@ public class sheepInfomation : MonoBehaviour
 
         if (isChild == true)
         {
-            HarvestButton.gameObject.GetComponent<Button>().interactable = false;
+            //HarvestButton.gameObject.GetComponent<Button>().interactable = false;
         }
 
         else if (isAdult == true)
         {
-            HarvestButton.gameObject.GetComponent<Button>().interactable = true;
+            //HarvestButton.gameObject.GetComponent<Button>().interactable = true;
         }
 
         else if (isElder == true)
         {
-            HarvestButton.gameObject.GetComponent<Button>().interactable = true;
+            //HarvestButton.gameObject.GetComponent<Button>().interactable = true;
         }
 
 

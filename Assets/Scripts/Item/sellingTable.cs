@@ -7,30 +7,34 @@ public class sellingTable : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Heart Jar") && collision.CompareTag("Left Kidney") && npcsystem.fatCustomerIsActive == true)  // Fat Customer #1 - Left Kidney and Heart
+        if (collision.CompareTag("Heart Jar") && collision.CompareTag("Left Kidney Jar") && npcsystem.fatCustomerIsActive == true)  // Fat Customer #1 - Left Kidney and Heart
         {
             npcsystem.SoldHeart();
             npcsystem.SoldLeftKidney();
+            Destroy(collision.gameObject);
             NPCsystem.hasSold = true; // moves the NPC back towards despawn position 
         }
 
-        if (collision.CompareTag("Left Kidney") && collision.CompareTag("Right Kidney") && npcsystem.skinnyCustomerIsActive == true) // Skinny Cutsomer #1 - Left and Right Kidney
+        if (collision.CompareTag("Left Kidney Jar") && collision.CompareTag("Right Kidney Jar") && npcsystem.skinnyCustomerIsActive == true) // Skinny Cutsomer #1 - Left and Right Kidney
         {
             npcsystem.SoldLeftKidney();
             npcsystem.SoldRightKidney();
+            Destroy(collision.gameObject);
             NPCsystem.hasSold = true;  // moves the NPC back towards despawn position
         }
 
-        if (collision.CompareTag("Liver") && npcsystem.fatCustomer2IsActive == true) // Fat Customer 2# - Liver
+        if (collision.CompareTag("Liver Jar") && npcsystem.fatCustomer2IsActive == true) // Fat Customer 2# - Liver
         {
             npcsystem.SoldLiver();
+            Destroy(collision.gameObject);
             NPCsystem.hasSold = true; // moves the NPC back towards despawn position
         }
 
-        if (collision.CompareTag("Heart") && collision.CompareTag("Liver") && npcsystem.skinnyCustomer2IsActive == true)
+        if (collision.CompareTag("Heart Jar") && collision.CompareTag("Liver Jar") && npcsystem.skinnyCustomer2IsActive == true)
         {
             npcsystem.SoldHeart();
             npcsystem.SoldLiver();
+            Destroy(collision.gameObject);
             NPCsystem.hasSold = true;
         }
     }
