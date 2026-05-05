@@ -16,6 +16,14 @@ public class DayCounter : MonoBehaviour
 
     [SerializeField] MoneyManager moneyManager;
 
+    [Header("Police Alert")]
+    public GameObject day5Alert;
+    public GameObject day10Alert;
+    public GameObject day20Alert;
+    public GameObject day25Alert;
+    public GameObject day30Alert;
+    public GameObject noAlerts;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,37 +44,74 @@ public class DayCounter : MonoBehaviour
         mainUIDaycount.text = "Day: " + dayCount.ToString();
         loadingdayCount.text = "Day: " + dayCount.ToString();
 
-        if (dayCount == 5)
+        if (taxesPaid = false && dayCount == 5 )
         {
             taxesPaid = false;
+        }
+
+        if (taxesPaid = false && dayCount == 10)
+        {
+            taxesPaid = false;
+        }
+
+        if (taxesPaid = false && dayCount == 15)
+        {
+            taxesPaid = false;
+        }
+
+        if (taxesPaid = false && dayCount == 20)
+        {
+            taxesPaid = false;
+        }
+
+        if (taxesPaid = false && dayCount == 25)
+        {
+            taxesPaid = false;
+        }
+
+        if (dayCount < 5 )
+        {
+            noAlerts.gameObject.SetActive(true);
+            Debug.Log("Day 5");
+        }
+        else if (dayCount > 4)
+        {
+            noAlerts.gameObject.SetActive(false);
+        }
+
+        if (dayCount == 5)
+        {
+            day5Alert.gameObject.SetActive(true);
         }
 
         if (dayCount == 10)
         {
-            taxesPaid = false;
+            day10Alert.gameObject.SetActive(true);
         }
 
-        if (dayCount == 15)
-        {
-            taxesPaid = false;
-        }
 
         if (dayCount == 20)
         {
-            taxesPaid = false;
+            day20Alert.gameObject.SetActive(true);
         }
 
         if (dayCount == 25)
         {
-            taxesPaid = false;
+            day25Alert.gameObject.SetActive(true);
         }
+
+        if (dayCount == 30)
+        {
+            day30Alert.gameObject.SetActive(true);
+        }
+
 
 
         if (taxesPaid == false)
         {
             taxesButton.gameObject.GetComponent<Button>().interactable = true;
         }
-        else
+        else if (taxesPaid == true)
         {
             taxesButton.gameObject.GetComponent<Button>().interactable = false;
         }
