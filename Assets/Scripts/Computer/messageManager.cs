@@ -27,6 +27,11 @@ public class messageManager : MonoBehaviour
     [SerializeField] private GameObject playerMessageInteraction2;
     [SerializeField] private GameObject playerMessageInteraction3;
 
+    [Header("Convo Status")]
+
+    [SerializeField] private GameObject canTypeText;
+    [SerializeField] private GameObject cannotTypeText;
+
     [Header("Client Reply Delay")]
 
     private float textDelayWait = 3f;
@@ -42,6 +47,9 @@ public class messageManager : MonoBehaviour
 
         playerMessageInteraction2.gameObject.SetActive(false);
         playerMessageInteraction3.gameObject.SetActive(false);
+
+        canTypeText.gameObject.SetActive(true);
+        cannotTypeText.gameObject.SetActive(false);
     }
 
     IEnumerator textDelay()
@@ -51,25 +59,45 @@ public class messageManager : MonoBehaviour
 
     public void ClientMessage2()
     {
-        StartCoroutine(textDelay());
-        clientmessage2.gameObject.SetActive(true);
-        playerMessageInteraction1.gameObject.SetActive(false);
-        playerMessageInteraction2.gameObject.SetActive(true);
+        StartCoroutine(ClientReply2());
     }
 
     public void ClientMessage3()
     {
-        StartCoroutine(textDelay());
-        clientmessage3.gameObject.SetActive(true);
-        playerMessageInteraction2.gameObject.SetActive(false);
-        playerMessageInteraction3.gameObject.SetActive(true);
+        StartCoroutine(ClientReply3());
     }
 
     public void Endtext()
     {
-        playerMessageInteraction3.gameObject.SetActive(false);
+        StartCoroutine(ClientReply4());
         Debug.Log("Conversation Ended.");
         
+    }
+
+    IEnumerator ClientReply2()
+    {
+        playerMessageInteraction1.gameObject.SetActive(false);
+        yield return new WaitForSeconds(textDelayWait);
+        clientmessage2.gameObject.SetActive(true);
+        playerMessageInteraction2.gameObject.SetActive(true);
+    }
+
+    IEnumerator ClientReply3()
+    {
+        playerMessageInteraction2.gameObject.SetActive(false);
+        yield return new WaitForSeconds(textDelayWait);
+        clientmessage3.gameObject.SetActive(true);
+        playerMessageInteraction3.gameObject.SetActive(true);
+    }
+
+    IEnumerator ClientReply4()
+    {
+        playerMessageInteraction3.gameObject.SetActive(false);
+        canTypeText.gameObject.SetActive(false);
+        cannotTypeText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(textDelayWait);
+        clientmessage4.gameObject.SetActive(true);
+
     }
 
 

@@ -8,6 +8,7 @@ public class GeneralFunctions : MonoBehaviour
     [SerializeField] private GameOver GameOver;
 
     [SerializeField] private GameObject player;
+    public Transform spawnSpot;
 
     [SerializeField] GameObject pauseMenu;
 
@@ -82,6 +83,13 @@ public class GeneralFunctions : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void ResetPos()
+    {
+        player.transform.position = spawnSpot.transform.position;
+    }
+
+
 
 
 }

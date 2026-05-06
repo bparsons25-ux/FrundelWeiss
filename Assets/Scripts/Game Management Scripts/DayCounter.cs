@@ -28,9 +28,9 @@ public class DayCounter : MonoBehaviour
     void Start()
     {
         dayCount = 01;
-        computerDaycount.text = "Day: " + dayCount.ToString();
-        mainUIDaycount.text = "Day: " + dayCount.ToString();
-        loadingdayCount.text = "Day: " + dayCount.ToString(); // Paste this in everyday when there is a change in day count
+        computerDaycount.text = "Day:" + dayCount.ToString();
+        mainUIDaycount.text = "Day:" + dayCount.ToString();
+        loadingdayCount.text = "Day:" + dayCount.ToString(); // Paste this in everyday when there is a change in day count
         taxesPaid = true;
 
     }
@@ -40,9 +40,9 @@ public class DayCounter : MonoBehaviour
     {
         // keeps the day counter UI always updated 
 
-        computerDaycount.text = "Day: " + dayCount.ToString();
-        mainUIDaycount.text = "Day: " + dayCount.ToString();
-        loadingdayCount.text = "Day: " + dayCount.ToString();
+        computerDaycount.text = "Day:" + dayCount.ToString();
+        mainUIDaycount.text = "Day:" + dayCount.ToString();
+        loadingdayCount.text = "Day:" + dayCount.ToString();
 
         if (taxesPaid = false && dayCount == 5 )
         {
