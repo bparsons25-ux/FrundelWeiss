@@ -38,7 +38,6 @@ public class OrganHarvestingMode : MonoBehaviour
 
     public GameObject sheepPrefab;
     public GameObject harvestingUserInterface;
-    [SerializeField] sheepInfomation sInfo;
     [SerializeField] private GeneralFunctions func;
 
 
@@ -73,17 +72,16 @@ public class OrganHarvestingMode : MonoBehaviour
 
     public GameObject intercationUser;
 
+    public Transform sheepDeathPos;
+    public GameObject sheepObject;
+
     public void Awake()
     {
         timeBeforeDeath = 3600f;
     }
     public void Start()
     {
-        if (isHarvesting == true)
-        {
-            sInfo.sheepHungerPercent = 120;
 
-        }
     }
 
 
@@ -104,22 +102,23 @@ public class OrganHarvestingMode : MonoBehaviour
         {
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
-            sInfo.sheepAlive = false;
             Cursor.lockState = CursorLockMode.Locked;
             intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
+            Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
-            sInfo.sheepAlive = false;
             Cursor.lockState = CursorLockMode.Locked;
             intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
+            Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
         }
 
         // Heart Methods

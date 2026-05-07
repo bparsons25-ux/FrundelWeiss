@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,6 +40,11 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day3Obj3;
     [SerializeField] private GameObject day3Obj4;
 
+    private bool day3Obj1IsDone = false;
+    private bool day3Obj2IsDone = false;
+    private bool day3Obj3IsDone = false;
+    private bool day3Obj4IsDone = false;
+
     TMP_Text day3Obj1text;
     TMP_Text day3Obj2text;
     TMP_Text day3Obj3text;
@@ -49,8 +55,13 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day4Obj1;
     [SerializeField] private GameObject day4Obj2;
 
+    private bool day4Obj1IsDone = false;
+    private bool day4Obj2IsDone = false;
+    private bool day4Obj3IsDone = false;
+
     TMP_Text day4Obj1text;
     TMP_Text day4Obj2text;
+    TMP_Text day4Obj3text;
 
     [Header("Day 7 Objectives")]
 
@@ -82,6 +93,18 @@ public class ObjectiveCounter : MonoBehaviour
 
     [Header("Log off Button")]
     [SerializeField] private GameObject logOffButton;
+    [SerializeField] private GameObject logOffReminder;
+
+    [Header("day Specific Objects")]
+    [SerializeField] private GameObject Friend1;
+    [SerializeField] private GameObject Sheep1;
+    [SerializeField] private GameObject Profile1;
+    [SerializeField] private GameObject TaxesButton;
+    [SerializeField] private GameObject noTaxes;
+    [SerializeField] private GameObject policeAlert1;
+
+    [Header("dialogue")]
+    [SerializeField] private GameObject day3SheepDialogue;
 
 
     private void Start()
@@ -93,6 +116,25 @@ public class ObjectiveCounter : MonoBehaviour
         day2Obj1IsDone = false;
         day2Obj2IsDone = false;
         day2Obj3IsDone = false;
+
+        day3Obj1IsDone = false;
+        day3Obj2IsDone = false;
+        day3Obj3IsDone = false;
+        day3Obj4IsDone = false;
+
+        day4Obj1IsDone = false;
+        day4Obj2IsDone = false;
+        day4Obj3IsDone = false;
+
+        logOffReminder.gameObject.SetActive(false); 
+
+        Sheep1.gameObject.SetActive(false);
+        Friend1.gameObject.SetActive(false);
+        Profile1.gameObject.SetActive(false);
+
+        noTaxes.gameObject.SetActive(true);
+        policeAlert1.gameObject.SetActive(false);
+        
     }
 
 
@@ -108,18 +150,23 @@ private void Update()
         {
             day1All.gameObject.SetActive(false);
             day2All.gameObject.SetActive(true);
+
+            Profile1.gameObject.SetActive(true);
         }
 
         if (dayCounter.dayCount == 3)
         {
             day2All.gameObject.SetActive(false);
             day3All.gameObject.SetActive(true);
+
+            Friend1.gameObject.SetActive(true);
         }
 
         if (dayCounter.dayCount == 4)
         {
             day3All.gameObject.SetActive(false);
             day4All.gameObject.SetActive(true);
+
         }
 
         if (dayCounter.dayCount == 7)
@@ -143,6 +190,7 @@ private void Update()
                     if (day1Obj3IsDone == true)
                     {
                         logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                        logOffReminder.gameObject.SetActive(true);
 
                     }
                 }
@@ -163,6 +211,33 @@ private void Update()
                     }
                 }
 
+            }
+        }
+
+        if (dayCounter.dayCount == 3)
+        {
+            if (day3Obj1IsDone == true)
+            {
+                if (day3Obj2IsDone == true)
+                {
+                    if (day3Obj3IsDone == true)
+                    {
+                        if (day3Obj4IsDone)
+                        {
+                            logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        if (dayCounter.dayCount == 4)
+        {
+            if (day4Obj1IsDone)
+            {
+                Sheep1.gameObject.SetActive(true);
             }
         }
     }
@@ -233,6 +308,7 @@ private void Update()
         {
             day3Obj1text = day3Obj1.gameObject.GetComponent<TMP_Text>();
             day3Obj1text.color = Color.green;
+            day3Obj1IsDone = true;
         }
     }
 
@@ -242,6 +318,7 @@ private void Update()
         {
             day3Obj2text = day3Obj2.gameObject.GetComponent<TMP_Text>();
             day3Obj2text.color = Color.green;
+            day3Obj2IsDone = true;
         }
     }
 
@@ -251,6 +328,7 @@ private void Update()
         {
             day3Obj3text = day3Obj3.gameObject.GetComponent<TMP_Text>();
             day3Obj3text.color = Color.green;
+            day3Obj3IsDone = true;
         }
     }
 
@@ -260,7 +338,34 @@ private void Update()
         {
             day3Obj4text = day3Obj4.gameObject.GetComponent<TMP_Text>();
             day3Obj4text.color = Color.green;
+            day3Obj4IsDone = true;
         }
+    }
+
+    public void d4o1complete()
+    {
+        if (dayCounter.dayCount == 4)
+        {
+            day4Obj1text = day4Obj1.gameObject.GetComponent<TMP_Text>();
+            day4Obj1text.color = Color.green;
+            day4Obj1IsDone = true;
+        }
+    }
+
+    public void d4o2complete()
+    {
+        if (dayCounter.dayCount == 4)
+        {
+            day4Obj2text = day4Obj2.gameObject.GetComponent<TMP_Text>();
+            day4Obj2text.color = Color.green;
+            day4Obj2IsDone = true;
+        }
+    }
+
+    public void d4o3complete()
+    {
+        day4Obj2text = day4Obj2.gameObject.GetComponent<TMP_Text>();
+        day4Obj2text.color = Color.green;
     }
 
     public void day1Complete()
@@ -268,6 +373,7 @@ private void Update()
         if (dayCounter.dayCount == 1)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
             
@@ -280,7 +386,43 @@ private void Update()
         {
             dayCounter.ChangeDay();
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             startDayCount.ShowDate();
         }
+    }
+
+    public void day3Complete()
+    {
+        if (dayCounter.dayCount == 3)
+        {
+            dayCounter.ChangeDay();
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            startDayCount.ShowDate();
+            day4Taxes();
+        }
+        
+    }
+
+    public void day4Complete()
+    {
+        if (dayCounter.dayCount == 4)
+        {
+            // sheep wail SFX goes here
+            dayCounter.dayCount = 7;
+            day3SheepDialogue.gameObject.SetActive(false);
+            startDayCount.ShowDate();
+        }
+
+    }
+
+    public void day4Taxes()
+    {
+        TaxesButton.gameObject.SetActive(true);
+        noTaxes.gameObject.SetActive(false);
+    }
+
+    public void PoliceAlert1()
+    {
+        policeAlert1.gameObject.SetActive(true);
     }
 }
