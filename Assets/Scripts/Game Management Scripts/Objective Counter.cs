@@ -24,6 +24,10 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day2Obj2;
     [SerializeField] private GameObject day2Obj3;
 
+    private bool day2Obj1IsDone = false;
+    private bool day2Obj2IsDone = false;
+    private bool day2Obj3IsDone = false;
+
     TMP_Text day2Obj1text;
     TMP_Text day2Obj2text;
     TMP_Text day2Obj3text;
@@ -73,6 +77,7 @@ public class ObjectiveCounter : MonoBehaviour
 
     [Header("script references")]
     [SerializeField] private DayCounter dayCounter;
+    [SerializeField] private startdaycount startDayCount;
 
 
     [Header("Log off Button")]
@@ -84,6 +89,10 @@ public class ObjectiveCounter : MonoBehaviour
         day1Obj1IsDone = false;
         day1Obj2IsDone = false;
         day1Obj3IsDone = false;
+
+        day2Obj1IsDone = false;
+        day2Obj2IsDone = false;
+        day2Obj3IsDone = false;
     }
 
 
@@ -140,6 +149,22 @@ private void Update()
 
             }
         }
+
+        if (dayCounter.dayCount == 2)
+        {
+            if (day2Obj1IsDone == true)
+            {
+                if (day2Obj2IsDone == true)
+                {
+                    if (day2Obj3IsDone == true)
+                    {
+                        logOffButton.gameObject.GetComponent<Button>().interactable = true;
+
+                    }
+                }
+
+            }
+        }
     }
 
     public void d1o1complete()
@@ -148,6 +173,7 @@ private void Update()
         {
             day1Obj1text = day1Obj1.gameObject.GetComponent<TMP_Text>();
             day1Obj1text.color = Color.green;
+            day1Obj1IsDone = true;
         }
     }
 
@@ -157,6 +183,7 @@ private void Update()
         {
             day1Obj2text = day1Obj2.gameObject.GetComponent<TMP_Text>();
             day1Obj2text.color = Color.green;
+            day1Obj2IsDone = true;
         }
     }
 
@@ -164,8 +191,9 @@ private void Update()
     {
         if (dayCounter.dayCount == 1)
         {
-            day1Obj3text = day1Obj1.gameObject.GetComponent<TMP_Text>();
+            day1Obj3text = day1Obj3.gameObject.GetComponent<TMP_Text>();
             day1Obj3text.color = Color.green;
+            day1Obj3IsDone = true;
         }
     }
 
@@ -175,6 +203,7 @@ private void Update()
         {
             day2Obj1text = day2Obj1.gameObject.GetComponent<TMP_Text>();
             day2Obj1text.color = Color.green;
+            day2Obj1IsDone = true;
         }
     }
 
@@ -184,6 +213,7 @@ private void Update()
         {
             day2Obj2text = day2Obj2.gameObject.GetComponent<TMP_Text>();
             day2Obj2text.color = Color.green;
+            day2Obj2IsDone = true;
         }
     }
 
@@ -193,6 +223,7 @@ private void Update()
         {
             day2Obj3text = day2Obj3.gameObject.GetComponent<TMP_Text>();
             day2Obj3text.color = Color.green;
+            day2Obj3IsDone = true;
         }
     }
 
@@ -236,9 +267,20 @@ private void Update()
     {
         if (dayCounter.dayCount == 1)
         {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
             dayCounter.ChangeDay();
-            day1Obj1IsDone = false;
+            startDayCount.ShowDate();
+            
         }
-        
+    }
+
+    public void day2Complete()
+    {
+        if (dayCounter.dayCount == 2)
+        {
+            dayCounter.ChangeDay();
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            startDayCount.ShowDate();
+        }
     }
 }

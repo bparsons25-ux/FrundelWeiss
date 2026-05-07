@@ -121,7 +121,6 @@ public class DayCounter : MonoBehaviour
     public void ChangeDay()
     {
         dayCount++;
-
     }
 
     public void payTaxes()
