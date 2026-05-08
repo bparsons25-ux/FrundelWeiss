@@ -36,9 +36,9 @@ public class OrganHarvestingMode : MonoBehaviour
 
     [Header("Object References")]
 
-    public GameObject sheepPrefab;
     public GameObject harvestingUserInterface;
     [SerializeField] private GeneralFunctions func;
+    public GameObject sheep1;
 
 
     [Header("User Interface Objects")]
@@ -70,10 +70,13 @@ public class OrganHarvestingMode : MonoBehaviour
     public static bool isSpawningLeftKidney;
     public static bool isSpawningRightKidney;
 
-    public GameObject intercationUser;
-
     public Transform sheepDeathPos;
     public GameObject sheepObject;
+
+    [Header("other script References")]
+    [SerializeField] private ObjectiveCounter objectivecounter;
+    [SerializeField] private DayCounter daycounter;
+
 
     public void Awake()
     {
@@ -94,8 +97,6 @@ public class OrganHarvestingMode : MonoBehaviour
         {
             timeBeforeDeath -= Time.deltaTime;
             UpdateDeathBar();
-            
-            
         }
 
         if (timeBeforeDeath < 0)
@@ -103,10 +104,16 @@ public class OrganHarvestingMode : MonoBehaviour
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
-            Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
+            
+
+            if (daycounter.dayCount == 7)
+            {
+                Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
+                objectivecounter.d7o3complete();
+                sheep1.gameObject.SetActive(false);
+            }
             
         }
 
@@ -115,10 +122,18 @@ public class OrganHarvestingMode : MonoBehaviour
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            intercationUser.gameObject.SetActive(false);
             func.CamUnlock();
             func.PlayerFree();
             Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
+
+            if (daycounter.dayCount == 7)
+            {
+                Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
+                objectivecounter.d7o3complete();
+                sheepObject.gameObject.SetActive(false);
+            }
+
+
         }
 
         // Heart Methods
@@ -272,7 +287,6 @@ public class OrganHarvestingMode : MonoBehaviour
         timeBeforeDeath = 60f;
         harvestingUserInterface.gameObject.SetActive(true);
         Debug.Log("Called Organ Harvest");
-        gameObject.GetComponent<sheepInfomation>().enabled = false;
     }
 
 

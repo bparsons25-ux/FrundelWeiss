@@ -11,7 +11,7 @@ public class Day3Ending : MonoBehaviour
 
     private void Start()
     {
-        ObjectiveCounter.gameObject.SetActive(false);
+        transition.gameObject.SetActive(false);
     }
 
     public void Day4transition()

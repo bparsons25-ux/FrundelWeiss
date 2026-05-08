@@ -283,9 +283,38 @@ private void Update()
 
         if (dayCounter.dayCount == 4)
         {
-            if (day4Obj1IsDone)
+            if (day4Obj1IsDone == true)
             {
                 Sheep1.gameObject.SetActive(true);
+            }
+        }
+
+        if (dayCounter.dayCount == 7)
+        {
+            if (day7Obj1IsDone == true)
+            {
+                if (day7Obj2IsDone == true)
+                {
+                    livestockRoomDoor.gameObject.SetActive(false);
+                }
+            }
+        }
+
+        if (dayCounter.dayCount == 7)
+        {
+            if (day7Obj1IsDone == true)
+            {
+                if (day7Obj2IsDone == true)
+                {
+                    if (day7Obj3IsDone == true)
+                    {
+                        if (day7Obj4IsDone == true)
+                        {
+                            logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                            logOffReminder.gameObject.SetActive(true);
+                        }
+                    }
+                }
             }
         }
     }
@@ -420,6 +449,49 @@ private void Update()
         day4Obj3IsDone = true;
     }
 
+    public void d7o1complete()
+    {
+        if (dayCounter.dayCount == 7)
+        {
+            day7Obj1text = day7Obj1.gameObject.GetComponent<TMP_Text>();
+            day7Obj1text.color = Color.green;
+            day7Obj1IsDone = true;
+        }
+    }
+
+    public void d7o2complete()
+    {
+        if (dayCounter.dayCount == 7)
+        {
+            day7Obj2text = day7Obj2.gameObject.GetComponent<TMP_Text>();
+            day7Obj2text.color = Color.green;
+            day7Obj2IsDone = true;
+        }
+
+    }
+
+    public void d7o3complete()
+    {
+        if (dayCounter.dayCount == 7)
+        {
+            day7Obj3text = day7Obj3.gameObject.GetComponent<TMP_Text>();
+            day7Obj3text.color = Color.green;
+            day7Obj3IsDone = true;
+        }
+    }
+
+    public void d7o4complete()
+    {
+        if (dayCounter.dayCount == 7)
+        {
+            day7Obj4text = day7Obj4.gameObject.GetComponent<TMP_Text>();
+            day7Obj4text.color = Color.green;
+            day7Obj4IsDone = true;
+        }
+    }
+
+    
+
     public void day1Complete()
     {
         if (dayCounter.dayCount == 1 && day1IsComplete == true)
@@ -473,9 +545,16 @@ private void Update()
             dayCounter.dayCount = 7;
             startDayCount.ShowDate();
             PoliceAlert1();
-            livestockRoomDoor.gameObject.SetActive(false);
+            sheep1Trapped.gameObject.SetActive(true);
         }
+    }
 
+    public void day7Complete()
+    {
+        if (dayCounter.dayCount == 7)
+        {
+
+        }
     }
 
     public void day2alert()

@@ -7,18 +7,22 @@ public class sheepDay7 : MonoBehaviour
     [SerializeField] private GameObject bloodSplatter;
     [SerializeField] private ObjectiveCounter ObjectiveCounter;
     [SerializeField] private GameObject OrganHarvest1;
+    [SerializeField] private GameObject sheepConvo;
+    [SerializeField] private GameObject sheep1;
 
 
     private float transitionTime = 5f;
 
     private void Start()
     {
-        ObjectiveCounter.gameObject.SetActive(false);
+        transition.gameObject.SetActive(true);
         OrganHarvest1.gameObject.SetActive(false);
+        sheepConvo.gameObject.SetActive(false);
     }
 
     public void OrganMethod()
     {
+        
         StartCoroutine(Organtrans());
     }
 
@@ -30,7 +34,9 @@ public class sheepDay7 : MonoBehaviour
         bloodSplatter.gameObject.SetActive(false);
         transition.gameObject.SetActive(false);
         OrganHarvest1.gameObject.SetActive(true);
+        sheepConvo.gameObject.SetActive(false);
         OrganHarvest1.GetComponent<OrganHarvestingMode>().StartHarvesting();
+
     }
 
 
