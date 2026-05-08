@@ -103,6 +103,11 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject noTaxes;
     [SerializeField] private GameObject policeAlert1;
 
+    [SerializeField] private GameObject policeNotification;
+    [SerializeField] private GameObject messageNotification;
+    [SerializeField] private GameObject socialMediaNotification;
+    [SerializeField] private GameObject taxesNotification;
+
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
 
@@ -134,6 +139,11 @@ public class ObjectiveCounter : MonoBehaviour
 
         noTaxes.gameObject.SetActive(true);
         policeAlert1.gameObject.SetActive(false);
+
+        socialMediaNotification.gameObject.SetActive(false);
+        policeNotification.gameObject.SetActive(false);
+
+        messageNotification.gameObject.SetActive(true);
         
     }
 
@@ -191,6 +201,7 @@ private void Update()
                     {
                         logOffButton.gameObject.GetComponent<Button>().interactable = true;
                         logOffReminder.gameObject.SetActive(true);
+                        // Play some kind of pinging SFX for Log off notification
 
                     }
                 }
@@ -207,7 +218,8 @@ private void Update()
                     if (day2Obj3IsDone == true)
                     {
                         logOffButton.gameObject.GetComponent<Button>().interactable = true;
-
+                        logOffReminder.gameObject.SetActive(true);
+                        // Play some kind of pinging SFX for Log off notification
                     }
                 }
 
@@ -225,6 +237,8 @@ private void Update()
                         if (day3Obj4IsDone)
                         {
                             logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                            logOffReminder.gameObject.SetActive(true);
+                            // Play some kind of pinging SFX for Log off notification
                         }
 
                     }
@@ -366,6 +380,7 @@ private void Update()
     {
         day4Obj2text = day4Obj2.gameObject.GetComponent<TMP_Text>();
         day4Obj2text.color = Color.green;
+        day4Obj3IsDone = true;
     }
 
     public void day1Complete()
@@ -376,7 +391,7 @@ private void Update()
             logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
-            
+            // turn off pinging SFX
         }
     }
 
@@ -388,6 +403,7 @@ private void Update()
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             startDayCount.ShowDate();
+            // turn off pinging SFX
         }
     }
 
@@ -397,10 +413,12 @@ private void Update()
         {
             dayCounter.ChangeDay();
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             startDayCount.ShowDate();
             day4Taxes();
+            // turn off pinging SFX
         }
-        
+
     }
 
     public void day4Complete()
@@ -415,14 +433,21 @@ private void Update()
 
     }
 
+    public void day2alert()
+    {
+        socialMediaNotification.gameObject.SetActive(true);
+    }
+
     public void day4Taxes()
     {
         TaxesButton.gameObject.SetActive(true);
         noTaxes.gameObject.SetActive(false);
+        taxesNotification.gameObject.SetActive(true);
     }
 
     public void PoliceAlert1()
     {
         policeAlert1.gameObject.SetActive(true);
+        policeNotification.gameObject.SetActive(true);
     }
 }
