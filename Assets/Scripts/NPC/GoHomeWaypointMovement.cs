@@ -3,52 +3,52 @@ using UnityEngine;
 
 public class GoHomeWaypointMovement : MonoBehaviour
 {
-    public List<GameObject> waypoints;
-    public float speed = 2f;
-    int index = 0;
-    public bool isLoop = false;
+    //public List<GameObject> waypoints;
+    //public float speed = 2f;
+    //int index = 0;
+    //public bool isLoop = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    //// Start is called once before the first execution of Update after the MonoBehaviour is created
+    //void Start()
+    //{
 
-    }
+    //}
 
-    private void Update()
-    {
+    //private void Update()
+    //{
 
-        Vector3 destination = waypoints[index].transform.position;
-        Vector3 newPos = Vector3.MoveTowards(transform.position, waypoints[index].transform.position, speed * Time.deltaTime);
-        transform.position = newPos;
+    //    Vector3 destination = waypoints[index].transform.position;
+    //    Vector3 newPos = Vector3.MoveTowards(transform.position, waypoints[index].transform.position, speed * Time.deltaTime);
+    //    transform.position = newPos;
 
-        float distance = Vector3.Distance(transform.position, destination);
+    //    float distance = Vector3.Distance(transform.position, destination);
 
-        if (distance <= 0.05)
-        {
-            if (index < waypoints.Count - 1)
-            {
-                index++;
-            }
-            else
-            {
-                if (isLoop == true)
-                {
-                    index = 0;
-                }
-            }
-        }
+    //    if (distance <= 0.05)
+    //    {
+    //        if (index < waypoints.Count - 1)
+    //        {
+    //            index++;
+    //        }
+    //        else
+    //        {
+    //            if (isLoop == true)
+    //            {
+    //                index = 0;
+    //            }
+    //        }
+    //    }
 
-        if (index == 5)
-        {
-            NPCmovement.isAtDespawn = true;
+    //    if (index == 5)
+    //    {
+    //        NPCmovement.isAtDespawn = true;
             
-        }
+    //    }
 
-        if (index > 0)
-        {
-            NPCmovement.isAtSale = false;
-        }
+    //    if (index > 0)
+    //    {
+    //        NPCmovement.isAtSale = false;
+    //    }
 
-    }
+    //}
 }
 

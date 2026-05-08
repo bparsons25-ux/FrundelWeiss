@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -54,6 +55,7 @@ public class ObjectiveCounter : MonoBehaviour
 
     [SerializeField] private GameObject day4Obj1;
     [SerializeField] private GameObject day4Obj2;
+    [SerializeField] private GameObject day4Obj3;
 
     private bool day4Obj1IsDone = false;
     private bool day4Obj2IsDone = false;
@@ -69,6 +71,16 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day7Obj2;
     [SerializeField] private GameObject day7Obj3;
     [SerializeField] private GameObject day7Obj4;
+
+    private bool day7Obj1IsDone = false;
+    private bool day7Obj2IsDone = false;
+    private bool day7Obj3IsDone = false;
+    private bool day7Obj4IsDone = false;
+
+    TMP_Text day7Obj1text;
+    TMP_Text day7Obj2text;
+    TMP_Text day7Obj3text;
+    TMP_Text day7Obj4text;
 
     [Header("Day 8 Objectives")]
 
@@ -108,8 +120,19 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject socialMediaNotification;
     [SerializeField] private GameObject taxesNotification;
 
+    [SerializeField] private GameObject noFriendsAlert;
+    [SerializeField] private GameObject noFriendsSuggestedAlert;
+
+    [SerializeField] private GameObject Frontdoor;
+
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
+
+    [Header("Day checkers")]
+    [SerializeField] private bool day1IsComplete;
+    [SerializeField] private bool day2IsComplete;
+    [SerializeField] private bool day3IsComplete;
+    [SerializeField] private bool day7IsComplete;
 
 
     private void Start()
@@ -144,6 +167,15 @@ public class ObjectiveCounter : MonoBehaviour
         policeNotification.gameObject.SetActive(false);
 
         messageNotification.gameObject.SetActive(true);
+
+        noFriendsSuggestedAlert.gameObject.SetActive(true);
+        noFriendsAlert.gameObject.SetActive(true);
+
+        day1IsComplete = false;
+        day2IsComplete = false;
+        day3IsComplete = false;
+        day7IsComplete = false;
+       
         
     }
 
@@ -160,8 +192,6 @@ private void Update()
         {
             day1All.gameObject.SetActive(false);
             day2All.gameObject.SetActive(true);
-
-            Profile1.gameObject.SetActive(true);
         }
 
         if (dayCounter.dayCount == 3)
@@ -169,13 +199,11 @@ private void Update()
             day2All.gameObject.SetActive(false);
             day3All.gameObject.SetActive(true);
 
-            Friend1.gameObject.SetActive(true);
         }
 
         if (dayCounter.dayCount == 4)
         {
             day3All.gameObject.SetActive(false);
-            day4All.gameObject.SetActive(true);
 
         }
 
@@ -283,6 +311,7 @@ private void Update()
             day1Obj3text = day1Obj3.gameObject.GetComponent<TMP_Text>();
             day1Obj3text.color = Color.green;
             day1Obj3IsDone = true;
+            day1IsComplete = true;
         }
     }
 
@@ -313,6 +342,7 @@ private void Update()
             day2Obj3text = day2Obj3.gameObject.GetComponent<TMP_Text>();
             day2Obj3text.color = Color.green;
             day2Obj3IsDone = true;
+            day2IsComplete = true;
         }
     }
 
@@ -353,6 +383,7 @@ private void Update()
             day3Obj4text = day3Obj4.gameObject.GetComponent<TMP_Text>();
             day3Obj4text.color = Color.green;
             day3Obj4IsDone = true;
+            day3IsComplete = true;
         }
     }
 
@@ -378,46 +409,49 @@ private void Update()
 
     public void d4o3complete()
     {
-        day4Obj2text = day4Obj2.gameObject.GetComponent<TMP_Text>();
-        day4Obj2text.color = Color.green;
+        day4Obj3text = day4Obj3.gameObject.GetComponent<TMP_Text>();
+        day4Obj3text.color = Color.green;
         day4Obj3IsDone = true;
     }
 
     public void day1Complete()
     {
-        if (dayCounter.dayCount == 1)
+        if (dayCounter.dayCount == 1 && day1IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
             day2alert();
+            DonorAppear1();
             // turn off pinging SFX
         }
     }
 
     public void day2Complete()
     {
-        if (dayCounter.dayCount == 2)
+        if (dayCounter.dayCount == 2 && day2IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
             day3alert();
+            FriendAppear1();
             // turn off pinging SFX
         }
     }
 
     public void day3Complete()
     {
-        if (dayCounter.dayCount == 3)
+        if (dayCounter.dayCount == 3 && day3IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
             day4Taxes();
+            day4All.gameObject.SetActive(true);
             // turn off pinging SFX
         }
 
@@ -428,9 +462,11 @@ private void Update()
         if (dayCounter.dayCount == 4)
         {
             // sheep wail SFX goes here
-            dayCounter.dayCount = 7;
             day3SheepDialogue.gameObject.SetActive(false);
+            Frontdoor.gameObject.SetActive(true);
+            dayCounter.dayCount = 7;
             startDayCount.ShowDate();
+            PoliceAlert1();
         }
 
     }
@@ -456,5 +492,17 @@ private void Update()
     {
         policeAlert1.gameObject.SetActive(true);
         policeNotification.gameObject.SetActive(true);
+    }
+
+    public void DonorAppear1()
+    {
+        noFriendsSuggestedAlert.gameObject.SetActive(true);
+        Profile1.gameObject.SetActive(true);
+    }
+
+    public void FriendAppear1()
+    {
+        Friend1.gameObject.SetActive(true);
+        noFriendsAlert.gameObject.SetActive(false);
     }
 }

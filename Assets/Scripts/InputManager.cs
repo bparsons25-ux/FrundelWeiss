@@ -25,7 +25,7 @@ public class InputManager : MonoBehaviour
         onfoot.Pause.performed += ctx => movement.Pause();
         onfoot.PickUp.performed += ctx => ray.PickUp();
         onfoot.Drop.performed += ctx => ray.Drop();
-        onfoot.Use.performed += ctx => ray.Use();
+
 
 
     }

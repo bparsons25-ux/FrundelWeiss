@@ -33,6 +33,8 @@ public class DonorMessageManager : MonoBehaviour
 
     private float textDelayWait = 3f;
 
+    [SerializeField] private ObjectiveCounter counter;
+
 
     private void Start()
     {
@@ -130,5 +132,6 @@ public class DonorMessageManager : MonoBehaviour
         playermessage4.gameObject.SetActive(true);
         playerMessageInteraction4 .gameObject.SetActive(false);
         cannotTypeText.gameObject.SetActive(true);
+        counter.d3o4complete();
     }
 }

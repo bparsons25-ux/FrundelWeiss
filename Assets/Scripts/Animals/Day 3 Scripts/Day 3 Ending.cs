@@ -7,7 +7,7 @@ public class Day3Ending : MonoBehaviour
     [SerializeField] private ObjectiveCounter ObjectiveCounter;
 
 
-    private float transitionTime = 2f;
+    private float transitionTime = 5f;
 
     private void Start()
     {

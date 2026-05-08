@@ -110,7 +110,7 @@ public class OrganHarvestingMode : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && isHarvesting == true)
         {
             isHarvesting = false;
             harvestingUserInterface.gameObject.SetActive(false);

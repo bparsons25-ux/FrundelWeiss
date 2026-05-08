@@ -69,15 +69,6 @@ public class DayCounter : MonoBehaviour
             taxesPaid = false;
         }
 
-        if (dayCount < 5 )
-        {
-            noAlerts.gameObject.SetActive(true);
-            Debug.Log("Day 5");
-        }
-        else if (dayCount > 4)
-        {
-            noAlerts.gameObject.SetActive(false);
-        }
 
         if (dayCount == 5)
         {
