@@ -391,6 +391,7 @@ private void Update()
             logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
+            day2alert();
             // turn off pinging SFX
         }
     }
@@ -399,10 +400,11 @@ private void Update()
     {
         if (dayCounter.dayCount == 2)
         {
-            dayCounter.ChangeDay();
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
+            dayCounter.ChangeDay();
             startDayCount.ShowDate();
+            day3alert();
             // turn off pinging SFX
         }
     }
@@ -411,9 +413,9 @@ private void Update()
     {
         if (dayCounter.dayCount == 3)
         {
-            dayCounter.ChangeDay();
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
+            dayCounter.ChangeDay();
             startDayCount.ShowDate();
             day4Taxes();
             // turn off pinging SFX
@@ -434,6 +436,11 @@ private void Update()
     }
 
     public void day2alert()
+    {
+        socialMediaNotification.gameObject.SetActive(true);
+    }
+
+    public void day3alert()
     {
         socialMediaNotification.gameObject.SetActive(true);
     }
