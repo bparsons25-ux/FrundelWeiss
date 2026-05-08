@@ -109,7 +109,10 @@ public class ObjectiveCounter : MonoBehaviour
 
     [Header("day Specific Objects")]
     [SerializeField] private GameObject Friend1;
+
     [SerializeField] private GameObject Sheep1;
+    [SerializeField] private GameObject sheep1Trapped;
+
     [SerializeField] private GameObject Profile1;
     [SerializeField] private GameObject TaxesButton;
     [SerializeField] private GameObject noTaxes;
@@ -124,6 +127,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject noFriendsSuggestedAlert;
 
     [SerializeField] private GameObject Frontdoor;
+    [SerializeField] private GameObject livestockRoomDoor;
 
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
@@ -176,6 +180,8 @@ public class ObjectiveCounter : MonoBehaviour
         day3IsComplete = false;
         day7IsComplete = false;
        
+        Frontdoor.gameObject.SetActive(true);
+        livestockRoomDoor.gameObject.SetActive(true);
         
     }
 
@@ -467,6 +473,7 @@ private void Update()
             dayCounter.dayCount = 7;
             startDayCount.ShowDate();
             PoliceAlert1();
+            livestockRoomDoor.gameObject.SetActive(false);
         }
 
     }

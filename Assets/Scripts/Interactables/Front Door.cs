@@ -5,29 +5,55 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class FrontDoor : Interactable
+public class FrontDoor : MonoBehaviour
 {
-    //private bool Fade = false;
-    private float Fadetime = 3f;
-    public GameObject Fadescreen;
-    [SerializeField] private GeneralFunctions generalFunctions;
+
+    public bool canOpen;
+    public bool isOpen;
 
 
-    protected override void Interact()
+    public Transform openPos;
+    public Transform closePos;
+
+    private void Start()
     {
-        StartCoroutine(leave());
-        //Cursor.lockState = CursorLockMode.None;
+        canOpen = true;
+        isOpen = false;
+
+
+
+    }
+
+    private void Update()
+    {
+        if (isOpen == false)
+        {
+            gameObject.transform.position = closePos.transform.position;
+            gameObject.transform.rotation = closePos.transform.rotation;
+        }
+
+        if (isOpen == true)
+        {
+            gameObject.transform.position = openPos.transform.position;
+            gameObject.transform.rotation = openPos.transform.rotation;
+        }
+
+    }
+
+    public void OpenDoor()
+    {
+        if (isOpen == false)
+        {
+            isOpen = true;
+        }
+
+        if (isOpen == true)
+        {
+            isOpen = false;
+        }
+ 
+
         
     }
 
-    IEnumerator leave()
-    {
-        //Fade = true;
-        Fadescreen.SetActive(true);
-        
-        yield return new WaitForSeconds(Fadetime);
-        SceneManager.LoadSceneAsync(0);
-        generalFunctions.MouseUnlock();
-        
-        }
 }
