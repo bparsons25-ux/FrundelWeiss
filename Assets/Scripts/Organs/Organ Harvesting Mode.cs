@@ -112,7 +112,6 @@ public class OrganHarvestingMode : MonoBehaviour
             {
                 Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
                 objectivecounter.d7o3complete();
-                sheep1.gameObject.SetActive(false);
             }
             
         }
@@ -130,7 +129,6 @@ public class OrganHarvestingMode : MonoBehaviour
             {
                 Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
                 objectivecounter.d7o3complete();
-                sheepObject.gameObject.SetActive(false);
             }
 
 

@@ -864,11 +864,11 @@ RectTransform:
   m_Children:
   - {fileID: 2016695337}
   - {fileID: 2100116788}
-  - {fileID: 1060445351}
-  - {fileID: 2034861944}
   - {fileID: 1882407186}
   - {fileID: 1339073945}
   - {fileID: 1418341989}
+  - {fileID: 1060445351}
+  - {fileID: 2034861944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13835,7 +13835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Frundelweiss Alpha V1.5.1 - Created by Ben Parsons and Sam Noonan Mcguire
+  m_text: 'Frundelweiss Alpha V1.6.9 - Created by Ben Parsons and Sam Noonan Mcguire
 
 '
   m_isRightToLeft: 0
