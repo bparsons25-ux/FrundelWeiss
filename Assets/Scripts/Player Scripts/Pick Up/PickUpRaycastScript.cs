@@ -16,6 +16,8 @@ public class PickUpRaycastScript : MonoBehaviour
 
     [SerializeField] private GameObject inHandItem;
 
+    private bool canPickUp = true;
+
 
 
 
@@ -50,45 +52,50 @@ public class PickUpRaycastScript : MonoBehaviour
     {
         if(hit.collider != null)
         {
-
-            //IPckable pickableItem = hit.collider.GetComponent<IPckable>();
-            //if (pickableItem != null )
-            //{
-            //    Debug.Log("Picked Up");
-            //    inHandItem = pickableItem.PickUp();
-            //    inHandItem.transform.SetParent(pickUpParent.transform, pickableItem.KeepWorldPosition);
-            //}
-
-            Debug.Log(hit.collider.name);
-            Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
-            if (hit.collider.GetComponent<Item>()) // close up hand held 
+            if (canPickUp == true)
             {
-                Debug.Log("It's food!");
 
-                inHandItem = hit.collider.gameObject;
-                inHandItem.transform.position = Vector3.zero;
-                inHandItem.transform.rotation = Quaternion.identity;
-                inHandItem.transform.SetParent(pickUpParent.transform, false);
+                //IPckable pickableItem = hit.collider.GetComponent<IPckable>();
+                //if (pickableItem != null )
+                //{
+                //    Debug.Log("Picked Up");
+                //    inHandItem = pickableItem.PickUp();
+                //    inHandItem.transform.SetParent(pickUpParent.transform, pickableItem.KeepWorldPosition);
+                //}
 
-                if (rb != null)
+                Debug.Log(hit.collider.name);
+                Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+                if (hit.collider.GetComponent<Item>()) // close up hand held 
                 {
-                    rb.isKinematic = true;
+                    Debug.Log("Picked Up Object");
+
+                    inHandItem = hit.collider.gameObject;
+                    inHandItem.transform.position = Vector3.zero;
+                    inHandItem.transform.rotation = Quaternion.identity;
+                    inHandItem.transform.SetParent(pickUpParent.transform, false);
+
+                    if (rb != null)
+                    {
+                        rb.isKinematic = true;
+                    }
+
+                    canPickUp = false;
+                    return;
                 }
 
-                return;
+                if (hit.collider.GetComponent<Handheld>()) // far away moving hold
+                {
+                    Debug.Log("Bosh it's a Jar...");
+                    inHandItem = hit.collider.gameObject;
+                    inHandItem.transform.SetParent(pickUpParent.transform, true);
+                    if (rb != null)
+                    {
+                        rb.isKinematic = true;
+                    }
+                    return;
+                }
             }
 
-            if (hit.collider.GetComponent<Handheld>()) // far away moving hold
-            {
-                Debug.Log("Bosh it's a Jar...");
-                inHandItem = hit.collider.gameObject;
-                inHandItem.transform.SetParent(pickUpParent.transform, true);
-                if (rb != null)
-                {
-                    rb.isKinematic = true;
-                }
-                return;
-            }
         }
     }
 
@@ -103,6 +110,7 @@ public class PickUpRaycastScript : MonoBehaviour
             {
                 rb.isKinematic = false;
             }
+            canPickUp = true;
         }
     }
 

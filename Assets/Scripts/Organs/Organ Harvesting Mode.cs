@@ -99,6 +99,11 @@ public class OrganHarvestingMode : MonoBehaviour
         {
             timeBeforeDeath -= Time.deltaTime;
             UpdateDeathBar();
+
+            if (daycounter.dayCount == 8)
+            {
+                sheep1.gameObject.SetActive(false);
+            }
         }
 
         if (timeBeforeDeath < 0)

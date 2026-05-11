@@ -10,17 +10,6 @@ public class DeadSheep : MonoBehaviour
         transform.Rotate(Vector3.up, 90);
     }
 
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (collision.CompareTag("pCylinder44"))
-        { 
-            Destroy(gameObject);
-
-
-        }
-        
-
-    }
 
 
 }

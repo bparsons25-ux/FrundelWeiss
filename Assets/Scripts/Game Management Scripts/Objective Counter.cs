@@ -592,6 +592,12 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject policeAlert3;
     [SerializeField] private GameObject policeAlert4;
 
+    [SerializeField] private GameObject Police1;
+    [SerializeField] private GameObject Police2;
+    [SerializeField] private GameObject Police3;
+    [SerializeField] private GameObject Police4;
+    [SerializeField] private GameObject Police5;
+
     [SerializeField] private GameObject policeNotification;
     [SerializeField] private GameObject messageNotification;
     [SerializeField] private GameObject socialMediaNotification;
@@ -609,46 +615,51 @@ public class ObjectiveCounter : MonoBehaviour
     private float transTime = 5f;
 
     [Header("Day checkers")]
-    [SerializeField] private bool day1IsComplete;
-    [SerializeField] private bool day2IsComplete;
-    [SerializeField] private bool day3IsComplete;
-    [SerializeField] private bool day7IsComplete;
-    [SerializeField] private bool day8IsComplete;
-    [SerializeField] private bool day10IsComplete;
+    private bool day1IsComplete;
+    private bool day2IsComplete;
+    private bool day3IsComplete;
+    private bool day4IsComplete;
+    private bool day7IsComplete;
+    private bool day8IsComplete;
+    private bool day10IsComplete;
 
-    // week 4 - medium week
+    // week 2 - medium week
 
-    [SerializeField] private bool day14IsComplete;
-    [SerializeField] private bool day15IsComplete;
-    [SerializeField] private bool day16IsComplete;
-    [SerializeField] private bool day20IsComplete;
-    [SerializeField] private bool day21IsComplete;
-    [SerializeField] private bool day24IsComplete;
+    private bool day14IsComplete;
+    private bool day15IsComplete;
+    private bool day16IsComplete;
+     private bool day17IsComplete;
+    private bool day20IsComplete;
+    private bool day21IsComplete;
+    private bool day24IsComplete;
 
     // week 3 - hard week
 
-    [SerializeField] private bool day30IsComplete;
-    [SerializeField] private bool day31IsComplete;
-    [SerializeField] private bool day32IsComplete;
-    [SerializeField] private bool day35IsComplete;
-    [SerializeField] private bool day36IsComplete;
-    [SerializeField] private bool day39IsComplete;
+    private bool day30IsComplete;
+    private bool day31IsComplete;
+    private bool day32IsComplete;
+    private bool day33IsComplete;
+    private bool day35IsComplete;
+    private bool day36IsComplete;
+    private bool day39IsComplete;
     
     // week 4 - hardest week
 
-    [SerializeField] private bool day42IsComplete;
-    [SerializeField] private bool day43IsComplete;
-    [SerializeField] private bool day44IsComplete;
-    [SerializeField] private bool day47IsComplete;
-    [SerializeField] private bool day48IsComplete;
-    [SerializeField] private bool day50IsComplete;
+    private bool day42IsComplete;
+    private bool day43IsComplete;
+    private bool day44IsComplete;
+    private bool day45IsComplete;
+    private bool day47IsComplete;
+    private bool day48IsComplete;
+    private bool day50IsComplete;
 
     // week 5 - arrest week
 
-    [SerializeField] private bool day55IsComplete;
-    [SerializeField] private bool day56IsComplete;
-    [SerializeField] private bool day57IsComplete;
-    [SerializeField] private bool day60IsComplete;
+    private bool day55IsComplete;
+    private bool day56IsComplete;
+    private bool day57IsComplete;
+    private bool day58IsComplete;
+    private bool day60IsComplete;
 
     private void Start()
     {
@@ -690,6 +701,37 @@ public class ObjectiveCounter : MonoBehaviour
         day2IsComplete = false;
         day3IsComplete = false;
         day7IsComplete = false;
+        day10IsComplete = false;
+
+        day14IsComplete = false;
+        day15IsComplete = false;
+        day16IsComplete = false;
+        day17IsComplete = false;
+        day20IsComplete = false;
+        day21IsComplete = false;
+        day24IsComplete = false;
+
+        day30IsComplete = false;
+        day31IsComplete = false;
+        day32IsComplete = false;
+        day33IsComplete = false;
+        day35IsComplete = false;
+        day36IsComplete = false;
+        day39IsComplete = false;
+
+        day42IsComplete = false;
+        day43IsComplete = false;
+        day44IsComplete = false;
+        day45IsComplete = false;
+        day47IsComplete = false;
+        day48IsComplete = false;
+        day50IsComplete = false;
+
+        day55IsComplete = false;
+        day56IsComplete = false;
+        day57IsComplete = false;
+        day58IsComplete = false;
+        day60IsComplete = false;
        
         Frontdoor.gameObject.SetActive(true);
         livestockRoomDoor.gameObject.SetActive(true);
@@ -805,16 +847,7 @@ private void Update()
                 if (day7Obj2IsDone == true)
                 {
                     livestockRoomDoor.gameObject.SetActive(false);
-                }
-            }
-        }
 
-        if (dayCounter.dayCount == 7)
-        {
-            if (day7Obj1IsDone == true)
-            {
-                if (day7Obj2IsDone == true)
-                {
                     if (day7Obj3IsDone == true)
                     {
                         if (day7Obj4IsDone == true)
@@ -826,6 +859,26 @@ private void Update()
                 }
             }
         }
+
+        if (dayCounter.dayCount == 8)
+        {
+            if (day8Obj1IsDone==true)
+            {
+                if (day8Obj2IsDone == true)
+                {
+                    if (day8Obj3IsDone == true)
+                    {
+                        if (day8Obj4IsDone==true)
+                        {
+                            logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                            logOffReminder.gameObject.SetActive(true);
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 
     public void d1o1complete()
@@ -999,7 +1052,318 @@ private void Update()
         }
     }
 
-    
+    public void d8o1complete()
+    {
+        if (dayCounter.dayCount == 8)
+        {
+            day8Obj1text = day8Obj1.gameObject.GetComponent<TMP_Text>();
+            day8Obj1text.color = Color.green;
+            day8Obj1IsDone = true;
+        }
+    }
+
+    public void d8o2complete()
+    {
+        if (dayCounter.dayCount == 8)
+        {
+            day8Obj2text = day8Obj2.gameObject.GetComponent<TMP_Text>();
+            day8Obj2text.color = Color.green;
+            day8Obj2IsDone = true;
+        }
+    }
+
+    public void d8o3complete()
+    {
+        if (dayCounter.dayCount == 8)
+        {
+            day8Obj3text = day8Obj3.gameObject.GetComponent<TMP_Text>();
+            day8Obj3text.color = Color.green;
+            day8Obj3IsDone = true;
+        }
+    }
+
+    public void d8o4complete()
+    {
+        if (dayCounter.dayCount == 8)
+        {
+            day8Obj4text = day8Obj3.gameObject.GetComponent<TMP_Text>();
+            day8Obj4text.color = Color.green;
+            day8Obj4IsDone = true;
+        }
+    }
+
+    public void d10o1complete()
+    {
+        if (dayCounter.dayCount == 10)
+        {
+            day10Obj1text = day10Obj1.gameObject.GetComponent<TMP_Text>();
+            day10Obj1text.color = Color.green;
+            day10Obj1IsDone = true;
+        }
+    }
+
+    public void d10o2complete()
+    {
+        if (dayCounter.dayCount == 10)
+        {
+            day10Obj2text = day10Obj2.gameObject.GetComponent<TMP_Text>();
+            day10Obj2text.color = Color.green;
+            day10Obj2IsDone = true;
+        }
+    }
+
+    // Week 2 methods 
+
+    // Day 14 methods
+
+    public void d14o1()
+    {
+        if (dayCounter.dayCount == 14)
+        {
+            w2day1Obj1text = w2day1Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day1Obj1text.color = Color.green;
+            w2day1Obj1IsDone = true;
+        }
+    }
+
+    public void d14o2()
+    {
+        if (dayCounter.dayCount == 14)
+        {
+            w2day1Obj2text = w2day1Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day1Obj2text.color = Color.green;
+            w2day1Obj2IsDone = true;
+        }
+    }
+
+    public void d14o3()
+    {
+        if (dayCounter.dayCount == 14)
+        {
+            w2day1Obj3text = w2day1Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day1Obj3text.color = Color.green;
+            w2day1Obj3IsDone = true;
+        }
+    }
+
+    // Day 15 methods
+
+    public void d15o1()
+    {
+        if (dayCounter.dayCount == 15)
+        {
+            w2day2Obj1text = w2day2Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day2Obj1text.color = Color.green;
+            w2day2Obj1IsDone = true;
+        }
+    }
+
+    public void d15o2()
+    {
+        if (dayCounter.dayCount == 15)
+        {
+            w2day2Obj2text = w2day2Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day2Obj2text.color = Color.green;
+            w2day2Obj2IsDone = true;
+        }
+    }
+
+    public void d15o3()
+    {
+        if (dayCounter.dayCount == 15)
+        {
+            w2day2Obj3text = w2day2Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day2Obj3text.color = Color.green;
+            w2day2Obj3IsDone = true;
+        }
+    }
+
+    // Day 16 methods
+
+    public void d16o1()
+    {
+        if (dayCounter.dayCount == 16)
+        {
+            w2day3Obj1text = w2day3Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day3Obj1text.color = Color.green;
+            w2day3Obj1IsDone = true;
+        }
+    }
+
+    public void d16o2()
+    {
+        if (dayCounter.dayCount == 16)
+        {
+            w2day3Obj2text = w2day3Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day3Obj2text.color = Color.green;
+            w2day3Obj2IsDone = true;
+        }
+    }
+
+    public void d16o3()
+    {
+        if (dayCounter.dayCount == 16)
+        {
+            w2day3Obj3text = w2day3Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day3Obj3text.color = Color.green;
+            w2day3Obj3IsDone = true;
+        }
+    }
+
+    public void d16o4()
+    {
+        if (dayCounter.dayCount == 16)
+        {
+            w2day3Obj4text = w2day3Obj4.gameObject.GetComponent<TMP_Text>();
+            w2day3Obj4text.color = Color.green;
+            w2day3Obj4IsDone = true;
+        }
+    }
+
+    // Day 16 methods
+
+    public void d17o1()
+    {
+        if (dayCounter.dayCount == 17)
+        {
+            w2day4Obj1text = w2day4Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day4Obj1text.color = Color.green;
+            w2day4Obj1IsDone = true;
+        }
+    }
+
+    public void d17o2()
+    {
+        if (dayCounter.dayCount == 17)
+        {
+            w2day4Obj2text = w2day4Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day4Obj2text.color = Color.green;
+            w2day4Obj2IsDone = true;
+        }
+    }
+
+    public void d17o3()
+    {
+        if (dayCounter.dayCount == 17)
+        {
+            w2day4Obj3text = w2day4Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day4Obj3text.color = Color.green;
+            w2day4Obj3IsDone = true;
+        }
+    }
+
+    // Day 20 methods
+
+    public void d20o1()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day7Obj1text = w2day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day7Obj1text.color = Color.green;
+            w2day7Obj1IsDone = true;
+        }
+    }
+
+    public void d20o2()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day7Obj2text = w2day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day7Obj2text.color = Color.green;
+            w2day7Obj2IsDone = true;
+        }
+    }
+
+    public void d20o3()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day7Obj3text = w2day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day7Obj3text.color = Color.green;
+            w2day7Obj3IsDone = true;
+        }
+    }
+
+    public void d20o4()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day7Obj4text = w2day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w2day7Obj4text.color = Color.green;
+            w2day7Obj4IsDone = true;
+        }
+    }
+
+    // Day 21 methods
+
+    public void d21o1()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day8Obj1text = w2day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day8Obj1text.color = Color.green;
+            w2day8Obj1IsDone = true;
+        }
+    }
+
+    public void d21o2()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day8Obj2text = w2day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day8Obj2text.color = Color.green;
+            w2day8Obj2IsDone = true;
+        }
+    }
+
+    public void d21o3()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day8Obj3text = w2day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w2day8Obj3text.color = Color.green;
+            w2day8Obj3IsDone = true;
+        }
+    }
+
+    public void d21o4()
+    {
+        if (dayCounter.dayCount == 20)
+        {
+            w2day8Obj4text = w2day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w2day8Obj4text.color = Color.green;
+            w2day8Obj4IsDone = true;
+        }
+    }
+
+    // Day 24 methods
+
+    public void d24o1()
+    {
+        if (dayCounter.dayCount == 24)
+        {
+            w2day10Obj1text = w2day10Obj1.gameObject.GetComponent<TMP_Text>();
+            w2day10Obj1text.color = Color.green;
+            w2day10Obj1IsDone = true;
+        }
+    }
+
+    public void d24o2()
+    {
+        if (dayCounter.dayCount == 24)
+        {
+            w2day10Obj2text = w2day10Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day10Obj2text.color = Color.green;
+            w2day10Obj2IsDone = true;
+        }
+    }
+
+
+
+
+
+
+
 
     public void day1Complete()
     {
@@ -1039,6 +1403,7 @@ private void Update()
             startDayCount.ShowDate();
             day4Taxes();
             day4All.gameObject.SetActive(true);
+            Sheep1.gameObject.SetActive(true);
             // turn off pinging SFX
         }
 
@@ -1065,7 +1430,16 @@ private void Update()
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
+            Customer1.gameObject.SetActive(true);
         }
+    }
+
+    public void day8Complete()
+    {
+        logOffButton.gameObject.GetComponent<Button>().interactable = false;
+        dayCounter.dayCount = 10;
+        startDayCount.ShowDate();
+        Police1.gameObject.SetActive(true);
     }
 
     public void day2alert()

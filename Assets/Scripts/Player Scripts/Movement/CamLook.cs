@@ -5,8 +5,8 @@ public class CamLook : MonoBehaviour
     public Camera cam;
     private float xRotation = 0f;
 
-    public float xSensitivity = 30f;
-    public float ySenstivity = 30f;
+    public float xSensitivity = 45f;
+    public float ySenstivity = 45f;
 
     private void Start()
     {
