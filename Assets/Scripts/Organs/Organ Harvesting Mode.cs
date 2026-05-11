@@ -77,6 +77,8 @@ public class OrganHarvestingMode : MonoBehaviour
     [SerializeField] private ObjectiveCounter objectivecounter;
     [SerializeField] private DayCounter daycounter;
 
+    private bool sheepIsDead;
+
 
     public void Awake()
     {
@@ -84,7 +86,7 @@ public class OrganHarvestingMode : MonoBehaviour
     }
     public void Start()
     {
-
+        sheepIsDead = false;
     }
 
 
@@ -110,8 +112,9 @@ public class OrganHarvestingMode : MonoBehaviour
 
             if (daycounter.dayCount == 7)
             {
-                Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
+
                 objectivecounter.d7o3complete();
+                sheepIsDead = true;
             }
             
         }
@@ -123,12 +126,16 @@ public class OrganHarvestingMode : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             func.CamUnlock();
             func.PlayerFree();
-            Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
 
             if (daycounter.dayCount == 7)
             {
-                Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
                 objectivecounter.d7o3complete();
+                sheepIsDead = true; 
+
+                if (daycounter.dayCount == 7)
+                {
+                    sheep1.gameObject.SetActive(false);
+                }
             }
 
 
@@ -214,6 +221,11 @@ public class OrganHarvestingMode : MonoBehaviour
 
             
         }
+
+        if (sheepIsDead == true)
+        {
+            Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
+        }
     }
 
     private void UpdateDeathBar()
@@ -286,6 +298,8 @@ public class OrganHarvestingMode : MonoBehaviour
         harvestingUserInterface.gameObject.SetActive(true);
         Debug.Log("Called Organ Harvest");
     }
+
+
 
 
 

@@ -9894,37 +9894,6 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1701379194}
   TextMessageFill: {fileID: 1171599853}
---- !u!1 &140329761
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 140329762}
-  m_Layer: 0
-  m_Name: Sheep 1 spawn Pos.
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &140329762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140329761}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.30070576, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 2.5, y: 0.7, z: 32.4}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 35, z: 0}
 --- !u!1 &140706103
 GameObject:
   m_ObjectHideFlags: 0
@@ -16231,37 +16200,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222258233}
   m_CullTransparentMesh: 1
---- !u!1 &223616171
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 223616172}
-  m_Layer: 0
-  m_Name: 'Sheep 9 spawn Pos.  '
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &223616172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223616171}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.27395913, z: 0, w: 0.9617413}
-  m_LocalPosition: {x: -16.9, y: 0.7, z: 32.4}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 31.8, z: 0}
 --- !u!1 &224742471
 GameObject:
   m_ObjectHideFlags: 0
@@ -20937,37 +20875,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316326873}
   m_CullTransparentMesh: 1
---- !u!1 &319047616
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 319047617}
-  m_Layer: 0
-  m_Name: 'Sheep 5 spawn Pos.  '
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &319047617
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319047616}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9659258, z: -0, w: 0.25881913}
-  m_LocalPosition: {x: -7.63, y: 0.7, z: 48.39}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -150, z: 0}
 --- !u!1 &319431501
 GameObject:
   m_ObjectHideFlags: 0
@@ -23198,37 +23105,6 @@ MonoBehaviour:
   avgFramerate: 0
   display: '{0} FPS'
   m_Text: {fileID: 1203816775}
---- !u!1 &348635070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 348635071}
-  m_Layer: 0
-  m_Name: 'Sheep 7 spawn Pos. '
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &348635071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348635070}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.30070576, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 6, y: 0.7, z: 32.4}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -35, z: 0}
 --- !u!1 &348808531
 GameObject:
   m_ObjectHideFlags: 0
@@ -36614,37 +36490,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593777640}
   m_CullTransparentMesh: 1
---- !u!1 &594244573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 594244574}
-  m_Layer: 0
-  m_Name: 'Sheep 8 spawn Pos.  '
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &594244574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594244573}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -3.2, y: 0.7, z: 32.4}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!1001 &595529228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59405,18 +59250,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921462652}
-        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
-        m_MethodName: day1Complete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 921462643}
         m_TargetAssemblyTypeName: GeneralFunctions, Assembly-CSharp
         m_MethodName: MouseLock
@@ -59467,6 +59300,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: day1Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: day2Complete
         m_Mode: 1
         m_Arguments:
@@ -59480,6 +59325,18 @@ MonoBehaviour:
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: day3Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: day7Complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -60844,23 +60701,159 @@ MonoBehaviour:
   day8Obj2: {fileID: 782927275}
   day8Obj3: {fileID: 310148213}
   day8Obj4: {fileID: 378535698}
+  day10Obj1: {fileID: 0}
+  day10Obj2: {fileID: 0}
+  w2day1Obj1: {fileID: 0}
+  w2day1Obj2: {fileID: 0}
+  w2day1Obj3: {fileID: 0}
+  w2day2Obj1: {fileID: 0}
+  w2day2Obj2: {fileID: 0}
+  w2day2Obj3: {fileID: 0}
+  w2day3Obj1: {fileID: 0}
+  w2day3Obj2: {fileID: 0}
+  w2day3Obj3: {fileID: 0}
+  w2day3Obj4: {fileID: 0}
+  w2day4Obj1: {fileID: 0}
+  w2day4Obj2: {fileID: 0}
+  w2day4Obj3: {fileID: 0}
+  w2day7Obj1: {fileID: 0}
+  w2day7Obj2: {fileID: 0}
+  w2day7Obj3: {fileID: 0}
+  w2day7Obj4: {fileID: 0}
+  w2day8Obj1: {fileID: 0}
+  w2day8Obj2: {fileID: 0}
+  w2day8Obj3: {fileID: 0}
+  w2day8Obj4: {fileID: 0}
+  w2day10Obj1: {fileID: 0}
+  w2day10Obj2: {fileID: 0}
+  w3day1Obj1: {fileID: 0}
+  w3day1Obj2: {fileID: 0}
+  w3day1Obj3: {fileID: 0}
+  w3day2Obj1: {fileID: 0}
+  w3day2Obj2: {fileID: 0}
+  w3day2Obj3: {fileID: 0}
+  w3day3Obj1: {fileID: 0}
+  w3day3Obj2: {fileID: 0}
+  w3day3Obj3: {fileID: 0}
+  w3day3Obj4: {fileID: 0}
+  w3day4Obj1: {fileID: 0}
+  w3day4Obj2: {fileID: 0}
+  w3day4Obj3: {fileID: 0}
+  w3day7Obj1: {fileID: 0}
+  w3day7Obj2: {fileID: 0}
+  w3day7Obj3: {fileID: 0}
+  w3day7Obj4: {fileID: 0}
+  w3day8Obj1: {fileID: 0}
+  w3day8Obj2: {fileID: 0}
+  w3day8Obj3: {fileID: 0}
+  w3day8Obj4: {fileID: 0}
+  w3day10Obj1: {fileID: 0}
+  w3day10Obj2: {fileID: 0}
+  w4day1Obj1: {fileID: 0}
+  w4day1Obj2: {fileID: 0}
+  w4day1Obj3: {fileID: 0}
+  w4day2Obj1: {fileID: 0}
+  w4day2Obj2: {fileID: 0}
+  w4day2Obj3: {fileID: 0}
+  w4day3Obj1: {fileID: 0}
+  w4day3Obj2: {fileID: 0}
+  w4day3Obj3: {fileID: 0}
+  w4day3Obj4: {fileID: 0}
+  w4day4Obj1: {fileID: 0}
+  w4day4Obj2: {fileID: 0}
+  w4day4Obj3: {fileID: 0}
+  w4day7Obj1: {fileID: 0}
+  w4day7Obj2: {fileID: 0}
+  w4day7Obj3: {fileID: 0}
+  w4day7Obj4: {fileID: 0}
+  w4day8Obj1: {fileID: 0}
+  w4day8Obj2: {fileID: 0}
+  w4day8Obj3: {fileID: 0}
+  w4day8Obj4: {fileID: 0}
+  w4day10Obj1: {fileID: 0}
+  w4day10Obj2: {fileID: 0}
+  w5day1Obj1: {fileID: 0}
+  w5day1Obj2: {fileID: 0}
+  w5day1Obj3: {fileID: 0}
+  w5day2Obj1: {fileID: 0}
+  w5day2Obj2: {fileID: 0}
+  w5day2Obj3: {fileID: 0}
+  w5day3Obj1: {fileID: 0}
+  w5day3Obj2: {fileID: 0}
+  w5day3Obj3: {fileID: 0}
+  w5day3Obj4: {fileID: 0}
+  w5day4Obj1: {fileID: 0}
+  w5day4Obj2: {fileID: 0}
+  w5day4Obj3: {fileID: 0}
+  w5day7Obj1: {fileID: 0}
+  w5day7Obj2: {fileID: 0}
+  w5day7Obj3: {fileID: 0}
+  w5day7Obj4: {fileID: 0}
+  w5day10Obj1: {fileID: 0}
+  w5day10Obj2: {fileID: 0}
   day1All: {fileID: 1132104799}
   day2All: {fileID: 1324145309}
   day3All: {fileID: 1183416175}
   day4All: {fileID: 1291422008}
   day7All: {fileID: 1966962088}
   day8All: {fileID: 1001492329}
+  day10All: {fileID: 0}
+  day14All: {fileID: 0}
+  day15All: {fileID: 0}
+  day16All: {fileID: 0}
+  day20All: {fileID: 0}
+  day21All: {fileID: 0}
+  day24All: {fileID: 0}
+  day30All: {fileID: 0}
+  day31All: {fileID: 0}
+  day32All: {fileID: 0}
+  day35All: {fileID: 0}
+  day36All: {fileID: 0}
+  day39All: {fileID: 0}
+  day42All: {fileID: 0}
+  day43All: {fileID: 0}
+  day44All: {fileID: 0}
+  day47All: {fileID: 0}
+  day48All: {fileID: 0}
+  day50All: {fileID: 0}
+  day55All: {fileID: 0}
+  day56All: {fileID: 0}
+  day57All: {fileID: 0}
+  day60All: {fileID: 0}
   dayCounter: {fileID: 921462650}
   startDayCount: {fileID: 921462653}
   logOffButton: {fileID: 904440806}
   logOffReminder: {fileID: 2143382363}
   Friend1: {fileID: 2072123503}
+  Friend2: {fileID: 0}
+  Friend3: {fileID: 0}
+  Friend4: {fileID: 0}
+  Friend5: {fileID: 0}
   Sheep1: {fileID: 8304147366053708355}
-  sheep1Trapped: {fileID: 0}
+  Sheep2: {fileID: 0}
+  Sheep3: {fileID: 0}
+  Sheep4: {fileID: 0}
+  Sheep5: {fileID: 0}
+  sheep1Trapped: {fileID: 1401636453}
+  sheep2Trapped: {fileID: 0}
+  sheep3Trapped: {fileID: 0}
+  sheep4Trapped: {fileID: 0}
+  sheep5Trapped: {fileID: 0}
+  Customer1: {fileID: 0}
+  Customer2: {fileID: 0}
+  Customer3: {fileID: 0}
+  Customer4: {fileID: 0}
   Profile1: {fileID: 1785429943}
+  Profile2: {fileID: 0}
+  Profile3: {fileID: 0}
+  Profile4: {fileID: 0}
+  Profile5: {fileID: 0}
   TaxesButton: {fileID: 7113574}
   noTaxes: {fileID: 9047324}
   policeAlert1: {fileID: 1916932835}
+  policeAlert2: {fileID: 0}
+  policeAlert3: {fileID: 0}
+  policeAlert4: {fileID: 0}
   policeNotification: {fileID: 504025415}
   messageNotification: {fileID: 260904805}
   socialMediaNotification: {fileID: 735683538}
@@ -60874,6 +60867,30 @@ MonoBehaviour:
   day2IsComplete: 0
   day3IsComplete: 0
   day7IsComplete: 0
+  day8IsComplete: 0
+  day10IsComplete: 0
+  day14IsComplete: 0
+  day15IsComplete: 0
+  day16IsComplete: 0
+  day20IsComplete: 0
+  day21IsComplete: 0
+  day24IsComplete: 0
+  day30IsComplete: 0
+  day31IsComplete: 0
+  day32IsComplete: 0
+  day35IsComplete: 0
+  day36IsComplete: 0
+  day39IsComplete: 0
+  day42IsComplete: 0
+  day43IsComplete: 0
+  day44IsComplete: 0
+  day47IsComplete: 0
+  day48IsComplete: 0
+  day50IsComplete: 0
+  day55IsComplete: 0
+  day56IsComplete: 0
+  day57IsComplete: 0
+  day60IsComplete: 0
 --- !u!114 &921462653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61721,10 +61738,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1401636453}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: transition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -63722,37 +63739,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957643697}
   m_CullTransparentMesh: 1
---- !u!1 &961948044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961948045}
-  m_Layer: 0
-  m_Name: 'Sheep 2 spawn Pos. '
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &961948045
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961948044}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.22495107, z: 0, w: 0.9743701}
-  m_LocalPosition: {x: -7.5, y: 0.7, z: 32.4}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 26, z: 0}
 --- !u!1 &963061962
 GameObject:
   m_ObjectHideFlags: 0
@@ -71269,68 +71255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050105522}
   m_CullTransparentMesh: 1
---- !u!1 &1050195452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1050195453}
-  m_Layer: 0
-  m_Name: 'Sheep 6 spawn Pos.   '
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1050195453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050195452}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9659258, z: -0, w: -0.2588193}
-  m_LocalPosition: {x: 2.82, y: 0.7, z: 48.45}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -210, z: 0}
---- !u!1 &1052846925
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052846926}
-  m_Layer: 0
-  m_Name: 'Sheep 11 spawn Pos.  '
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1052846926
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052846925}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.86602545, z: -0, w: -0.49999994}
-  m_LocalPosition: {x: -4.1, y: 0.7, z: 48.03}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -240, z: 0}
 --- !u!1 &1053668404
 GameObject:
   m_ObjectHideFlags: 0
@@ -74926,37 +74850,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117051138}
   m_CullTransparentMesh: 1
---- !u!1 &1117406070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1117406071}
-  m_Layer: 0
-  m_Name: 'Sheep 3 spawn Pos.  '
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1117406071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117406070}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14, y: 0.7, z: 33}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121464368
 GameObject:
   m_ObjectHideFlags: 0
@@ -80354,37 +80247,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213004971}
   m_CullTransparentMesh: 1
---- !u!1 &1214010679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1214010680}
-  m_Layer: 0
-  m_Name: 'Sheep 10 spawn Pos. '
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1214010680
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214010679}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9396927, z: 0, w: -0.34202012}
-  m_LocalPosition: {x: -17.09, y: 0.7, z: 48.67}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -220, z: 0}
 --- !u!1 &1214476393
 GameObject:
   m_ObjectHideFlags: 0
@@ -117108,37 +116970,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793671188}
   m_CullTransparentMesh: 1
---- !u!1 &1795763174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1795763175}
-  m_Layer: 0
-  m_Name: 'Sheep 4 spawn Pos. '
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1795763175
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795763174}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -13.22, y: 0.7, z: 48.52}
-  m_LocalScale: {x: 1.614002, y: 1.614002, z: 1.614002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1798078643
 GameObject:
   m_ObjectHideFlags: 0
@@ -139236,12 +139067,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -146502,27 +146333,16 @@ SceneRoots:
   - {fileID: 564893745}
   - {fileID: 1251543115}
   - {fileID: 1045106916}
-  - {fileID: 140329762}
   - {fileID: 1919325975}
-  - {fileID: 961948045}
   - {fileID: 66164386}
-  - {fileID: 1117406071}
   - {fileID: 1861356497}
-  - {fileID: 1795763175}
   - {fileID: 384741897}
-  - {fileID: 319047617}
   - {fileID: 693831596}
-  - {fileID: 1050195453}
   - {fileID: 777549507}
-  - {fileID: 348635071}
   - {fileID: 211717978}
-  - {fileID: 594244574}
   - {fileID: 1130338996}
-  - {fileID: 223616172}
   - {fileID: 293785812}
-  - {fileID: 1214010680}
   - {fileID: 126135318}
-  - {fileID: 1052846926}
   - {fileID: 8680005092693301497}
   - {fileID: 1401636459}
   - {fileID: 1236072372}

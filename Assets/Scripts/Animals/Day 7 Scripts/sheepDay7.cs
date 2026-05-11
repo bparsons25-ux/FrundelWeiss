@@ -11,6 +11,7 @@ public class sheepDay7 : MonoBehaviour
     [SerializeField] private GameObject sheep1;
 
 
+
     private float transitionTime = 5f;
 
     private void Start()
@@ -28,6 +29,7 @@ public class sheepDay7 : MonoBehaviour
 
     IEnumerator Organtrans()
     {
+
         transition.gameObject.SetActive(true);
         bloodSplatter.gameObject.SetActive(true);
         yield return new WaitForSeconds(transitionTime);

@@ -10,6 +10,9 @@ public class OrganJars : MonoBehaviour
     [SerializeField] private GameObject leftKidenyJar;
     [SerializeField] private GameObject rightKidneyJar;
 
+    [SerializeField] private DayCounter dayCounter;
+    [SerializeField] private ObjectiveCounter objective;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +37,11 @@ public class OrganJars : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
             Instantiate(heartJar, jarPos.position, transform.rotation);
+
+            if (dayCounter.dayCount == 7)
+            {
+                objective.d7o4complete();
+            }
         }
 
         if (collision.CompareTag("Liver"))

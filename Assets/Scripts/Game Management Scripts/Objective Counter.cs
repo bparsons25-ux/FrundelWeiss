@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
@@ -89,6 +90,426 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day8Obj3;
     [SerializeField] private GameObject day8Obj4;
 
+    private bool day8Obj1IsDone = false;
+    private bool day8Obj2IsDone = false;
+    private bool day8Obj3IsDone = false;
+    private bool day8Obj4IsDone = false;
+
+    TMP_Text day8Obj1text;
+    TMP_Text day8Obj2text;
+    TMP_Text day8Obj3text;
+    TMP_Text day8Obj4text;
+
+    [Header("Day 10 Objectives")]
+
+    [SerializeField] private GameObject day10Obj1;
+    [SerializeField] private GameObject day10Obj2;
+
+    private bool day10Obj1IsDone = false;
+    private bool day10Obj2IsDone = false;
+
+    TMP_Text day10Obj1text;
+    TMP_Text day10Obj2text;
+
+    [Header("Week 2, Day 1 Objectives")]
+
+    [SerializeField] private GameObject w2day1Obj1;
+    [SerializeField] private GameObject w2day1Obj2;
+    [SerializeField] private GameObject w2day1Obj3;
+
+    private bool w2day1Obj1IsDone = false;
+    private bool w2day1Obj2IsDone = false;
+    private bool w2day1Obj3IsDone = false;
+
+    TMP_Text w2day1Obj1text;
+    TMP_Text w2day1Obj2text;
+    TMP_Text w2day1Obj3text;
+
+    [Header("Week 2, Day 2 Objectives")]
+
+    [SerializeField] private GameObject w2day2Obj1;
+    [SerializeField] private GameObject w2day2Obj2;
+    [SerializeField] private GameObject w2day2Obj3;
+
+    private bool w2day2Obj1IsDone = false;
+    private bool w2day2Obj2IsDone = false;
+    private bool w2day2Obj3IsDone = false;
+
+    TMP_Text w2day2Obj1text;
+    TMP_Text w2day2Obj2text;
+    TMP_Text w2day2Obj3text;
+
+    [Header("Week 2, Day 3 Objectives")]
+
+    [SerializeField] private GameObject w2day3Obj1;
+    [SerializeField] private GameObject w2day3Obj2;
+    [SerializeField] private GameObject w2day3Obj3;
+    [SerializeField] private GameObject w2day3Obj4;
+
+    private bool w2day3Obj1IsDone = false;
+    private bool w2day3Obj2IsDone = false;
+    private bool w2day3Obj3IsDone = false;
+    private bool w2day3Obj4IsDone = false;
+
+    TMP_Text w2day3Obj1text;
+    TMP_Text w2day3Obj2text;
+    TMP_Text w2day3Obj3text;
+    TMP_Text w2day3Obj4text;
+
+    [Header("Week 2, Day 4 Objectives")]
+
+    [SerializeField] private GameObject w2day4Obj1;
+    [SerializeField] private GameObject w2day4Obj2;
+    [SerializeField] private GameObject w2day4Obj3;
+
+    private bool w2day4Obj1IsDone = false;
+    private bool w2day4Obj2IsDone = false;
+    private bool w2day4Obj3IsDone = false;
+
+    TMP_Text w2day4Obj1text;
+    TMP_Text w2day4Obj2text;
+    TMP_Text w2day4Obj3text;
+
+    [Header("Week 2, Day 7 Objectives")]
+
+    [SerializeField] private GameObject w2day7Obj1;
+    [SerializeField] private GameObject w2day7Obj2;
+    [SerializeField] private GameObject w2day7Obj3;
+    [SerializeField] private GameObject w2day7Obj4;
+
+    private bool w2day7Obj1IsDone = false;
+    private bool w2day7Obj2IsDone = false;
+    private bool w2day7Obj3IsDone = false;
+    private bool w2day7Obj4IsDone = false;
+
+    TMP_Text w2day7Obj1text;
+    TMP_Text w2day7Obj2text;
+    TMP_Text w2day7Obj3text;
+    TMP_Text w2day7Obj4text;
+
+    [Header("Week 2, Day 8 Objectives")]
+
+    [SerializeField] private GameObject w2day8Obj1;
+    [SerializeField] private GameObject w2day8Obj2;
+    [SerializeField] private GameObject w2day8Obj3;
+    [SerializeField] private GameObject w2day8Obj4;
+
+    private bool w2day8Obj1IsDone = false;
+    private bool w2day8Obj2IsDone = false;
+    private bool w2day8Obj3IsDone = false;
+    private bool w2day8Obj4IsDone = false;
+
+    TMP_Text w2day8Obj1text;
+    TMP_Text w2day8Obj2text;
+    TMP_Text w2day8Obj3text;
+    TMP_Text w2day8Obj4text;
+
+    [Header("Week 2, Day 10 Objectives")]
+
+    [SerializeField] private GameObject w2day10Obj1;
+    [SerializeField] private GameObject w2day10Obj2;
+
+    private bool w2day10Obj1IsDone = false;
+    private bool w2day10Obj2IsDone = false;
+
+    TMP_Text w2day10Obj1text;
+    TMP_Text w2day10Obj2text;
+
+    [Header("Week 3, Day 1 Objectives")]
+
+    [SerializeField] private GameObject w3day1Obj1;
+    [SerializeField] private GameObject w3day1Obj2;
+    [SerializeField] private GameObject w3day1Obj3;
+
+    private bool w3day1Obj1IsDone = false;
+    private bool w3day1Obj2IsDone = false;
+    private bool w3day1Obj3IsDone = false;
+
+    TMP_Text w3day1Obj1text;
+    TMP_Text w3day1Obj2text;
+    TMP_Text w3day1Obj3text;
+
+    [Header("Week 3, Day 2 Objectives")]
+
+    [SerializeField] private GameObject w3day2Obj1;
+    [SerializeField] private GameObject w3day2Obj2;
+    [SerializeField] private GameObject w3day2Obj3;
+
+    private bool w3day2Obj1IsDone = false;
+    private bool w3day2Obj2IsDone = false;
+    private bool w3day2Obj3IsDone = false;
+
+    TMP_Text w3day2Obj1text;
+    TMP_Text w3day2Obj2text;
+    TMP_Text w3day2Obj3text;
+
+    [Header("Week 3, Day 3 Objectives")]
+
+    [SerializeField] private GameObject w3day3Obj1;
+    [SerializeField] private GameObject w3day3Obj2;
+    [SerializeField] private GameObject w3day3Obj3;
+    [SerializeField] private GameObject w3day3Obj4;
+
+    private bool w3day3Obj1IsDone = false;
+    private bool w3day3Obj2IsDone = false;
+    private bool w3day3Obj3IsDone = false;
+    private bool w3day3Obj4IsDone = false;
+
+    TMP_Text w3day3Obj1text;
+    TMP_Text w3day3Obj2text;
+    TMP_Text w3day3Obj3text;
+    TMP_Text w3day3Obj4text;
+
+    [Header("Week 3, Day 4 Objectives")]
+
+    [SerializeField] private GameObject w3day4Obj1;
+    [SerializeField] private GameObject w3day4Obj2;
+    [SerializeField] private GameObject w3day4Obj3;
+
+    private bool w3day4Obj1IsDone = false;
+    private bool w3day4Obj2IsDone = false;
+    private bool w3day4Obj3IsDone = false;
+
+    TMP_Text w3day4Obj1text;
+    TMP_Text w3day4Obj2text;
+    TMP_Text w3day4Obj3text;
+
+    [Header("Week 3, Day 7 Objectives")]
+
+    [SerializeField] private GameObject w3day7Obj1;
+    [SerializeField] private GameObject w3day7Obj2;
+    [SerializeField] private GameObject w3day7Obj3;
+    [SerializeField] private GameObject w3day7Obj4;
+
+    private bool w3day7Obj1IsDone = false;
+    private bool w3day7Obj2IsDone = false;
+    private bool w3day7Obj3IsDone = false;
+    private bool w3day7Obj4IsDone = false;
+
+    TMP_Text w3day7Obj1text;
+    TMP_Text w3day7Obj2text;
+    TMP_Text w3day7Obj3text;
+    TMP_Text w3day7Obj4text;
+
+    [Header("Week 3, Day 8 Objectives")]
+
+    [SerializeField] private GameObject w3day8Obj1;
+    [SerializeField] private GameObject w3day8Obj2;
+    [SerializeField] private GameObject w3day8Obj3;
+    [SerializeField] private GameObject w3day8Obj4;
+
+    private bool w3day8Obj1IsDone = false;
+    private bool w3day8Obj2IsDone = false;
+    private bool w3day8Obj3IsDone = false;
+    private bool w3day8Obj4IsDone = false;
+
+    TMP_Text w3day8Obj1text;
+    TMP_Text w3day8Obj2text;
+    TMP_Text w3day8Obj3text;
+    TMP_Text w3day8Obj4text;
+
+    [Header("Week 3, Day 10 Objectives")]
+
+    [SerializeField] private GameObject w3day10Obj1;
+    [SerializeField] private GameObject w3day10Obj2;
+
+    private bool w3day10Obj1IsDone = false;
+    private bool w3day10Obj2IsDone = false;
+
+    TMP_Text w3day10Obj1text;
+    TMP_Text w3day10Obj2text;
+
+    [Header("Week 4, Day 1 Objectives")]
+
+    [SerializeField] private GameObject w4day1Obj1;
+    [SerializeField] private GameObject w4day1Obj2;
+    [SerializeField] private GameObject w4day1Obj3;
+
+    private bool w4day1Obj1IsDone = false;
+    private bool w4day1Obj2IsDone = false;
+    private bool w4day1Obj3IsDone = false;
+
+    TMP_Text w4day1Obj1text;
+    TMP_Text w4day1Obj2text;
+    TMP_Text w4day1Obj3text;
+
+    [Header("Week 4, Day 2 Objectives")]
+
+    [SerializeField] private GameObject w4day2Obj1;
+    [SerializeField] private GameObject w4day2Obj2;
+    [SerializeField] private GameObject w4day2Obj3;
+
+    private bool w4day2Obj1IsDone = false;
+    private bool w4day2Obj2IsDone = false;
+    private bool w4day2Obj3IsDone = false;
+
+    TMP_Text w4day2Obj1text;
+    TMP_Text w4day2Obj2text;
+    TMP_Text w4day2Obj3text;
+
+    [Header("Week 4, Day 3 Objectives")]
+
+    [SerializeField] private GameObject w4day3Obj1;
+    [SerializeField] private GameObject w4day3Obj2;
+    [SerializeField] private GameObject w4day3Obj3;
+    [SerializeField] private GameObject w4day3Obj4;
+
+    private bool w4day3Obj1IsDone = false;
+    private bool w4day3Obj2IsDone = false;
+    private bool w4day3Obj3IsDone = false;
+    private bool w4day3Obj4IsDone = false;
+
+    TMP_Text w4day3Obj1text;
+    TMP_Text w4day3Obj2text;
+    TMP_Text w4day3Obj3text;
+    TMP_Text w4day3Obj4text;
+
+    [Header("Week 4, Day 4 Objectives")]
+
+    [SerializeField] private GameObject w4day4Obj1;
+    [SerializeField] private GameObject w4day4Obj2;
+    [SerializeField] private GameObject w4day4Obj3;
+
+    private bool w4day4Obj1IsDone = false;
+    private bool w4day4Obj2IsDone = false;
+    private bool w4day4Obj3IsDone = false;
+
+    TMP_Text w4day4Obj1text;
+    TMP_Text w4day4Obj2text;
+    TMP_Text w4day4Obj3text;
+
+    [Header("Week 4, Day 7 Objectives")]
+
+    [SerializeField] private GameObject w4day7Obj1;
+    [SerializeField] private GameObject w4day7Obj2;
+    [SerializeField] private GameObject w4day7Obj3;
+    [SerializeField] private GameObject w4day7Obj4;
+
+    private bool vday7Obj1IsDone = false;
+    private bool w4day7Obj2IsDone = false;
+    private bool vday7Obj3IsDone = false;
+    private bool w4day7Obj4IsDone = false;
+
+    TMP_Text w4day7Obj1text;
+    TMP_Text w4day7Obj2text;
+    TMP_Text w4day7Obj3text;
+    TMP_Text w4day7Obj4text;
+
+    [Header("Week 4, Day 8 Objectives")]
+
+    [SerializeField] private GameObject w4day8Obj1;
+    [SerializeField] private GameObject w4day8Obj2;
+    [SerializeField] private GameObject w4day8Obj3;
+    [SerializeField] private GameObject w4day8Obj4;
+
+    private bool w4day8Obj1IsDone = false;
+    private bool w4day8Obj2IsDone = false;
+    private bool w4day8Obj3IsDone = false;
+    private bool w4day8Obj4IsDone = false;
+
+    TMP_Text w4day8Obj1text;
+    TMP_Text w4day8Obj2text;
+    TMP_Text w4day8Obj3text;
+    TMP_Text w4day8Obj4text;
+
+    [Header("Week 4, Day 10 Objectives")]
+
+    [SerializeField] private GameObject w4day10Obj1;
+    [SerializeField] private GameObject w4day10Obj2;
+
+    private bool w4day10Obj1IsDone = false;
+    private bool w4day10Obj2IsDone = false;
+
+    TMP_Text w4day10Obj1text;
+    TMP_Text w4day10Obj2text;
+
+    [Header("Week 5, Day 1 Objectives")]
+
+    [SerializeField] private GameObject w5day1Obj1;
+    [SerializeField] private GameObject w5day1Obj2;
+    [SerializeField] private GameObject w5day1Obj3;
+
+    private bool w5day1Obj1IsDone = false;
+    private bool w5day1Obj2IsDone = false;
+    private bool w5day1Obj3IsDone = false;
+
+    TMP_Text w5day1Obj1text;
+    TMP_Text w5day1Obj2text;
+    TMP_Text w5day1Obj3text;
+
+    [Header("Week 5, Day 2 Objectives")]
+
+    [SerializeField] private GameObject w5day2Obj1;
+    [SerializeField] private GameObject w5day2Obj2;
+    [SerializeField] private GameObject w5day2Obj3;
+
+    private bool w5day2Obj1IsDone = false;
+    private bool w5day2Obj2IsDone = false;
+    private bool w5day2Obj3IsDone = false;
+
+    TMP_Text w5day2Obj1text;
+    TMP_Text w5day2Obj2text;
+    TMP_Text w5day2Obj3text;
+
+    [Header("Week 5, Day 3 Objectives")]
+
+    [SerializeField] private GameObject w5day3Obj1;
+    [SerializeField] private GameObject w5day3Obj2;
+    [SerializeField] private GameObject w5day3Obj3;
+    [SerializeField] private GameObject w5day3Obj4;
+
+    private bool w5day3Obj1IsDone = false;
+    private bool w5day3Obj2IsDone = false;
+    private bool w5day3Obj3IsDone = false;
+    private bool w5day3Obj4IsDone = false;
+
+    TMP_Text w5day3Obj1text;
+    TMP_Text w5day3Obj2text;
+    TMP_Text w5day3Obj3text;
+    TMP_Text w5day3Obj4text;
+
+    [Header("Week 5, Day 4 Objectives")]
+
+    [SerializeField] private GameObject w5day4Obj1;
+    [SerializeField] private GameObject w5day4Obj2;
+    [SerializeField] private GameObject w5day4Obj3;
+
+    private bool w5day4Obj1IsDone = false;
+    private bool w5day4Obj2IsDone = false;
+    private bool w5day4Obj3IsDone = false;
+
+    TMP_Text w5day4Obj1text;
+    TMP_Text w5day4Obj2text;
+    TMP_Text w5day4Obj3text;
+
+    [Header("Week 5, Day 7 Objectives")]
+
+    [SerializeField] private GameObject w5day7Obj1;
+    [SerializeField] private GameObject w5day7Obj2;
+    [SerializeField] private GameObject w5day7Obj3;
+    [SerializeField] private GameObject w5day7Obj4;
+
+    private bool w5day7Obj1IsDone = false;
+    private bool w5day7Obj2IsDone = false;
+    private bool w5day7Obj3IsDone = false;
+    private bool w5day7Obj4IsDone = false;
+
+    TMP_Text w5day7Obj1text;
+    TMP_Text w5day7Obj2text;
+    TMP_Text w5day7Obj3text;
+    TMP_Text w5day7Obj4text;
+
+    [Header("Week 5, Day 10 Objectives")]
+
+    [SerializeField] private GameObject w5day10Obj1;
+    [SerializeField] private GameObject w5day10Obj2;
+
+    private bool w5day10Obj1IsDone = false;
+    private bool w5day10Obj2IsDone = false;
+
+    TMP_Text w5day10Obj1text;
+    TMP_Text w5day10Obj2text;
+
     [Header("Day by Day Headings")]
 
     [SerializeField] private GameObject day1All;
@@ -97,11 +518,37 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day4All;
     [SerializeField] private GameObject day7All;
     [SerializeField] private GameObject day8All;
+    [SerializeField] private GameObject day10All;
+
+    [SerializeField] private GameObject day14All;
+    [SerializeField] private GameObject day15All;
+    [SerializeField] private GameObject day16All;
+    [SerializeField] private GameObject day20All;
+    [SerializeField] private GameObject day21All;
+    [SerializeField] private GameObject day24All;
+
+    [SerializeField] private GameObject day30All;
+    [SerializeField] private GameObject day31All;
+    [SerializeField] private GameObject day32All;
+    [SerializeField] private GameObject day35All;
+    [SerializeField] private GameObject day36All;
+    [SerializeField] private GameObject day39All;
+
+    [SerializeField] private GameObject day42All;
+    [SerializeField] private GameObject day43All;
+    [SerializeField] private GameObject day44All;
+    [SerializeField] private GameObject day47All;
+    [SerializeField] private GameObject day48All;
+    [SerializeField] private GameObject day50All;
+
+    [SerializeField] private GameObject day55All;
+    [SerializeField] private GameObject day56All;
+    [SerializeField] private GameObject day57All;
+    [SerializeField] private GameObject day60All;
 
     [Header("script references")]
     [SerializeField] private DayCounter dayCounter;
     [SerializeField] private startdaycount startDayCount;
-
 
     [Header("Log off Button")]
     [SerializeField] private GameObject logOffButton;
@@ -109,14 +556,41 @@ public class ObjectiveCounter : MonoBehaviour
 
     [Header("day Specific Objects")]
     [SerializeField] private GameObject Friend1;
+    [SerializeField] private GameObject Friend2;
+    [SerializeField] private GameObject Friend3;
+    [SerializeField] private GameObject Friend4;
+    [SerializeField] private GameObject Friend5;
 
     [SerializeField] private GameObject Sheep1;
+    [SerializeField] private GameObject Sheep2;
+    [SerializeField] private GameObject Sheep3;
+    [SerializeField] private GameObject Sheep4;
+    [SerializeField] private GameObject Sheep5;
+
     [SerializeField] private GameObject sheep1Trapped;
+    [SerializeField] private GameObject sheep2Trapped;
+    [SerializeField] private GameObject sheep3Trapped;
+    [SerializeField] private GameObject sheep4Trapped;
+    [SerializeField] private GameObject sheep5Trapped;
+
+    [SerializeField] private GameObject Customer1;
+    [SerializeField] private GameObject Customer2;
+    [SerializeField] private GameObject Customer3;
+    [SerializeField] private GameObject Customer4;
 
     [SerializeField] private GameObject Profile1;
+    [SerializeField] private GameObject Profile2;
+    [SerializeField] private GameObject Profile3;
+    [SerializeField] private GameObject Profile4;
+    [SerializeField] private GameObject Profile5;
+
     [SerializeField] private GameObject TaxesButton;
     [SerializeField] private GameObject noTaxes;
+
     [SerializeField] private GameObject policeAlert1;
+    [SerializeField] private GameObject policeAlert2;
+    [SerializeField] private GameObject policeAlert3;
+    [SerializeField] private GameObject policeAlert4;
 
     [SerializeField] private GameObject policeNotification;
     [SerializeField] private GameObject messageNotification;
@@ -132,12 +606,49 @@ public class ObjectiveCounter : MonoBehaviour
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
 
+    private float transTime = 5f;
+
     [Header("Day checkers")]
     [SerializeField] private bool day1IsComplete;
     [SerializeField] private bool day2IsComplete;
     [SerializeField] private bool day3IsComplete;
     [SerializeField] private bool day7IsComplete;
+    [SerializeField] private bool day8IsComplete;
+    [SerializeField] private bool day10IsComplete;
 
+    // week 4 - medium week
+
+    [SerializeField] private bool day14IsComplete;
+    [SerializeField] private bool day15IsComplete;
+    [SerializeField] private bool day16IsComplete;
+    [SerializeField] private bool day20IsComplete;
+    [SerializeField] private bool day21IsComplete;
+    [SerializeField] private bool day24IsComplete;
+
+    // week 3 - hard week
+
+    [SerializeField] private bool day30IsComplete;
+    [SerializeField] private bool day31IsComplete;
+    [SerializeField] private bool day32IsComplete;
+    [SerializeField] private bool day35IsComplete;
+    [SerializeField] private bool day36IsComplete;
+    [SerializeField] private bool day39IsComplete;
+    
+    // week 4 - hardest week
+
+    [SerializeField] private bool day42IsComplete;
+    [SerializeField] private bool day43IsComplete;
+    [SerializeField] private bool day44IsComplete;
+    [SerializeField] private bool day47IsComplete;
+    [SerializeField] private bool day48IsComplete;
+    [SerializeField] private bool day50IsComplete;
+
+    // week 5 - arrest week
+
+    [SerializeField] private bool day55IsComplete;
+    [SerializeField] private bool day56IsComplete;
+    [SerializeField] private bool day57IsComplete;
+    [SerializeField] private bool day60IsComplete;
 
     private void Start()
     {
@@ -184,8 +695,6 @@ public class ObjectiveCounter : MonoBehaviour
         livestockRoomDoor.gameObject.SetActive(true);
         
     }
-
-
 
 private void Update()
     {
@@ -553,7 +1062,9 @@ private void Update()
     {
         if (dayCounter.dayCount == 7)
         {
-
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            dayCounter.ChangeDay();
+            startDayCount.ShowDate();
         }
     }
 
@@ -590,5 +1101,17 @@ private void Update()
     {
         Friend1.gameObject.SetActive(true);
         noFriendsAlert.gameObject.SetActive(false);
+    }
+
+    public void transition()
+    {
+        StartCoroutine(Day7transition());
+    }
+
+    IEnumerator Day7transition()
+    {
+        gameObject.GetComponent<sheepDay7>().enabled = true;
+        yield return new WaitForSeconds(transTime);
+        gameObject.GetComponent<sheepDay7>().enabled = false;
     }
 }
