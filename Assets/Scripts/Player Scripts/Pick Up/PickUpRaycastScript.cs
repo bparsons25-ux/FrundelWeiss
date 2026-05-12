@@ -16,7 +16,7 @@ public class PickUpRaycastScript : MonoBehaviour
 
     [SerializeField] private GameObject inHandItem;
 
-    private bool canPickUp = true;
+    public static bool canPickUp = true;
 
 
 

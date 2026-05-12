@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7728437053042220770}
   - component: {fileID: 5787375546844543596}
   - component: {fileID: 697123413891534184}
+  - component: {fileID: 947436779143402811}
   m_Layer: 8
   m_Name: Dead sheep
-  m_TagString: Untagged
+  m_TagString: Dead Sheep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,3 +163,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &947436779143402811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917909170443929054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8, y: 1.6, z: 2.5}
+  m_Center: {x: -0.017252037, y: 0.70195496, z: -0.066147715}

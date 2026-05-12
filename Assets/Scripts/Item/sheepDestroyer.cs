@@ -5,13 +5,25 @@ public class sheepDestroyer : MonoBehaviour
 
     [SerializeField] private ObjectiveCounter counter;
     [SerializeField] private DayCounter dayCounter;
+    [SerializeField] private PickUpRaycastScript pickUpRaycastScript;
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (dayCounter.dayCount == 8 && collision.CompareTag("Dead Sheep"))
+        if (collision.CompareTag("Dead Sheep"))
         {
-            counter.d8o1complete();
+            Destroy(collision.gameObject);
+            PickUpRaycastScript.canPickUp = true;
+
+            if (dayCounter.dayCount == 8)
+            {
+                counter.d8o1complete();
+            }
         }
+
+
+
+
+
 
     }
 

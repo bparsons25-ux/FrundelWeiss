@@ -12,6 +12,7 @@ public class OrganJars : MonoBehaviour
 
     [SerializeField] private DayCounter dayCounter;
     [SerializeField] private ObjectiveCounter objective;
+    [SerializeField] private PickUpRaycastScript pickUpRaycastScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +38,7 @@ public class OrganJars : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
             Instantiate(heartJar, jarPos.position, transform.rotation);
+            PickUpRaycastScript.canPickUp = true;
 
             if (dayCounter.dayCount == 7)
             {
@@ -49,6 +51,7 @@ public class OrganJars : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
             Instantiate(liverJar, jarPos.position, transform.rotation);
+            PickUpRaycastScript.canPickUp = true;
         }
 
         if (collision.CompareTag("leftKidney"))
@@ -56,12 +59,14 @@ public class OrganJars : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
             Instantiate(leftKidenyJar, jarPos.position, transform.rotation);
+            PickUpRaycastScript.canPickUp = true;
         }
         if (collision.CompareTag("rightKidney"))
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
             Instantiate(rightKidneyJar, jarPos.position, transform.rotation);
+            PickUpRaycastScript.canPickUp = true;
         }
     }
 

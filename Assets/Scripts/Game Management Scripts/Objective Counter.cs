@@ -58,7 +58,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day4Obj2;
     [SerializeField] private GameObject day4Obj3;
 
-    private bool day4Obj1IsDone = false;
+    public bool day4Obj1IsDone = false;
     private bool day4Obj2IsDone = false;
     private bool day4Obj3IsDone = false;
 
@@ -90,7 +90,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day8Obj3;
     [SerializeField] private GameObject day8Obj4;
 
-    private bool day8Obj1IsDone = false;
+    public bool day8Obj1IsDone = false;
     private bool day8Obj2IsDone = false;
     private bool day8Obj3IsDone = false;
     private bool day8Obj4IsDone = false;
@@ -162,7 +162,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject w2day4Obj2;
     [SerializeField] private GameObject w2day4Obj3;
 
-    private bool w2day4Obj1IsDone = false;
+    public bool w2day4Obj1IsDone = false;
     private bool w2day4Obj2IsDone = false;
     private bool w2day4Obj3IsDone = false;
 
@@ -194,7 +194,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject w2day8Obj3;
     [SerializeField] private GameObject w2day8Obj4;
 
-    private bool w2day8Obj1IsDone = false;
+    public bool w2day8Obj1IsDone = false;
     private bool w2day8Obj2IsDone = false;
     private bool w2day8Obj3IsDone = false;
     private bool w2day8Obj4IsDone = false;
@@ -606,7 +606,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject noFriendsAlert;
     [SerializeField] private GameObject noFriendsSuggestedAlert;
 
-    [SerializeField] private GameObject Frontdoor;
+    [SerializeField] private FrontDoor frontDoor;
     [SerializeField] private GameObject livestockRoomDoor;
 
     [Header("dialogue")]
@@ -733,7 +733,7 @@ public class ObjectiveCounter : MonoBehaviour
         day58IsComplete = false;
         day60IsComplete = false;
        
-        Frontdoor.gameObject.SetActive(true);
+
         livestockRoomDoor.gameObject.SetActive(true);
         
     }
@@ -1415,11 +1415,11 @@ private void Update()
         {
             // sheep wail SFX goes here
             day3SheepDialogue.gameObject.SetActive(false);
-            Frontdoor.gameObject.SetActive(true);
             dayCounter.dayCount = 7;
             startDayCount.ShowDate();
             PoliceAlert1();
             sheep1Trapped.gameObject.SetActive(true);
+            frontDoor.canOpen = false;
         }
     }
 
@@ -1440,6 +1440,7 @@ private void Update()
         dayCounter.dayCount = 10;
         startDayCount.ShowDate();
         Police1.gameObject.SetActive(true);
+        frontDoor.canOpen = false;
     }
 
     public void day2alert()

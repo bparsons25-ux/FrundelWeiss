@@ -7766,6 +7766,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -7773,6 +7781,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8287,6 +8299,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -8294,6 +8314,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15882,6 +15906,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -15889,6 +15921,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18997,6 +19033,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -19004,6 +19048,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24566,6 +24614,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -24573,6 +24629,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25238,6 +25298,7 @@ RectTransform:
   - {fileID: 668393208}
   - {fileID: 1445177987}
   - {fileID: 1428047418}
+  - {fileID: 1673643645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -31382,6 +31443,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -31389,6 +31458,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37788,6 +37861,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -37795,6 +37876,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41064,7 +41149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921462648}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NPCspawning, Assembly-CSharp
         m_MethodName: SpawnDecrease
         m_Mode: 1
@@ -41251,7 +41336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921462648}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NPCspawning, Assembly-CSharp
         m_MethodName: SpawnIncrease
         m_Mode: 1
@@ -42218,6 +42303,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -42225,6 +42318,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44396,33 +44493,9 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921462652}
-        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
-        m_MethodName: d4o2complete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 697182367}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 921462652}
-        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
-        m_MethodName: d8o2complete
+      - m_Target: {fileID: 697182386}
+        m_TargetAssemblyTypeName: FrontDoor, Assembly-CSharp
+        m_MethodName: OpenDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44446,6 +44519,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 1
   promptMessage: LMB (Open Door)
+--- !u!114 &697182386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697182367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f53be9be53a9447874c522257639ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canOpen: 0
+  dayCounter: {fileID: 921462650}
+  objectiveCounter: {fileID: 921462652}
+  LockedAlert: {fileID: 1673643644}
 --- !u!1 &697210361
 GameObject:
   m_ObjectHideFlags: 0
@@ -47284,6 +47373,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -47291,6 +47388,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52531,6 +52632,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -52538,6 +52647,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53359,6 +53472,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -53366,6 +53487,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59926,14 +60051,11 @@ GameObject:
   - component: {fileID: 921462645}
   - component: {fileID: 921462646}
   - component: {fileID: 921462647}
-  - component: {fileID: 921462648}
-  - component: {fileID: 921462649}
   - component: {fileID: 921462650}
   - component: {fileID: 921462651}
   - component: {fileID: 921462652}
   - component: {fileID: 921462653}
   - component: {fileID: 921462654}
-  - component: {fileID: 921462655}
   - component: {fileID: 921462656}
   m_Layer: 0
   m_Name: Game Manager
@@ -60049,68 +60171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limit: 0
---- !u!114 &921462648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921462641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cfa99e1760a1c41b675cdc60816462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npcsToSpawn:
-  - {fileID: 2375426493798006421, guid: a04e602d22eaae1489c7f58ff1b5bdfb, type: 3}
-  - {fileID: 4026086584782447393, guid: f547ae958b9eab740aaad091c76213ec, type: 3}
-  - {fileID: 3409903507020390249, guid: d6cc07a14fb1dd04abef49e724b15243, type: 3}
-  - {fileID: 2375426493798006421, guid: a04e602d22eaae1489c7f58ff1b5bdfb, type: 3}
-  - {fileID: 3409903507020390249, guid: d6cc07a14fb1dd04abef49e724b15243, type: 3}
-  - {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
-  spawnPos: {fileID: 1978445259}
-  timeToNextSpawn: 0
-  timesinceLastSpawn: 0
-  minSpawnTime: 30
-  maxSpawnTime: 60
-  canSpawnNPC: 0
-  BlankNPC: {fileID: 6914855201006343015, guid: 5a154a16045f17f4fb87341bb2bd89e1, type: 3}
---- !u!114 &921462649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921462641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e78adeeb0483d764c8bbd85c5fe62282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fatCustomer: {fileID: 2375426494574149993}
-  skinnyCustomer: {fileID: 0}
-  fatCustomer2: {fileID: 0}
-  policeOfficer: {fileID: 0}
-  skinnyCustomer2: {fileID: 0}
-  policeOfficer2: {fileID: 0}
-  fatCustomerIsActive: 0
-  fatCustomer2IsActive: 0
-  skinnyCustomerIsActive: 0
-  policeOfficer1IsActive: 0
-  skinnyCustomer2IsActive: 0
-  policeOfficer2IsActive: 0
-  saleIsDone: 0
-  sellingArea: {fileID: 1126675762}
-  moneyManager: {fileID: 921462642}
-  customer1Sold: 0
-  customer2Sold: 0
-  customer3Sold: 0
-  policeBribed: 0
-  customer4Sold: 0
-  police2Bribed: 0
-  timeuntilSpawn1: 0
-  spawnCount: 0
-  demoEndCanvas: {fileID: 0}
 --- !u!114 &921462650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60171,6 +60231,7 @@ MonoBehaviour:
   day4Obj1: {fileID: 912345517}
   day4Obj2: {fileID: 686815533}
   day4Obj3: {fileID: 1397521705}
+  day4Obj1IsDone: 0
   day7Obj1: {fileID: 381286557}
   day7Obj2: {fileID: 674167932}
   day7Obj3: {fileID: 1600561959}
@@ -60179,6 +60240,7 @@ MonoBehaviour:
   day8Obj2: {fileID: 782927275}
   day8Obj3: {fileID: 310148213}
   day8Obj4: {fileID: 378535698}
+  day8Obj1IsDone: 0
   day10Obj1: {fileID: 1727479303}
   day10Obj2: {fileID: 645408902}
   w2day1Obj1: {fileID: 2071499959}
@@ -60194,6 +60256,7 @@ MonoBehaviour:
   w2day4Obj1: {fileID: 1728981694}
   w2day4Obj2: {fileID: 1499350109}
   w2day4Obj3: {fileID: 1243014010}
+  w2day4Obj1IsDone: 0
   w2day7Obj1: {fileID: 1975875269}
   w2day7Obj2: {fileID: 1055921091}
   w2day7Obj3: {fileID: 150168832}
@@ -60202,6 +60265,7 @@ MonoBehaviour:
   w2day8Obj2: {fileID: 526727711}
   w2day8Obj3: {fileID: 1501215296}
   w2day8Obj4: {fileID: 2017353576}
+  w2day8Obj1IsDone: 0
   w2day10Obj1: {fileID: 94542286}
   w2day10Obj2: {fileID: 80232994}
   w3day1Obj1: {fileID: 1159503664}
@@ -60343,7 +60407,7 @@ MonoBehaviour:
   taxesNotification: {fileID: 168406925}
   noFriendsAlert: {fileID: 1747312294}
   noFriendsSuggestedAlert: {fileID: 217487134}
-  Frontdoor: {fileID: 697182367}
+  frontDoor: {fileID: 0}
   livestockRoomDoor: {fileID: 206907433}
   day3SheepDialogue: {fileID: 288267032}
 --- !u!114 &921462653
@@ -60374,22 +60438,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 453227628}
   ObjectiveCounter: {fileID: 921462652}
---- !u!114 &921462655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921462641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f53be9be53a9447874c522257639ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canOpen: 0
-  isOpen: 0
-  openPos: {fileID: 225749461}
-  closePos: {fileID: 1705440773}
 --- !u!114 &921462656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63341,6 +63389,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -63348,6 +63404,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64869,6 +64929,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -64876,6 +64944,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68866,7 +68938,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921462648}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NPCspawning, Assembly-CSharp
         m_MethodName: ForceSpawnNPC
         m_Mode: 1
@@ -74906,7 +74978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647de706fb3edee41ba395dab0a6be59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcsystem: {fileID: 921462649}
+  npcsystem: {fileID: 0}
 --- !u!65 &1126675768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75751,6 +75823,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -75758,6 +75838,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78435,6 +78519,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -78442,6 +78534,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79283,6 +79379,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -79290,6 +79394,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80286,6 +80394,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -80293,6 +80409,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91617,6 +91737,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -91624,6 +91752,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92077,6 +92209,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -92084,6 +92224,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93287,6 +93431,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -93294,6 +93446,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -94669,6 +94825,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -94676,6 +94840,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106338,6 +106506,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -106345,6 +106521,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106788,6 +106968,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 697182384}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 697182386}
   m_SourcePrefab: {fileID: 100100000, guid: 0fba94a82b728e942beea93c457585e0, type: 3}
 --- !u!1 &1640686028
 GameObject:
@@ -109326,6 +109509,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671319826}
+  m_CullTransparentMesh: 1
+--- !u!1 &1673643644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673643645}
+  - component: {fileID: 1673643647}
+  - component: {fileID: 1673643646}
+  m_Layer: 5
+  m_Name: Door is Locked Alert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1673643645
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673643644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 381637372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 23.6}
+  m_SizeDelta: {x: 600, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1673643646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673643644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Cannot Open! (Door is Locked)
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1673643647
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673643644}
   m_CullTransparentMesh: 1
 --- !u!1 &1675102368
 GameObject:
@@ -111931,6 +112250,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -111938,6 +112265,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -116059,6 +116390,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -116066,6 +116405,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121165,6 +121508,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -121172,6 +121523,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -130514,6 +130869,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -130521,6 +130884,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -130998,6 +131365,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -131005,6 +131380,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -141176,6 +141555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: {fileID: 921462652}
   dayCounter: {fileID: 921462650}
+  pickUpRaycastScript: {fileID: 5589523835079840839}
 --- !u!1001 &2124893015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141241,6 +141621,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -141248,6 +141636,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144363,6 +144755,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4378050413684970729, guid: b62f060c88f85c849916d520c1fbb428, type: 3}
     - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 921462652}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: dayCounter
+      value: 
+      objectReference: {fileID: 921462650}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
       propertyPath: leftKidenyJar
       value: 
       objectReference: {fileID: 1861298369391777082, guid: 3c98b1399979e824bb6de4121b6be8b7, type: 3}
@@ -144370,6 +144770,10 @@ PrefabInstance:
       propertyPath: rightKidneyJar
       value: 
       objectReference: {fileID: 5955809031127166, guid: 863a6bf0c2a16f54f9b18f32485880bd, type: 3}
+    - target: {fileID: 8359909236438407585, guid: 2ba070448b74eb94fb5b683ce1d8e66d, type: 3}
+      propertyPath: pickUpRaycastScript
+      value: 
+      objectReference: {fileID: 5589523835079840839}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144874,7 +145278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaypointMovement1: {fileID: 3212266524713250961}
   WaypointMovement2: {fileID: 3212266524713250960}
-  NPCsystem: {fileID: 921462649}
+  NPCsystem: {fileID: 0}
 --- !u!224 &3215611925257127009
 RectTransform:
   m_ObjectHideFlags: 0

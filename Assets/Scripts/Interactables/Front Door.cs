@@ -7,53 +7,90 @@ using UnityEngine.UIElements;
 
 public class FrontDoor : MonoBehaviour
 {
+    public bool canOpen = false;
+    [SerializeField] private DayCounter dayCounter;
+    [SerializeField] private ObjectiveCounter objectiveCounter;
 
-    public bool canOpen;
-    public bool isOpen;
-
-
-    public Transform openPos;
-    public Transform closePos;
+    [SerializeField] private GameObject LockedAlert;
+    private float waitfordoorLock = 3f;
 
     private void Start()
     {
-        canOpen = true;
-        isOpen = false;
-
-
-
+        canOpen = false;
+        LockedAlert.gameObject.SetActive(false);
     }
-
     private void Update()
     {
-        if (isOpen == false)
+        if (canOpen == false)
         {
-            gameObject.transform.position = closePos.transform.position;
-            gameObject.transform.rotation = closePos.transform.rotation;
+            gameObject.SetActive(true);
+            Debug.Log("Door is Locked!!!");
         }
-
-        if (isOpen == true)
-        {
-            gameObject.transform.position = openPos.transform.position;
-            gameObject.transform.rotation = openPos.transform.rotation;
-        }
-
     }
-
     public void OpenDoor()
     {
-        if (isOpen == false)
+        // week 1
+
+        if (dayCounter.dayCount == 4)
         {
-            isOpen = true;
+            canOpen = true;
+            
+            if (objectiveCounter.day4Obj1IsDone == true)
+            {
+                gameObject.SetActive(false);
+                objectiveCounter.d4o2complete();
+            }
+
         }
 
-        if (isOpen == true)
+        if (dayCounter.dayCount == 8)
         {
-            isOpen = false;
-        }
- 
+            canOpen = true;
 
-        
+            if (objectiveCounter.day8Obj1IsDone == true)
+            {
+                gameObject.SetActive(false);
+                objectiveCounter.d8o2complete();
+            }
+
+        }
+
+        // week 2
+
+        if (dayCounter.dayCount == 17)
+        {
+            canOpen = true;
+
+            if (objectiveCounter.w2day4Obj1IsDone == true)
+            {
+                gameObject.SetActive(false);
+                // week 2 day 4 objective 2 complete
+            }
+        }
+
+        if (dayCounter.dayCount == 21)
+        {
+            canOpen = true;
+
+            if (objectiveCounter.w2day8Obj1IsDone == true)
+            {
+                gameObject.SetActive(false);
+                // week 2 day 8 objective 3 compelete
+            }
+        }
+
+        if (canOpen == false)
+        {
+            StartCoroutine(DoorisLOcked());
+        }
     }
+
+    IEnumerator DoorisLOcked()
+    {
+        LockedAlert.gameObject.SetActive(true);
+        yield return new WaitForSeconds(waitfordoorLock);
+        LockedAlert.gameObject.SetActive(false);
+    }
+
 
 }
