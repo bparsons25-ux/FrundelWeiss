@@ -523,6 +523,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day14All;
     [SerializeField] private GameObject day15All;
     [SerializeField] private GameObject day16All;
+    [SerializeField] private GameObject day17All;
     [SerializeField] private GameObject day20All;
     [SerializeField] private GameObject day21All;
     [SerializeField] private GameObject day24All;
@@ -530,6 +531,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day30All;
     [SerializeField] private GameObject day31All;
     [SerializeField] private GameObject day32All;
+    [SerializeField] private GameObject day33All;
     [SerializeField] private GameObject day35All;
     [SerializeField] private GameObject day36All;
     [SerializeField] private GameObject day39All;
@@ -537,6 +539,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day42All;
     [SerializeField] private GameObject day43All;
     [SerializeField] private GameObject day44All;
+    [SerializeField] private GameObject day45All;
     [SerializeField] private GameObject day47All;
     [SerializeField] private GameObject day48All;
     [SerializeField] private GameObject day50All;
@@ -544,6 +547,7 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject day55All;
     [SerializeField] private GameObject day56All;
     [SerializeField] private GameObject day57All;
+    [SerializeField] private GameObject day58All;
     [SerializeField] private GameObject day60All;
 
     [Header("script references")]
@@ -1420,6 +1424,7 @@ private void Update()
             PoliceAlert1();
             sheep1Trapped.gameObject.SetActive(true);
             frontDoor.canOpen = false;
+            Sheep1.gameObject.SetActive(false);
         }
     }
 

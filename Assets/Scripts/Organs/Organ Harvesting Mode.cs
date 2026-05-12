@@ -72,10 +72,14 @@ public class OrganHarvestingMode : MonoBehaviour
 
     public Transform sheepDeathPos;
     public GameObject sheepObject;
+    public GameObject Player;
+    public Transform organHarvestPos;
 
     [Header("other script References")]
     [SerializeField] private ObjectiveCounter objectivecounter;
     [SerializeField] private DayCounter daycounter;
+
+
 
     private bool sheepIsDead;
 
@@ -229,7 +233,7 @@ public class OrganHarvestingMode : MonoBehaviour
 
         if (sheepIsDead == true)
         {
-            Instantiate(sheepObject, sheep1.transform.position, transform.rotation);
+            Instantiate(sheepObject, sheepDeathPos.transform.position, transform.rotation);
         }
     }
 
@@ -302,9 +306,13 @@ public class OrganHarvestingMode : MonoBehaviour
         timeBeforeDeath = 60f;
         harvestingUserInterface.gameObject.SetActive(true);
         Debug.Log("Called Organ Harvest");
+        MovePlayer();
     }
 
-
+    public void MovePlayer()
+    {
+        Player.transform.position = organHarvestPos.transform.position;
+    }
 
 
 

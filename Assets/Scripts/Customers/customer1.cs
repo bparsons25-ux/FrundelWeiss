@@ -4,14 +4,17 @@ public class customer1 : MonoBehaviour
 {
     [SerializeField] private ObjectiveCounter counter;
     [SerializeField] private GeneralFunctions generalFunctions;
+    [SerializeField] private DayCounter dayCounter;
 
     [SerializeField] private WaypointMovement waypointMovement;
-    [SerializeField] private GoHomeWaypointMovement goHomeWaypointMovement;
+    [SerializeField] private PickUpRaycastScript pickUpRaycastScript;
+
+    [SerializeField] private CustomerOrderCountdown orderCountdown;
+    [SerializeField] private GameObject customerCountdownObject;
+
 
     [SerializeField] CustomerOrderCountdown customerOrderCountdown;
     [SerializeField] private GameObject customerCountDown;
-
-    [SerializeField] private GameObject heartJar;
 
     private void Start()
     {
@@ -20,9 +23,17 @@ public class customer1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Heart Jar"))
+        if (dayCounter.dayCount == 8)
         {
-            counter.d8o4complete();
+            if (collision.CompareTag("Heart Jar") && orderCountdown.remainingTime > 0)
+            {
+                counter.d8o4complete();
+                Destroy(collision.gameObject);
+                PickUpRaycastScript.canPickUp = true;
+                orderCountdown.remainingTime = 120;
+                customerCountDown.gameObject.SetActive(false);
+
+            }
         }
     }
 
