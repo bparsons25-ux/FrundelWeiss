@@ -126,8 +126,34 @@ public class MoneyManager : MonoBehaviour
     {
         money -= 150;
         moneyText.text = "$" + money.ToString();
+    }
 
+    public void Heartsale()
+    {
+        money += 200;
+        moneyText.text = "$" + money.ToString();
+        Debug.Log("Heart Sold");
+    }
 
+    public void leftKidneySale()
+    {
+        money += 75;
+        moneyText.text = "$" + money.ToString();
+        Debug.Log("Left Kidney Sold");
+    }
+
+    public void rightKidneySale()
+    {
+        money += 75;
+        moneyText.text = "$" + money.ToString();
+        Debug.Log("Right Kidney Sold");
+    }
+
+    public void LiverSale()
+    {
+        money += 75;
+        moneyText.text = "$" + money.ToString();
+        Debug.Log("Liver Sold");
     }
 
     public void taxesButtonNotInteract()

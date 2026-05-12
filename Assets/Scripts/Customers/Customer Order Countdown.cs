@@ -16,29 +16,21 @@ public class CustomerOrderCountdown : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (OrderisActive == true)
+        if (remainingTime > 0)
         {
-
-            if (remainingTime > 0)
-            {
-                remainingTime -= Time.deltaTime;
-            }
-
-            else if (remainingTime < 0)
-            {
-                remainingTime = 0;
-                timerText.color = Color.red;
-            }
-
-            int minutes = Mathf.FloorToInt(remainingTime / 60);
-            int seconds = Mathf.FloorToInt(remainingTime % 60);
-            timerText.text = remainingTime.ToString();
-            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            remainingTime -= Time.deltaTime;
         }
-    }
 
-    public void StartOrder()
-    {
-        OrderisActive = true;
+        else if (remainingTime < 0)
+        {
+            remainingTime = 0;
+            timerText.color = Color.red;
+        }
+
+        int minutes = Mathf.FloorToInt(remainingTime / 60);
+        int seconds = Mathf.FloorToInt(remainingTime % 60);
+        timerText.text = remainingTime.ToString();
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
     }
 }

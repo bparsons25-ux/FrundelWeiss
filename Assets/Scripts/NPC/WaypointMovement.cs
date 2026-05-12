@@ -7,7 +7,7 @@ public class WaypointMovement : MonoBehaviour
 {
     public List<GameObject> waypoints;
     public float speed = 2f;
-    int index = 0;
+    public int index = 0;
     public bool isLoop = false;
 
 

@@ -740,6 +740,10 @@ public class ObjectiveCounter : MonoBehaviour
 
         livestockRoomDoor.gameObject.SetActive(true);
         
+        Customer1.gameObject.SetActive(false);
+
+        Police1.gameObject.SetActive(false);
+
     }
 
 private void Update()
@@ -778,6 +782,18 @@ private void Update()
         {
             day7All.gameObject.SetActive(false);
             day8All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 10)
+        {
+            day8All.gameObject.SetActive(false);
+            day10All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 14)
+        {
+            day10All.gameObject.SetActive(false);
+            day14All.gameObject.SetActive(true);
         }
 
         if (dayCounter.dayCount == 1)
@@ -878,6 +894,18 @@ private void Update()
                             logOffReminder.gameObject.SetActive(true);
                         }
                     }
+                }
+            }
+        }
+
+        if (dayCounter.dayCount == 10)
+        {
+            if (day10Obj1IsDone == true)
+            {
+                if (day10Obj2IsDone == true)
+                {
+                    logOffButton.gameObject.GetComponent<Button>().interactable = true;
+                    logOffReminder.gameObject.SetActive(true);
                 }
             }
         }
@@ -1053,6 +1081,7 @@ private void Update()
             day7Obj4text = day7Obj4.gameObject.GetComponent<TMP_Text>();
             day7Obj4text.color = Color.green;
             day7Obj4IsDone = true;
+            day7IsComplete = true;
         }
     }
 
@@ -1093,6 +1122,18 @@ private void Update()
             day8Obj4text = day8Obj3.gameObject.GetComponent<TMP_Text>();
             day8Obj4text.color = Color.green;
             day8Obj4IsDone = true;
+            day8IsComplete = true;
+        }
+    }
+
+    public void d8o4incomplete()
+    {
+        if (dayCounter.dayCount == 8)
+        {
+            day8Obj4text = day8Obj3.gameObject.GetComponent<TMP_Text>();
+            day8Obj4text.color = Color.red;
+            day8Obj4IsDone = true;
+            day8IsComplete = true;
         }
     }
 
@@ -1423,6 +1464,7 @@ private void Update()
             startDayCount.ShowDate();
             PoliceAlert1();
             sheep1Trapped.gameObject.SetActive(true);
+            frontDoor.gameObject.SetActive(true);
             frontDoor.canOpen = false;
             Sheep1.gameObject.SetActive(false);
         }
@@ -1430,9 +1472,10 @@ private void Update()
 
     public void day7Complete()
     {
-        if (dayCounter.dayCount == 7)
+        if (dayCounter.dayCount == 7 && day7IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
             Customer1.gameObject.SetActive(true);
@@ -1441,11 +1484,33 @@ private void Update()
 
     public void day8Complete()
     {
-        logOffButton.gameObject.GetComponent<Button>().interactable = false;
-        dayCounter.dayCount = 10;
-        startDayCount.ShowDate();
-        Police1.gameObject.SetActive(true);
-        frontDoor.canOpen = false;
+        if (dayCounter.dayCount == 8 && day8IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            dayCounter.dayCount = 10;
+            startDayCount.ShowDate();
+            Police1.gameObject.SetActive(true);
+            frontDoor.gameObject.SetActive(true);
+            frontDoor.canOpen = false;
+            Police1.gameObject.SetActive(true);
+            dayCounter.ChangeDay();
+            startDayCount.ShowDate();
+        }
+    }
+
+    public void day10Complete()
+    {
+        if (dayCounter.dayCount == 10)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            dayCounter.dayCount = 14;
+            startDayCount.ShowDate();
+            Police1.gameObject.SetActive(true);
+            frontDoor.canOpen = false;
+            Police1.gameObject.SetActive(true);
+            dayCounter.ChangeDay();
+            startDayCount.ShowDate();
+        }
     }
 
     public void day2alert()
