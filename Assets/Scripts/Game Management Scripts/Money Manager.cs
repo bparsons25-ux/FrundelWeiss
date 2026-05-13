@@ -156,6 +156,13 @@ public class MoneyManager : MonoBehaviour
         Debug.Log("Liver Sold");
     }
 
+    public void Bribe()
+    {
+        money += 150;
+        moneyText.text = "$" + money.ToString();
+        Debug.Log("Liver Sold");
+    }
+
     public void taxesButtonNotInteract()
     {
         taxesbutton.gameObject.GetComponent<Button>().interactable = false;

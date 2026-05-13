@@ -56,8 +56,6 @@ public class customer1 : MonoBehaviour
             OrderFailed();
         }
 
-
-
         if (waypointMovement1.index == 2)
         {
             FrontDoorobject.gameObject.SetActive(false);         // Before Sale - Opens Front Door.
