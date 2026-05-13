@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -18,6 +19,10 @@ public class customer1 : MonoBehaviour
 
     [SerializeField] private WaypointMovement waypointMovement1;
     [SerializeField] private WaypointMovement waypointMovement2;
+
+    [SerializeField] private float completeFail = 5f;
+    public GameObject orderFailALert;
+    public GameObject customerSuccess;
 
     public GameObject FrontDoorobject;
     [SerializeField] private FrontDoor frontDoorObject;
@@ -78,10 +83,15 @@ public class customer1 : MonoBehaviour
             // door close SFX
         }
 
-        if (waypointMovement2.index > 4)
+        if (waypointMovement2.index == 4)
         {
             Destroy(gameObject);
 
+        }
+
+        if (waypointMovement1.index > 0)
+        {
+            ClientChat.gameObject.SetActive(false);
         }
     }
 
@@ -98,6 +108,7 @@ public class customer1 : MonoBehaviour
                 moneyManager.Heartsale();
                 orderisStarted = false;
                 MoveBack();
+                SuccessAlert();
                 // Play Cashier Ching Sound Effect?
             }
 
@@ -110,6 +121,7 @@ public class customer1 : MonoBehaviour
                 moneyManager.Heartsale();
                 orderisStarted = false;
                 MoveBack();
+                StartCoroutine(FailAlert());
             }
 
             if (collision.CompareTag("Right Kidney Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
@@ -121,6 +133,7 @@ public class customer1 : MonoBehaviour
                 moneyManager.Heartsale();
                 orderisStarted = false;
                 MoveBack();
+                StartCoroutine(FailAlert());
             }
 
             if (collision.CompareTag("Liver Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
@@ -132,6 +145,7 @@ public class customer1 : MonoBehaviour
                 moneyManager.Heartsale();
                 orderisStarted = false;
                 MoveBack();
+                StartCoroutine(FailAlert());
             }
 
 
@@ -167,7 +181,7 @@ public class customer1 : MonoBehaviour
 
     public void orderConfirmation()
     {
-        if (waypointMovement1.index == 5 && orderisStarted == false)
+        if (waypointMovement1.index == 4 && orderisStarted == false)
         {
             func.MouseUnlock();
             func.CamLock();
@@ -195,6 +209,20 @@ public class customer1 : MonoBehaviour
         {
             return;
         }
+    }
+
+    IEnumerator FailAlert()
+    {
+        orderFailALert.gameObject.SetActive(true);
+        yield return new WaitForSeconds(completeFail);
+        orderFailALert.gameObject.SetActive(false);
+    }
+
+    IEnumerator SuccessAlert()
+    {
+        customerSuccess.gameObject.SetActive(true);
+        yield return new WaitForSeconds(completeFail);
+        customerSuccess.gameObject.SetActive(false);
     }
 
 

@@ -603,6 +603,8 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject Police5;
 
     [SerializeField] private GameObject policeNotification;
+    public GameObject noPoliceAlerts;
+
     [SerializeField] private GameObject messageNotification;
     [SerializeField] private GameObject socialMediaNotification;
     [SerializeField] private GameObject taxesNotification;
@@ -616,7 +618,7 @@ public class ObjectiveCounter : MonoBehaviour
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
 
-    private float transTime = 5f;
+    private float transTime = 7f;
 
     [Header("Day checkers")]
     private bool day1IsComplete;
@@ -1154,6 +1156,7 @@ private void Update()
             day10Obj2text = day10Obj2.gameObject.GetComponent<TMP_Text>();
             day10Obj2text.color = Color.green;
             day10Obj2IsDone = true;
+            day10IsComplete = true;
         }
     }
 
@@ -1491,16 +1494,17 @@ private void Update()
             startDayCount.ShowDate();
             Police1.gameObject.SetActive(true);
             frontDoor.gameObject.SetActive(true);
-            frontDoor.canOpen = false;
+            frontDoor.canOpen = true;
             Police1.gameObject.SetActive(true);
             dayCounter.ChangeDay();
             startDayCount.ShowDate();
+            // starts the knocking SFX
         }
     }
 
     public void day10Complete()
     {
-        if (dayCounter.dayCount == 10)
+        if (dayCounter.dayCount == 10 && day10IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             dayCounter.dayCount = 14;
@@ -1534,6 +1538,7 @@ private void Update()
     {
         policeAlert1.gameObject.SetActive(true);
         policeNotification.gameObject.SetActive(true);
+        noPoliceAlerts.gameObject.SetActive(false);
     }
 
     public void DonorAppear1()

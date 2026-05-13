@@ -55,6 +55,15 @@ public class FrontDoor : MonoBehaviour
 
         }
 
+
+        if (dayCounter.dayCount == 10)
+        {
+            canOpen = true;
+
+            objectiveCounter.d10o1complete();
+            gameObject.SetActive(false);
+        }
+
         // week 2
 
         if (dayCounter.dayCount == 17)
