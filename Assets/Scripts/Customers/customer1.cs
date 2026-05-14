@@ -28,8 +28,10 @@ public class customer1 : MonoBehaviour
     [SerializeField] private FrontDoor frontDoorObject;
 
     private bool orderisStarted;
+    private bool orderisCompleted;
 
     public GameObject orderUI;
+    public GameObject orderUIparent;
     public GameObject ClientChat;
 
     [SerializeField] private GeneralFunctions func;
@@ -81,16 +83,30 @@ public class customer1 : MonoBehaviour
             // door close SFX
         }
 
-        if (waypointMovement2.index == 4)
+        if (orderisCompleted == true)
         {
-            Destroy(gameObject);
+            waypointMovement1.enabled = false;
+            waypointMovement2.enabled = true;
 
+            if (waypointMovement2.index == 4)
+            {
+                Destroy(gameObject);
+            }
         }
+
+        if (waypointMovement1.index == 4)
+        {
+            waypointMovement1.enabled = false;
+        }
+
+
 
         if (waypointMovement1.index > 0)
         {
             ClientChat.gameObject.SetActive(false);
         }
+
+        
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -105,6 +121,7 @@ public class customer1 : MonoBehaviour
                 customerCountDown.gameObject.SetActive(false);
                 moneyManager.Heartsale();
                 orderisStarted = false;
+                orderisCompleted = true;
                 MoveBack();
                 SuccessAlert();
                 // Play Cashier Ching Sound Effect?
@@ -118,6 +135,7 @@ public class customer1 : MonoBehaviour
                 customerCountDown.gameObject.SetActive(false);
                 moneyManager.Heartsale();
                 orderisStarted = false;
+                orderisCompleted = true;
                 MoveBack();
                 StartCoroutine(FailAlert());
             }
@@ -130,6 +148,7 @@ public class customer1 : MonoBehaviour
                 customerCountDown.gameObject.SetActive(false);
                 moneyManager.Heartsale();
                 orderisStarted = false;
+                orderisCompleted = true;
                 MoveBack();
                 StartCoroutine(FailAlert());
             }
@@ -142,6 +161,7 @@ public class customer1 : MonoBehaviour
                 customerCountDown.gameObject.SetActive(false);
                 moneyManager.Heartsale();
                 orderisStarted = false;
+                orderisCompleted = true;
                 MoveBack();
                 StartCoroutine(FailAlert());
             }
@@ -184,6 +204,7 @@ public class customer1 : MonoBehaviour
             func.MouseUnlock();
             func.CamLock();
             func.PlayerFreeze();
+            orderUIparent.gameObject.SetActive(true);
             orderUI.gameObject.SetActive(true);
         }
 

@@ -1496,7 +1496,6 @@ private void Update()
             frontDoor.gameObject.SetActive(true);
             frontDoor.canOpen = true;
             Police1.gameObject.SetActive(true);
-            dayCounter.ChangeDay();
             startDayCount.ShowDate();
             // starts the knocking SFX
         }

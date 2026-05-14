@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: 5489913979385315612}
   - component: {fileID: 615284815197962914}
   - component: {fileID: 4742538633539892869}
-  - component: {fileID: 6812266330000692547}
   m_Layer: 8
   m_Name: Heart Jar
   m_TagString: Heart Jar
@@ -238,26 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c4884a1ee157c40b8f75b4cb670b50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6812266330000692547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326609337293903826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bc21faf44c1004da089cac9bf87f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jarPos: {fileID: 0}
-  heartJar: {fileID: 0}
-  liverJar: {fileID: 0}
-  leftKidenyJar: {fileID: 0}
-  rightKidneyJar: {fileID: 0}
-  dayCounter: {fileID: 0}
-  objective: {fileID: 0}
-  pickUpRaycastScript: {fileID: 0}
 --- !u!1 &8810846238056405132
 GameObject:
   m_ObjectHideFlags: 0
