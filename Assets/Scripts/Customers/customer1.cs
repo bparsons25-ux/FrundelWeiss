@@ -18,9 +18,10 @@ public class customer1 : MonoBehaviour
     [SerializeField] private MoneyManager moneyManager;
 
     [SerializeField] private WaypointMovement waypointMovement1;
-    [SerializeField] private WaypointMovement waypointMovement2;
+    [SerializeField] private GoHomeWaypointMovement waypointMovement2;
 
     [SerializeField] private float completeFail = 5f;
+
     public GameObject orderFailALert;
     public GameObject customerSuccess;
 
@@ -164,6 +165,12 @@ public class customer1 : MonoBehaviour
                 orderisCompleted = true;
                 MoveBack();
                 StartCoroutine(FailAlert());
+            }
+
+            if (collision.CompareTag("Destroy Zone") && orderisCompleted ==  false)
+            {
+                Destroy(gameObject);
+                Debug.Log("Customer Destroyed");
             }
 
 

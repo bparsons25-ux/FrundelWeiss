@@ -18,9 +18,14 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] GameObject pauseMenu;
 
+    private bool canPause;
+
+    private bool canMove;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        canPause = true;
     }
 
     // receives the inputs for our InputManger.cs and apply them to our character controller
@@ -55,27 +60,45 @@ public class PlayerMovement : MonoBehaviour
 
     public void ProcessMove(Vector2 input)
     {
-        Vector3 moveDirection = Vector3.zero;
-        moveDirection.x = input.x;
-        moveDirection.z = input.y;
-        controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
-        playervelocity.y += gravity * Time.deltaTime;
-
-        if (isGrounded && playervelocity.y < 0)
+        if ( (canMove == true))
         {
-            playervelocity.y = -2f;
+            Vector3 moveDirection = Vector3.zero;
+            moveDirection.x = input.x;
+            moveDirection.z = input.y;
+            controller.Move(transform.TransformDirection(moveDirection) * speed * Time.deltaTime);
+            playervelocity.y += gravity * Time.deltaTime;
+
+            if (isGrounded && playervelocity.y < 0)
+            {
+                playervelocity.y = -2f;
+            }
+
+            controller.Move(playervelocity * Time.deltaTime);
+
         }
 
-        controller.Move(playervelocity * Time.deltaTime);
-        
+        if (canMove == false)
+        {
+            Debug.Log("Player Frozen");
+        }
+
     }
 
     public void Jump()
     {
-        if (isGrounded)
+        if (canMove == true)
         {
-            playervelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+            if (isGrounded)
+            {
+                playervelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+            }
         }
+
+        if (canMove == false)
+        {
+            Debug.Log("Player Frozen");
+        }
+
     }
 
     public void Sprint()
@@ -100,9 +123,38 @@ public class PlayerMovement : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
- 
+        if (canPause == true)
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        if (canPause == false)
+        {
+            Debug.Log("Can't Pause!");
+        }
+
     }
+
+    public void MoveDeactiavte()
+    {
+        canMove = false;
+    }
+
+    public void MoveActiavte()
+    {
+        canMove = true;
+    }
+
+    public void PauseDeactivate()
+    { 
+        canPause = false;
+    }
+
+    public void PauseActivate()
+    {
+        canPause = true;
+    }
+
 }

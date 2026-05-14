@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 public class GeneralFunctions : MonoBehaviour
 {
     [SerializeField] CamLook Look;
-    [SerializeField] PlayerMovement pm;
     [SerializeField] private GameOver GameOver;
 
     [SerializeField] private GameObject player;
+    [SerializeField] private PlayerMovement playerMovement;
     public Transform spawnSpot;
 
     [SerializeField] GameObject pauseMenu;
@@ -23,8 +23,7 @@ public class GeneralFunctions : MonoBehaviour
 
     private void Start()
     {
-        pm  = GetComponent<PlayerMovement>();
-        controller = player.GetComponent<CharacterController>();
+
 
     }
 
@@ -50,8 +49,8 @@ public class GeneralFunctions : MonoBehaviour
 
     public void CamUnlock()
     {
-        Look.xSensitivity = 20f;
-        Look.ySenstivity = 20f;
+        Look.xSensitivity = 35f;
+        Look.ySenstivity = 35f;
       
 
     }
@@ -60,18 +59,19 @@ public class GeneralFunctions : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         GameOver.gameIsOver = true;
+        playerMovement.PauseDeactivate();
 
 
     }
 
     public void PlayerFreeze()
     {
-        controller.enabled = false;
+        playerMovement.MoveDeactiavte();
     }
 
     public void PlayerFree()
     {
-        controller.enabled = true;
+        playerMovement.MoveActiavte();
     }
 
     public void ResetScene()

@@ -109,6 +109,7 @@ public class PickUpRaycastScript : MonoBehaviour
             if (rb != null)
             {
                 rb.isKinematic = false;
+
             }
             canPickUp = true;
         }
