@@ -25,8 +25,6 @@ public class Day3Ending : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         ObjectiveCounter.day4Complete();
         transition.gameObject.SetActive(false);
-
-
     }
 
 

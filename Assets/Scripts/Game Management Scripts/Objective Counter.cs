@@ -602,6 +602,11 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject Police4;
     [SerializeField] private GameObject Police5;
 
+    [SerializeField] private GameObject client2;
+    [SerializeField] private GameObject client3;
+    [SerializeField] private GameObject client4;
+    [SerializeField] private GameObject client5;
+
     [SerializeField] private GameObject policeNotification;
     public GameObject noPoliceAlerts;
 
@@ -1121,7 +1126,7 @@ private void Update()
     {
         if (dayCounter.dayCount == 8)
         {
-            day8Obj4text = day8Obj3.gameObject.GetComponent<TMP_Text>();
+            day8Obj4text = day8Obj4.gameObject.GetComponent<TMP_Text>();
             day8Obj4text.color = Color.green;
             day8Obj4IsDone = true;
             day8IsComplete = true;
@@ -1132,7 +1137,7 @@ private void Update()
     {
         if (dayCounter.dayCount == 8)
         {
-            day8Obj4text = day8Obj3.gameObject.GetComponent<TMP_Text>();
+            day8Obj4text = day8Obj4.gameObject.GetComponent<TMP_Text>();
             day8Obj4text.color = Color.red;
             day8Obj4IsDone = true;
             day8IsComplete = true;
@@ -1490,6 +1495,7 @@ private void Update()
         if (dayCounter.dayCount == 8 && day8IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             dayCounter.dayCount = 10;
             startDayCount.ShowDate();
             Police1.gameObject.SetActive(true);
@@ -1506,15 +1512,113 @@ private void Update()
         if (dayCounter.dayCount == 10 && day10IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             dayCounter.dayCount = 14;
-            startDayCount.ShowDate();
             Police1.gameObject.SetActive(true);
             frontDoor.canOpen = false;
+            frontDoor.gameObject.SetActive(true);
             Police1.gameObject.SetActive(true);
+            startDayCount.ShowDate();
+            client2.gameObject.SetActive(true);    
+        }
+    }
+
+    public void day14Complete()
+    {
+        if (dayCounter.dayCount == 14 && day14IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
             dayCounter.ChangeDay();
+            startDayCount.ShowDate();
+            day2alert();
+            Profile2.gameObject.SetActive(true);
+            // turn off pinging SFX
+        }
+    }
+
+    public void day15Complete()
+    {
+        if (dayCounter.dayCount == 2 && day15IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
+            dayCounter.ChangeDay();
+            startDayCount.ShowDate();
+            day3alert();
+            day14All.gameObject.SetActive(false);
+            day15All.gameObject.SetActive(true);
+            Friend2.gameObject.SetActive(true);
+            socialMediaNotification.gameObject.SetActive(true);   
+            // turn off pinging SFX
+        }
+    }
+
+    public void day16Complete()
+    {
+        if (dayCounter.dayCount == 16 && day16IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
+            dayCounter.ChangeDay();
+            startDayCount.ShowDate();
+            day4Taxes();
+            day15All.gameObject.SetActive(false);
+            day16All.gameObject.SetActive(true);
+            Sheep2.gameObject.SetActive(true);
+            // turn off pinging SFX
+        }
+    }
+
+    public void day17Complete()
+    {
+        if (dayCounter.dayCount == 17)
+        {
+            // sheep wail SFX goes here
+            //day17SheepDialogue.gameObject.SetActive(false);
+            dayCounter.dayCount = 20;
+            startDayCount.ShowDate();
+            policeAlert2.gameObject.SetActive(true);
+            sheep2Trapped.gameObject.SetActive(true);
+            frontDoor.gameObject.SetActive(true);
+            frontDoor.canOpen = false;
+            Sheep2.gameObject.SetActive(true);
+        }
+    }
+
+
+
+    public void day21Complete()
+    {
+        if (dayCounter.dayCount == 21 && day21IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
+            dayCounter.dayCount = 24;
+            startDayCount.ShowDate();
+            Police2.gameObject.SetActive(true);
+            frontDoor.gameObject.SetActive(true);
+            frontDoor.canOpen = true;
+            // starts the knocking SFX
+        }
+    }
+
+    public void day20Complete()
+    {
+        if (dayCounter.dayCount == 24 && day24IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
+            dayCounter.dayCount = 30;
+            frontDoor.canOpen = false;
+            frontDoor.gameObject.SetActive(true);
+            client3.gameObject.SetActive(true);
             startDayCount.ShowDate();
         }
     }
+
+
+
 
     public void day2alert()
     {

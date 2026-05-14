@@ -71,13 +71,13 @@ public class customer1 : MonoBehaviour
             // door close SFX
         }
 
-        if (waypointMovement2.index == 2)
+        if (waypointMovement2.index == 3)
         {
             frontDoorObject.canOpen = true;
             FrontDoorobject.gameObject.SetActive(false);
         }
 
-        if (waypointMovement2.index == 3)
+        if (waypointMovement2.index == 4)
         {
             FrontDoorobject.gameObject.SetActive(true);
             frontDoorObject.canOpen = false;
@@ -167,7 +167,7 @@ public class customer1 : MonoBehaviour
                 StartCoroutine(FailAlert());
             }
 
-            if (collision.CompareTag("Destroy Zone") && orderisCompleted ==  false)
+            if (collision.CompareTag("Destroy Zone") && orderisCompleted ==  true)
             {
                 Destroy(gameObject);
                 Debug.Log("Customer Destroyed");
@@ -194,13 +194,13 @@ public class customer1 : MonoBehaviour
     public void startToMove()
     {
         waypointMovement1.enabled = true;
-        
     }
 
     public void MoveBack()
     {
         waypointMovement1.enabled = false;
         waypointMovement2.enabled = true;
+        transform.Rotate(Vector3.up, 180);
 
     }
 

@@ -78,6 +78,7 @@ public class OrganHarvestingMode : MonoBehaviour
     [Header("other script References")]
     [SerializeField] private ObjectiveCounter objectivecounter;
     [SerializeField] private DayCounter daycounter;
+    [SerializeField] private PlayerMovement pm;
 
 
 
@@ -117,6 +118,7 @@ public class OrganHarvestingMode : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             func.CamUnlock();
             func.PlayerFree();
+            pm.PauseActivate();
             
 
             if (daycounter.dayCount == 7)
@@ -135,6 +137,7 @@ public class OrganHarvestingMode : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             func.CamUnlock();
             func.PlayerFree();
+            pm.PauseActivate();
 
             if (daycounter.dayCount == 7)
             {

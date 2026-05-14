@@ -9,18 +9,37 @@ public class PoliceOfficer : MonoBehaviour
     [SerializeField] private DayCounter dayCounter;
     [SerializeField] private MoneyManager moneyManager;
     [SerializeField] private FrontDoor frontDoor;
+    [SerializeField] private PlayerMovement pm;
+
+    [SerializeField] private GameObject transition;
 
 
     public GameObject talkingUI;
     public GameObject talkingoverall;
+    public GameObject gameOverUI;
+    public GameObject FinalPoliceText;
+    public GameObject previousGameObject;
 
     private bool canTalk;
+  
+    
 
-    private float DestroyWaitTime = 3f;
+    private float DestroyWaitTime = 5f;
+    private float factswaitTime = 2f;
 
     private void Start()
     {
         canTalk = true;
+        transition.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (canTalk == false)
+        {
+            talkingUI.SetActive(false);
+            frontDoor.canOpen = false;
+        }
     }
 
 
@@ -31,6 +50,7 @@ public class PoliceOfficer : MonoBehaviour
             func.MouseLock();
             func.PlayerFreeze();
             func.CamLock();
+            pm.PauseDeactivate();
             talkingUI.SetActive(true);
             talkingoverall.gameObject.SetActive(true);
         }
@@ -59,12 +79,21 @@ public class PoliceOfficer : MonoBehaviour
     public void Unlock()
     {
         talkingoverall.gameObject.SetActive(false);
-        func.MouseUnlock();
+        func.MouseLock();
         func.CamUnlock();
-        func.PlayerFreeze();
+        func.PlayerFree();
+        pm.PauseActivate();
         canTalk = false;
+        counter.day10Complete();
+        StartCoroutine(Transition());
         StartCoroutine(DestroyWait());
 
+
+    }
+
+    public void GameOver()
+    {
+        StartCoroutine(GameOverwait());
     }
 
     IEnumerator DestroyWait()
@@ -72,5 +101,29 @@ public class PoliceOfficer : MonoBehaviour
         yield return new WaitForSeconds(DestroyWaitTime);
         Destroy(gameObject);
     }
+
+    IEnumerator GameOverwait()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        previousGameObject.gameObject.SetActive(false);
+        FinalPoliceText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(DestroyWaitTime);
+        FinalPoliceText.gameObject.SetActive(false);
+        talkingoverall.gameObject.SetActive(false);
+        gameOverUI.gameObject.SetActive(true);
+        yield return new WaitForSeconds(factswaitTime);
+        func.CamLock();
+        func.PlayerFreeze();
+        func.ResetPos();
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
+    }
     
+    IEnumerator Transition()
+    {
+        transition.gameObject.SetActive(true);
+        yield return new WaitForSeconds(factswaitTime);
+        counter.day10Complete();
+        transition.gameObject.SetActive(false);
+    }
 }
