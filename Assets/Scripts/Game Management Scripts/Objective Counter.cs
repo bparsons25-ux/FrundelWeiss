@@ -385,9 +385,9 @@ public class ObjectiveCounter : MonoBehaviour
     [SerializeField] private GameObject w4day7Obj3;
     [SerializeField] private GameObject w4day7Obj4;
 
-    private bool vday7Obj1IsDone = false;
+    private bool w4day7Obj1IsDone = false;
     private bool w4day7Obj2IsDone = false;
-    private bool vday7Obj3IsDone = false;
+    private bool w4day7Obj3IsDone = false;
     private bool w4day7Obj4IsDone = false;
 
     TMP_Text w4day7Obj1text;
@@ -672,6 +672,8 @@ public class ObjectiveCounter : MonoBehaviour
     private bool day58IsComplete;
     private bool day60IsComplete;
 
+    public GameObject transition;
+
     private void Start()
     {
         day1Obj1IsDone = false;
@@ -797,11 +799,129 @@ private void Update()
             day10All.gameObject.SetActive(true);
         }
 
+        // Week 2 Objective Counters
+
         if (dayCounter.dayCount == 14)
         {
             day10All.gameObject.SetActive(false);
             day14All.gameObject.SetActive(true);
+            // TAX DAY
         }
+
+        if (dayCounter.dayCount == 15)
+        {
+            day14All.gameObject.SetActive(false);
+            day15All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 16)
+        {
+            day15All.gameObject.SetActive(false);
+            day16All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 17)
+        {
+            day16All.gameObject.SetActive(false);
+            day17All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 20)
+        {
+            day17All.gameObject.SetActive(false);
+            day20All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 21)
+        {
+            day20All.gameObject.SetActive(false);
+            day21All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 24)
+        {
+            day21All.gameObject.SetActive(false);
+            day24All.gameObject.SetActive(true);
+        }
+
+        // Week 3 Objective Counters
+
+        if (dayCounter.dayCount == 30)
+        {
+            day24All.gameObject.SetActive(false) ;
+            day30All.gameObject.SetActive(true) ;
+        }
+
+        if (dayCounter.dayCount == 31)
+        {
+            day30All.gameObject.SetActive(false);
+            day31All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 32)
+        {
+            day31All.gameObject.SetActive(false);
+            day32All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 33)
+        {
+            day32All.gameObject.SetActive(false);
+            day33All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 35)
+        {
+            day33All.gameObject.SetActive(false);
+            day35All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 36)
+        {
+            day35All.gameObject.SetActive(false);
+            day36All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 39)
+        {
+            day36All.gameObject.SetActive(false);
+            day39All.gameObject.SetActive(true);
+        }
+
+        // Week 4 (ARREST WEEK!)
+
+        if (dayCounter.dayCount == 42)
+        {
+            day39All.gameObject.SetActive(false) ;
+            day42All.gameObject.SetActive(true) ;
+        }
+
+        if (dayCounter.dayCount == 43)
+        {
+            day42All.gameObject.SetActive(false);
+            day43All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 44)
+        {
+            day43All.gameObject.SetActive(false);
+            day44All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 47)
+        {
+            day44All.gameObject.SetActive(false);
+            day47All.gameObject.SetActive(true);
+        }
+
+        if (dayCounter.dayCount == 48)
+        {
+            day47All.gameObject.SetActive(false);
+            day48All.gameObject.SetActive(true);
+        }
+
+        // GAME ENDS HERE (FOR NOW)
+
 
         if (dayCounter.dayCount == 1)
         {
@@ -1196,6 +1316,7 @@ private void Update()
             w2day1Obj3text = w2day1Obj3.gameObject.GetComponent<TMP_Text>();
             w2day1Obj3text.color = Color.green;
             w2day1Obj3IsDone = true;
+            day14IsComplete = true;
         }
     }
 
@@ -1228,6 +1349,7 @@ private void Update()
             w2day2Obj3text = w2day2Obj3.gameObject.GetComponent<TMP_Text>();
             w2day2Obj3text.color = Color.green;
             w2day2Obj3IsDone = true;
+            day15IsComplete = true;
         }
     }
 
@@ -1270,10 +1392,11 @@ private void Update()
             w2day3Obj4text = w2day3Obj4.gameObject.GetComponent<TMP_Text>();
             w2day3Obj4text.color = Color.green;
             w2day3Obj4IsDone = true;
+            day16IsComplete = true;
         }
     }
 
-    // Day 16 methods
+    // Day 17 methods
 
     public void d17o1()
     {
@@ -1302,6 +1425,7 @@ private void Update()
             w2day4Obj3text = w2day4Obj3.gameObject.GetComponent<TMP_Text>();
             w2day4Obj3text.color = Color.green;
             w2day4Obj3IsDone = true;
+            day17IsComplete = true;
         }
     }
 
@@ -1344,6 +1468,7 @@ private void Update()
             w2day7Obj4text = w2day7Obj4.gameObject.GetComponent<TMP_Text>();
             w2day7Obj4text.color = Color.green;
             w2day7Obj4IsDone = true;
+            day20IsComplete = true;
         }
     }
 
@@ -1351,7 +1476,7 @@ private void Update()
 
     public void d21o1()
     {
-        if (dayCounter.dayCount == 20)
+        if (dayCounter.dayCount == 21)
         {
             w2day8Obj1text = w2day7Obj1.gameObject.GetComponent<TMP_Text>();
             w2day8Obj1text.color = Color.green;
@@ -1361,7 +1486,7 @@ private void Update()
 
     public void d21o2()
     {
-        if (dayCounter.dayCount == 20)
+        if (dayCounter.dayCount == 21)
         {
             w2day8Obj2text = w2day7Obj2.gameObject.GetComponent<TMP_Text>();
             w2day8Obj2text.color = Color.green;
@@ -1371,7 +1496,7 @@ private void Update()
 
     public void d21o3()
     {
-        if (dayCounter.dayCount == 20)
+        if (dayCounter.dayCount == 21)
         {
             w2day8Obj3text = w2day7Obj3.gameObject.GetComponent<TMP_Text>();
             w2day8Obj3text.color = Color.green;
@@ -1381,11 +1506,24 @@ private void Update()
 
     public void d21o4()
     {
-        if (dayCounter.dayCount == 20)
+        if (dayCounter.dayCount == 21)
         {
             w2day8Obj4text = w2day7Obj4.gameObject.GetComponent<TMP_Text>();
             w2day8Obj4text.color = Color.green;
             w2day8Obj4IsDone = true;
+            day21IsComplete = true;
+        }
+    }
+
+    public void d21o4incomplete()
+    {
+        if (dayCounter.dayCount == 21)
+        {
+            w2day8Obj4text = w2day8Obj4text.gameObject.GetComponent<TMP_Text>();
+            w2day8Obj4text.color = Color.red;
+            w2day8Obj4IsDone = true;
+            day21IsComplete = true;
+
         }
     }
 
@@ -1408,12 +1546,515 @@ private void Update()
             w2day10Obj2text = w2day10Obj2.gameObject.GetComponent<TMP_Text>();
             w2day10Obj2text.color = Color.green;
             w2day10Obj2IsDone = true;
+            day24IsComplete = true;
         }
     }
 
 
+    // Week 3 methods 
+
+    // Day 30 methods
+
+    public void d30o1()
+    {
+        if (dayCounter.dayCount == 30)
+        {
+            w3day1Obj1text = w3day1Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day1Obj1text.color = Color.green;
+            w3day1Obj1IsDone = true;
+        }
+    }
+
+    public void d30o2()
+    {
+        if (dayCounter.dayCount == 30)
+        {
+            w3day1Obj2text = w3day1Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day1Obj2text.color = Color.green;
+            w3day1Obj2IsDone = true;
+        }
+    }
+
+    public void d30o3()
+    {
+        if (dayCounter.dayCount == 30)
+        {
+            w3day1Obj3text = w3day1Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day1Obj3text.color = Color.green;
+            w3day1Obj3IsDone = true;
+            day30IsComplete = true;
+        }
+    }
+
+    // Day 31 methods
+
+    public void d31o1()
+    {
+        if (dayCounter.dayCount == 31)
+        {
+            w3day2Obj1text = w3day2Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day2Obj1text.color = Color.green;
+            w3day2Obj1IsDone = true;
+        }
+    }
+
+    public void d31o2()
+    {
+        if (dayCounter.dayCount == 31)
+        {
+            w3day2Obj2text = w3day2Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day2Obj2text.color = Color.green;
+            w3day2Obj2IsDone = true;
+        }
+    }
+
+    public void d31o3()
+    {
+        if (dayCounter.dayCount == 31)
+        {
+            w3day2Obj3text = w3day2Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day2Obj3text.color = Color.green;
+            w3day2Obj3IsDone = true;
+            day31IsComplete = true;
+        }
+    }
+
+    // Day 32 methods
+
+    public void d32o1()
+    {
+        if (dayCounter.dayCount == 32)
+        {
+            w3day3Obj1text = w3day3Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day3Obj1text.color = Color.green;
+            w3day3Obj1IsDone = true;
+        }
+    }
+
+    public void d32o2()
+    {
+        if (dayCounter.dayCount == 32)
+        {
+            w3day3Obj2text = w3day3Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day3Obj2text.color = Color.green;
+            w3day3Obj2IsDone = true;
+        }
+    }
+
+    public void d32o3()
+    {
+        if (dayCounter.dayCount == 32)
+        {
+            w3day3Obj3text = w3day3Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day3Obj3text.color = Color.green;
+            w3day3Obj3IsDone = true;
+        }
+    }
+
+    public void d32o4()
+    {
+        if (dayCounter.dayCount == 32)
+        {
+            w3day3Obj4text = w3day3Obj4.gameObject.GetComponent<TMP_Text>();
+            w3day3Obj4text.color = Color.green;
+            w3day3Obj4IsDone = true;
+            day32IsComplete = true;
+        }
+    }
+
+    // Day 33 methods
+
+    public void d33o1()
+    {
+        if (dayCounter.dayCount == 33)
+        {
+            w3day4Obj1text = w3day4Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day4Obj1text.color = Color.green;
+            w3day4Obj1IsDone = true;
+        }
+    }
+
+    public void d33o2()
+    {
+        if (dayCounter.dayCount == 33)
+        {
+            w3day4Obj2text = w3day4Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day4Obj2text.color = Color.green;
+            w3day4Obj2IsDone = true;
+        }
+    }
+
+    public void d33o3()
+    {
+        if (dayCounter.dayCount == 33)
+        {
+            w3day4Obj3text = w3day4Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day4Obj3text.color = Color.green;
+            w3day4Obj3IsDone = true;
+            day33IsComplete = true;
+        }
+    }
+
+    // Day 35 methods
+
+    public void d35o1()
+    {
+        if (dayCounter.dayCount == 35)
+        {
+            w3day7Obj1text = w3day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day7Obj1text.color = Color.green;
+            w3day7Obj1IsDone = true;
+        }
+    }
+
+    public void d35o2()
+    {
+        if (dayCounter.dayCount == 35)
+        {
+            w3day7Obj2text = w3day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day7Obj2text.color = Color.green;
+            w3day7Obj2IsDone = true;
+        }
+    }
+
+    public void d35o3()
+    {
+        if (dayCounter.dayCount == 35)
+        {
+            w3day7Obj3text = w3day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day7Obj3text.color = Color.green;
+            w3day7Obj3IsDone = true;
+        }
+    }
+
+    public void d35o4()
+    {
+        if (dayCounter.dayCount == 35)
+        {
+            w3day7Obj4text = w3day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w3day7Obj4text.color = Color.green;
+            w3day7Obj4IsDone = true;
+            day35IsComplete = true;
+        }
+    }
+
+    // Day 36 methods
+
+    public void d36o1()
+    {
+        if (dayCounter.dayCount == 36)
+        {
+            w3day8Obj1text = w3day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day8Obj1text.color = Color.green;
+            w3day8Obj1IsDone = true;
+        }
+    }
+
+    public void d36o2()
+    {
+        if (dayCounter.dayCount == 36)
+        {
+            w3day8Obj2text = w3day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day8Obj2text.color = Color.green;
+            w3day8Obj2IsDone = true;
+        }
+    }
+
+    public void d36o3()
+    {
+        if (dayCounter.dayCount == 36)
+        {
+            w3day8Obj3text = w3day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w3day8Obj3text.color = Color.green;
+            w3day8Obj3IsDone = true;
+        }
+    }
+
+    public void d36o4()
+    {
+        if (dayCounter.dayCount == 36)
+        {
+            w3day8Obj4text = w3day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w3day8Obj4text.color = Color.green;
+            w3day8Obj4IsDone = true;
+            day36IsComplete = true;
+        }
+    }
+
+    public void d36o4incomplete()
+    {
+        if (dayCounter.dayCount == 36)
+        {
+            w3day8Obj4text = w3day8Obj4text.gameObject.GetComponent<TMP_Text>();
+            w3day8Obj4text.color = Color.red;
+            w3day8Obj4IsDone = true;
+            day36IsComplete = true;
+
+        }
+    }
+
+    // Day 39 methods
+    public void d39o1()
+    {
+        if (dayCounter.dayCount == 39)
+        {
+            w3day10Obj1text = w3day10Obj1.gameObject.GetComponent<TMP_Text>();
+            w3day10Obj1text.color = Color.green;
+            w3day10Obj1IsDone = true;
+        }
+    }
 
 
+    public void d39o2()
+    {
+        if (dayCounter.dayCount == 39)
+        {
+            w3day10Obj2text = w3day10Obj2.gameObject.GetComponent<TMP_Text>();
+            w3day10Obj2text.color = Color.green;
+            w3day10Obj2IsDone = true;
+            day39IsComplete = true;
+        }
+    }
+
+    // Week 4 methods lowk
+
+    public void d42o1()
+    {
+        if (dayCounter.dayCount == 42)
+        {
+            w4day1Obj1text = w4day1Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day1Obj1text.color = Color.green;
+            w4day1Obj1IsDone = true;
+        }
+    }
+
+    public void d42o2()
+    {
+        if (dayCounter.dayCount == 42)
+        {
+            w4day1Obj2text = w4day1Obj2.gameObject.GetComponent<TMP_Text>();
+            w4day1Obj2text.color = Color.green;
+            w4day1Obj2IsDone = true;
+        }
+    }
+
+    public void d42o3()
+    {
+        if (dayCounter.dayCount == 42)
+        {
+            w4day1Obj3text = w4day1Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day1Obj3text.color = Color.green;
+            w4day1Obj3IsDone = true;
+            day42IsComplete = true;
+        }
+    }
+
+    // Day 43 methods
+
+    public void d43o1()
+    {
+        if (dayCounter.dayCount == 43)
+        {
+            w4day2Obj1text = w4day2Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day2Obj1text.color = Color.green;
+            w4day2Obj1IsDone = true;
+        }
+    }
+
+    public void d43o2()
+    {
+        if (dayCounter.dayCount == 43)
+        {
+            w4day2Obj2text = w4day2Obj2.gameObject.GetComponent<TMP_Text>();
+            w4day2Obj2text.color = Color.green;
+            w4day2Obj2IsDone = true;
+        }
+    }
+
+    public void d43o3()
+    {
+        if (dayCounter.dayCount == 43)
+        {
+            w4day2Obj3text = w4day2Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day2Obj3text.color = Color.green;
+            w4day2Obj3IsDone = true;
+            day43IsComplete = true;
+        }
+    }
+
+    // Day 44 methods
+
+    public void d44o1()
+    {
+        if (dayCounter.dayCount == 44)
+        {
+            w4day3Obj1text = w4day3Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day3Obj1text.color = Color.green;
+            w4day3Obj1IsDone = true;
+        }
+    }
+
+    public void d44o2()
+    {
+        if (dayCounter.dayCount == 44)
+        {
+            w4day3Obj2text = w4day3Obj2.gameObject.GetComponent<TMP_Text>();
+            w4day3Obj2text.color = Color.green;
+            w4day3Obj2IsDone = true;
+        }
+    }
+
+    public void d44o3()
+    {
+        if (dayCounter.dayCount == 44)
+        {
+            w4day3Obj3text = w4day3Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day3Obj3text.color = Color.green;
+            w4day3Obj3IsDone = true;
+        }
+    }
+
+    public void d44o4()
+    {
+        if (dayCounter.dayCount == 44)
+        {
+            w4day3Obj4text = w4day3Obj4.gameObject.GetComponent<TMP_Text>();
+            w4day3Obj4text.color = Color.green;
+            w4day3Obj4IsDone = true;
+            day44IsComplete = true;
+        }
+    }
+
+    // Day 45 methods
+
+    public void d45o1()
+    {
+        if (dayCounter.dayCount == 45)
+        {
+            w4day4Obj1text = w4day4Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day4Obj1text.color = Color.green;
+            w4day4Obj1IsDone = true;
+        }
+    }
+
+    public void d45o2()
+    {
+        if (dayCounter.dayCount == 45)
+        {
+            w4day4Obj2text = w4day4Obj2.gameObject.GetComponent<TMP_Text>();
+            w4day4Obj2text.color = Color.green;
+            w4day4Obj2IsDone = true;
+        }
+    }
+
+    public void d45o3()
+    {
+        if (dayCounter.dayCount == 45)
+        {
+            w4day4Obj3text = w4day4Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day4Obj3text.color = Color.green;
+            w4day4Obj3IsDone = true;
+            day45IsComplete = true;
+        }
+    }
+
+    // Day 47 methods
+
+    public void d47o1()
+    {
+        if (dayCounter.dayCount == 47)
+        {
+            w4day7Obj1text = w4day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day7Obj1text.color = Color.green;
+            w4day7Obj1IsDone = true;
+        }
+    }
+
+    public void d47o2()
+    {
+        if (dayCounter.dayCount == 47)
+        {
+            w2day7Obj2text = w4day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w2day7Obj2text.color = Color.green;
+            w4day7Obj2IsDone = true;
+        }
+    }
+
+    public void d47o3()
+    {
+        if (dayCounter.dayCount == 47)
+        {
+            w4day7Obj3text = w4day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day7Obj3text.color = Color.green;
+            w4day7Obj3IsDone = true;
+        }
+    }
+
+    public void d47o4()
+    {
+        if (dayCounter.dayCount == 47)
+        {
+            w4day7Obj4text = w4day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w4day7Obj4text.color = Color.green;
+            w4day7Obj4IsDone = true;
+            day47IsComplete = true;
+        }
+    }
+
+    // Day 48 methods
+
+    public void d48o1()
+    {
+        if (dayCounter.dayCount == 48)
+        {
+            w4day8Obj1text = w4day7Obj1.gameObject.GetComponent<TMP_Text>();
+            w4day8Obj1text.color = Color.green;
+            w4day8Obj1IsDone = true;
+        }
+    }
+
+    public void d48o2()
+    {
+        if (dayCounter.dayCount == 48)
+        {
+            w4day8Obj2text = w4day7Obj2.gameObject.GetComponent<TMP_Text>();
+            w4day8Obj2text.color = Color.green;
+            w4day8Obj2IsDone = true;
+        }
+    }
+
+    public void d48o3()
+    {
+        if (dayCounter.dayCount == 48)
+        {
+            w4day8Obj3text = w4day7Obj3.gameObject.GetComponent<TMP_Text>();
+            w4day8Obj3text.color = Color.green;
+            w4day8Obj3IsDone = true;
+        }
+    }
+
+    public void d48o4()
+    {
+        if (dayCounter.dayCount == 48)
+        {
+            w4day8Obj4text = w4day7Obj4.gameObject.GetComponent<TMP_Text>();
+            w4day8Obj4text.color = Color.green;
+            w4day8Obj4IsDone = true;
+            day48IsComplete = true;
+        }
+    }
+
+    public void d48o4incomplete()
+    {
+        if (dayCounter.dayCount == 48)
+        {
+            w4day8Obj4text = w4day8Obj4text.gameObject.GetComponent<TMP_Text>();
+            w4day8Obj4text.color = Color.red;
+            w4day8Obj4IsDone = true;
+            day48IsComplete = true;
+
+        }
+    }
 
 
 
@@ -1501,8 +2142,7 @@ private void Update()
             Police1.gameObject.SetActive(true);
             frontDoor.gameObject.SetActive(true);
             frontDoor.canOpen = true;
-            Police1.gameObject.SetActive(true);
-            startDayCount.ShowDate();
+              startDayCount.ShowDate();
             // starts the knocking SFX
         }
     }
@@ -1514,12 +2154,11 @@ private void Update()
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             dayCounter.dayCount = 14;
-            Police1.gameObject.SetActive(true);
             frontDoor.canOpen = false;
+            Destroy(Police2.gameObject);
             frontDoor.gameObject.SetActive(true);
-            Police1.gameObject.SetActive(true);
+            client2.gameObject.SetActive(true);
             startDayCount.ShowDate();
-            client2.gameObject.SetActive(true);    
         }
     }
 
@@ -1539,7 +2178,7 @@ private void Update()
 
     public void day15Complete()
     {
-        if (dayCounter.dayCount == 2 && day15IsComplete == true)
+        if (dayCounter.dayCount == 15 && day15IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
@@ -1586,7 +2225,19 @@ private void Update()
         }
     }
 
-
+    public void day20Complete()
+    {
+        if (dayCounter.dayCount == 20 && day20IsComplete == true)
+        {
+            logOffButton.gameObject.GetComponent<Button>().interactable = false;
+            logOffReminder.gameObject.SetActive(false);
+            dayCounter.dayCount = 30;
+            frontDoor.canOpen = false;
+            frontDoor.gameObject.SetActive(true);
+            client3.gameObject.SetActive(true);
+            startDayCount.ShowDate();
+        }
+    }
 
     public void day21Complete()
     {
@@ -1603,17 +2254,18 @@ private void Update()
         }
     }
 
-    public void day20Complete()
+    public void day24Complete()
     {
         if (dayCounter.dayCount == 24 && day24IsComplete == true)
         {
             logOffButton.gameObject.GetComponent<Button>().interactable = false;
             logOffReminder.gameObject.SetActive(false);
             dayCounter.dayCount = 30;
+            Destroy(Police2.gameObject);
             frontDoor.canOpen = false;
             frontDoor.gameObject.SetActive(true);
-            client3.gameObject.SetActive(true);
             startDayCount.ShowDate();
+            client2.gameObject.SetActive(true);
         }
     }
 
@@ -1644,10 +2296,49 @@ private void Update()
         noPoliceAlerts.gameObject.SetActive(false);
     }
 
+    public void PoliceAlert2()
+    {
+        policeAlert2.gameObject.SetActive(true);
+        policeNotification.gameObject.SetActive(true);
+        noPoliceAlerts.gameObject.SetActive(false);
+    }
+
+    public void PoliceAlert3()
+    {
+        policeAlert3.gameObject.SetActive(true);
+        policeNotification.gameObject.SetActive(true);
+        noPoliceAlerts.gameObject.SetActive(false);
+    }
+
+    public void PoliceAlert4()
+    {
+        policeAlert4.gameObject.SetActive(true);
+        policeNotification.gameObject.SetActive(true);
+        noPoliceAlerts.gameObject.SetActive(false);
+    }
+
     public void DonorAppear1()
     {
-        noFriendsSuggestedAlert.gameObject.SetActive(true);
+        noFriendsSuggestedAlert.gameObject.SetActive(false);
         Profile1.gameObject.SetActive(true);
+    }
+
+    public void DonorAppear2()
+    {
+        noFriendsSuggestedAlert.gameObject.SetActive(false);
+        Profile2.gameObject.SetActive(true);
+    }
+
+    public void DonorAppear3()
+    {
+        noFriendsSuggestedAlert.gameObject.SetActive(false);
+        Profile3.gameObject.SetActive(true);
+    }
+
+    public void DonorAppear4()
+    {
+        noFriendsSuggestedAlert.gameObject.SetActive(false);
+        Profile4.gameObject.SetActive(true);
     }
 
     public void FriendAppear1()
@@ -1656,15 +2347,32 @@ private void Update()
         noFriendsAlert.gameObject.SetActive(false);
     }
 
-    public void transition()
+    public void FriendAppear2()
+    {
+        Friend2.gameObject.SetActive(true);
+    }
+
+    public void FriendAppear3()
+    {
+        Friend3.gameObject.SetActive(true);
+    }
+
+    public void FriendAppear4()
+    {
+        Friend4.gameObject.SetActive(true);
+    }
+
+    public void Transition()
     {
         StartCoroutine(Day7transition());
     }
 
     IEnumerator Day7transition()
     {
+        transition.gameObject.SetActive(true);
         gameObject.GetComponent<sheepDay7>().enabled = true;
         yield return new WaitForSeconds(transTime);
         gameObject.GetComponent<sheepDay7>().enabled = false;
+        transition.gameObject.SetActive(false);
     }
 }

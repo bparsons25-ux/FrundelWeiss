@@ -23,6 +23,7 @@ public class ComputerAudioManager : MonoBehaviour
 
     private bool computerIsOn;
 
+
     private void Start()
     {
         computerIsOn = false;
@@ -46,8 +47,17 @@ public class ComputerAudioManager : MonoBehaviour
 
     public void TurnOn()
     {
-        computerIsOn = true;
-        ComputerAudio.PlayOneShot(computerStartUpSfx);
+        if (computerIsOn == false)
+        {
+            computerIsOn = true;
+            ComputerAudio.PlayOneShot(computerStartUpSfx);
+        }
+
+        if (computerIsOn == true)
+        {
+            return;
+        }
+
     }
 
     public void TurnOff()

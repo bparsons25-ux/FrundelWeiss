@@ -1,15 +1,28 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class EnviromentAudioManager : MonoBehaviour
 {
-    public AudioSource playerSFX;
-
-    public AudioClip BurnSFX;
+    public AudioSource door;
 
 
-    public void BurnSheep()
+    [Header("Room Noises")]
+
+    public AudioClip doorShut;
+    public AudioClip doorOpen;
+
+
+    public void DoorOpen()
     {
-        playerSFX.PlayOneShot(BurnSFX);
+        door.PlayOneShot(doorOpen);
     }
+
+    public void DoorClose()
+    {
+        door.PlayOneShot(doorShut);
+    }
+
+
+
 
 }

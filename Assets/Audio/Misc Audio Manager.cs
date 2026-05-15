@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class MiscAudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public AudioSource playerSFX;
+
+    public AudioClip BurnSFX;
+
+
+    public void BurnSheep()
     {
-        
+        playerSFX.PlayOneShot(BurnSFX);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
