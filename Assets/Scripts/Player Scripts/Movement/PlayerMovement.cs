@@ -19,13 +19,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
 
     private bool canPause;
-
+    public bool GameisOver;
     private bool canMove;
+
+    public AudioClip mainLevelMusic;
+    public AudioClip gameOverMusic;
+
+    public AudioSource musicPlayer;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         canPause = true;
+        GameisOver = false;
     }
 
     // receives the inputs for our InputManger.cs and apply them to our character controller
@@ -55,7 +61,21 @@ public class PlayerMovement : MonoBehaviour
                 crouchTimer = 0f;
             }
 
+            if (GameisOver == false)
+            {
+                musicPlayer.clip = mainLevelMusic;
+                musicPlayer.loop = true;
+                musicPlayer.Play();
+            }
+
+            else if (GameisOver == true)
+            {
+                musicPlayer.clip = gameOverMusic;
+                musicPlayer.loop = true;
+                musicPlayer.Play();
+            }
         }
+
     }
 
     public void ProcessMove(Vector2 input)
@@ -155,6 +175,11 @@ public class PlayerMovement : MonoBehaviour
     public void PauseActivate()
     {
         canPause = true;
+    }
+
+    public void PlayGameOverMusic()
+    {
+        GameisOver = true;
     }
 
 }

@@ -36,6 +36,8 @@ public class messageManager : MonoBehaviour
 
     private float textDelayWait = 3f;
 
+    [SerializeField] ComputerAudioManager computerAudioManager;
+
 
     private void Start()
     {
@@ -79,6 +81,7 @@ public class messageManager : MonoBehaviour
         playerMessageInteraction1.gameObject.SetActive(false);
         yield return new WaitForSeconds(textDelayWait);
         clientmessage2.gameObject.SetActive(true);
+        computerAudioManager.MessageRecieved();
         playerMessageInteraction2.gameObject.SetActive(true);
     }
 
@@ -87,6 +90,7 @@ public class messageManager : MonoBehaviour
         playerMessageInteraction2.gameObject.SetActive(false);
         yield return new WaitForSeconds(textDelayWait);
         clientmessage3.gameObject.SetActive(true);
+        computerAudioManager.MessageRecieved();
         playerMessageInteraction3.gameObject.SetActive(true);
     }
 
@@ -97,6 +101,7 @@ public class messageManager : MonoBehaviour
         cannotTypeText.gameObject.SetActive(true);
         yield return new WaitForSeconds(textDelayWait);
         clientmessage4.gameObject.SetActive(true);
+        computerAudioManager.MessageRecieved();
 
     }
 

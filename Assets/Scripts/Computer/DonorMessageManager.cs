@@ -35,6 +35,8 @@ public class DonorMessageManager : MonoBehaviour
 
     [SerializeField] private ObjectiveCounter counter;
 
+    [SerializeField] ComputerAudioManager computerAudioManager;
+
 
     private void Start()
     {
@@ -91,6 +93,7 @@ public class DonorMessageManager : MonoBehaviour
         waitToText.gameObject.SetActive(true);
         yield return new WaitForSeconds(textDelayWait);
         waitToText.gameObject.SetActive(false);
+        computerAudioManager.MessageRecieved();
         donormessage1.gameObject.SetActive(true);
         canTypeText.gameObject.SetActive(true);
         playerMessageInteraction2.gameObject .SetActive(true);
@@ -104,6 +107,7 @@ public class DonorMessageManager : MonoBehaviour
         waitToText.gameObject.SetActive(true);
         yield return new WaitForSeconds(textDelayWait);
         waitToText.gameObject.SetActive(false);
+        computerAudioManager.MessageRecieved();
         donormessage2.gameObject.SetActive(true);
         canTypeText.gameObject.SetActive(true);
         playerMessageInteraction3.gameObject.SetActive(true);
@@ -117,6 +121,7 @@ public class DonorMessageManager : MonoBehaviour
         waitToText.gameObject.SetActive(true);
         yield return new WaitForSeconds(textDelayWait);
         waitToText.gameObject.SetActive(false);
+        computerAudioManager.MessageRecieved();
         donormessage3.gameObject.SetActive(true);
         canTypeText.gameObject .SetActive(true);
         playerMessageInteraction4.gameObject.SetActive(true);

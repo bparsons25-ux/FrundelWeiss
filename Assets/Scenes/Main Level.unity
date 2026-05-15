@@ -194,6 +194,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3371773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +657,7 @@ MonoBehaviour:
   maxLetterToType: 40
   sendButton: {fileID: 856371275}
   TextMessageFill: {fileID: 238306920}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &7528470
 RectTransform:
   m_ObjectHideFlags: 0
@@ -799,6 +848,7 @@ MonoBehaviour:
   maxLetterToType: 40
   sendButton: {fileID: 211491055}
   TextMessageFill: {fileID: 160466721}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &10229954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2612,6 +2662,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 2073224661}
   TextMessageFill: {fileID: 1574696484}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &42958804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5676,6 +5727,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d2o3complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: d2o3complete
@@ -8358,6 +8457,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1336969247}
   TextMessageFill: {fileID: 214641451}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &120919737
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,6 +8566,7 @@ MonoBehaviour:
   maxLetterToType: 40
   sendButton: {fileID: 1288352545}
   TextMessageFill: {fileID: 636155972}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &122834020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9825,6 +9926,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1701379194}
   TextMessageFill: {fileID: 1171599853}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &140706103
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +10267,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 460687015}
   TextMessageFill: {fileID: 407398034}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &144794036
 GameObject:
   m_ObjectHideFlags: 0
@@ -11076,6 +11179,8 @@ GameObject:
   - component: {fileID: 152681565}
   - component: {fileID: 152681564}
   - component: {fileID: 152681569}
+  - component: {fileID: 152681571}
+  - component: {fileID: 152681570}
   m_Layer: 6
   m_Name: Computer Object
   m_TagString: Untagged
@@ -11222,6 +11327,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152681565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11310,6 +11427,124 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.38525572, y: 0.29928246, z: 0.42820883}
   m_Center: {x: 0, y: 0.000000059604645, z: -0.00000011920929}
+--- !u!114 &152681570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152681562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcbd5afad726af478a16f1a9a25c48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ComputerAudio: {fileID: 152681571}
+  computerStartUpSfx: {fileID: 8300000, guid: 1e52321f0aa26a94d98ad38d6fa743fb, type: 3}
+  computerLogOffSfx: {fileID: 8300000, guid: 4f784524a14dd6143b49abb2bc566093, type: 3}
+  messageReceivedSfx: {fileID: 8300000, guid: 889a46427b82b14489924921252b2843, type: 3}
+  messageSentSfx: {fileID: 8300000, guid: e58c49c842d7ef84a8e67eef3a5b710b, type: 3}
+  UiKeyboardClick: {fileID: 8300000, guid: e7a4e6ec3b96974409cc0ea12e753246, type: 3}
+  UiMouseClick: {fileID: 8300000, guid: 8de94d964d1fb7c4ea81d0c41abe0f31, type: 3}
+  UiButtonClickSfx: {fileID: 8300000, guid: b758d6d308785ea48b50a40e30a02416, type: 3}
+  computerBuzzSfx: {fileID: 8300000, guid: 5e20f6af790931c48a866124dea3cb40, type: 3}
+--- !u!82 &152681571
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152681562}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &153242925
 GameObject:
   m_ObjectHideFlags: 0
@@ -11476,6 +11711,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 664718050}
   TextMessageFill: {fileID: 1481287260}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &153580791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11530,6 +11766,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 766751879}
   TextMessageFill: {fileID: 1630940209}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &157205335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12312,6 +12549,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d1o3complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: d1o3complete
@@ -12395,6 +12668,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 809146489}
   TextMessageFill: {fileID: 1255261972}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &168749184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12449,6 +12723,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1949484749}
   TextMessageFill: {fileID: 2067752908}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &169412517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12913,6 +13188,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1873006221}
   TextMessageFill: {fileID: 268664462}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &175731274
 GameObject:
   m_ObjectHideFlags: 0
@@ -13021,6 +13297,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 2049423839}
   TextMessageFill: {fileID: 1426633596}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &176568276
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15344,6 +15621,54 @@ MonoBehaviour:
       - m_Target: {fileID: 283651320}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20194,6 +20519,7 @@ MonoBehaviour:
   cannotTypeText: {fileID: 746724945}
   waitToText: {fileID: 365826277}
   counter: {fileID: 921462652}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &284598110
 GameObject:
   m_ObjectHideFlags: 0
@@ -22227,6 +22553,7 @@ MonoBehaviour:
   playerMessageInteraction3: {fileID: 984100689}
   canTypeText: {fileID: 1729427025}
   cannotTypeText: {fileID: 2123576260}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &307626528
 GameObject:
   m_ObjectHideFlags: 0
@@ -27573,6 +27900,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 87341880}
   TextMessageFill: {fileID: 532287000}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &364836422
 GameObject:
   m_ObjectHideFlags: 0
@@ -27639,6 +27967,54 @@ MonoBehaviour:
       - m_Target: {fileID: 1247750829}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29172,6 +29548,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1635955483}
   TextMessageFill: {fileID: 1175349535}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &387977971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30316,6 +30693,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1141192334}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: Endtext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d1o3complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35280,6 +35693,54 @@ MonoBehaviour:
       - m_Target: {fileID: 1247750829}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: EndText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d2o3complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42495,6 +42956,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1354178668}
   TextMessageFill: {fileID: 1332036152}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &555493100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43127,6 +43589,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1721314665}
   TextMessageFill: {fileID: 521867176}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!4 &565835390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1370235177799199937, guid: 5e15caeb969bd46478345e60297edd8d, type: 3}
@@ -50466,6 +50929,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &664718052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51802,6 +52301,7 @@ MonoBehaviour:
   cannotTypeText: {fileID: 580564129}
   waitToText: {fileID: 326090505}
   counter: {fileID: 921462652}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &680901480
 GameObject:
   m_ObjectHideFlags: 0
@@ -52327,6 +52827,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d2o3complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: d2o3complete
@@ -52546,6 +53094,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1000881718}
   TextMessageFill: {fileID: 1665859963}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &686855181
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53538,6 +54087,54 @@ MonoBehaviour:
       - m_Target: {fileID: 845411449}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -56445,6 +57042,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1515411869}
   TextMessageFill: {fileID: 1815221028}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &727992309
 GameObject:
   m_ObjectHideFlags: 0
@@ -56814,6 +57412,54 @@ MonoBehaviour:
       - m_Target: {fileID: 845411449}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57443,6 +58089,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1717757746}
   TextMessageFill: {fileID: 780911312}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &741291735
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59767,6 +60414,42 @@ MonoBehaviour:
       - m_Target: {fileID: 2044572407}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -63058,6 +63741,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &809146491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64895,6 +65614,7 @@ MonoBehaviour:
   cannotTypeText: {fileID: 681106656}
   waitToText: {fileID: 1253166902}
   counter: {fileID: 921462652}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &850638556
 GameObject:
   m_ObjectHideFlags: 0
@@ -65476,6 +66196,42 @@ MonoBehaviour:
       - m_Target: {fileID: 2044572407}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69507,9 +70263,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 921462652}
-        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
-        m_MethodName: day2Complete
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: TurnOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69618,6 +70374,18 @@ MonoBehaviour:
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: day8Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: day10Complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -71209,6 +71977,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1944382111}
   TextMessageFill: {fileID: 14179357}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &919981003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74822,6 +75591,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &960342803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75464,6 +76281,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1753196090}
   TextMessageFill: {fileID: 1656126262}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &969319244
 GameObject:
   m_ObjectHideFlags: 0
@@ -76740,6 +77558,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &983552993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76852,6 +77718,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 168525469}
   TextMessageFill: {fileID: 535654442}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &985517778
 GameObject:
   m_ObjectHideFlags: 0
@@ -77744,6 +78611,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1584869571}
   TextMessageFill: {fileID: 1809353593}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1000854598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -77843,6 +78711,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1943269923}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: ClientMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -79410,6 +80314,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1792145924}
   TextMessageFill: {fileID: 1607951336}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1020675901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82644,6 +83549,7 @@ MonoBehaviour:
   maxLetterToType: 40
   sendButton: {fileID: 364836422}
   TextMessageFill: {fileID: 2097239852}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1061252281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -86225,6 +87131,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: TurnOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117051141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88469,6 +89387,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 404597007}
   TextMessageFill: {fileID: 1188281264}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &1137304674
 GameObject:
   m_ObjectHideFlags: 0
@@ -88687,6 +89606,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1475589489}
   TextMessageFill: {fileID: 1095723103}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1137791765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88860,6 +89780,7 @@ MonoBehaviour:
   playerMessageInteraction3: {fileID: 1137209193}
   canTypeText: {fileID: 1313851804}
   cannotTypeText: {fileID: 1965989241}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &1142048128
 GameObject:
   m_ObjectHideFlags: 0
@@ -89360,6 +90281,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 685554625}
   TextMessageFill: {fileID: 170324288}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &1154687673
 GameObject:
   m_ObjectHideFlags: 0
@@ -95065,6 +95987,7 @@ MonoBehaviour:
   cannotTypeText: {fileID: 1325325663}
   waitToText: {fileID: 1087508415}
   counter: {fileID: 921462652}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &1247792515
 GameObject:
   m_ObjectHideFlags: 0
@@ -98158,6 +99081,54 @@ MonoBehaviour:
       - m_Target: {fileID: 680265839}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -102186,6 +103157,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d1o3complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: d1o3complete
@@ -103244,6 +104251,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 734105445}
   TextMessageFill: {fileID: 346365206}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1353293899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -103406,6 +104414,54 @@ MonoBehaviour:
       - m_Target: {fileID: 680265839}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -104234,6 +105290,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 1489583072}
   TextMessageFill: {fileID: 553480724}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!1 &1363813265
 GameObject:
   m_ObjectHideFlags: 0
@@ -104490,6 +105547,7 @@ MonoBehaviour:
   maxLetterToType: 40
   sendButton: {fileID: 694718542}
   TextMessageFill: {fileID: 248349331}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1369950668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -111681,6 +112739,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1475589491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113030,6 +114124,7 @@ MonoBehaviour:
   playerMessageInteraction3: {fileID: 175318621}
   canTypeText: {fileID: 1540958831}
   cannotTypeText: {fileID: 1692351211}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &1489490703
 GameObject:
   m_ObjectHideFlags: 0
@@ -113160,6 +114255,54 @@ MonoBehaviour:
       - m_Target: {fileID: 680265839}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: EndText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d2o3complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -115392,6 +116535,42 @@ MonoBehaviour:
       - m_Target: {fileID: 2021781409}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: Endtext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d1o3complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -120830,6 +122009,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1584869573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124522,6 +125749,42 @@ MonoBehaviour:
       - m_Target: {fileID: 305633786}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: ClientMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -128907,6 +130170,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 921462652}
         m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
         m_MethodName: d2o3complete
@@ -130067,6 +131366,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1717757748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130298,6 +131633,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1141192334}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: ClientMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133233,6 +134604,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1753196093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135121,6 +136540,54 @@ MonoBehaviour:
       - m_Target: {fileID: 283651320}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -139973,6 +141440,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 983552991}
   TextMessageFill: {fileID: 140906205}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1841980090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -142605,6 +144073,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1487008406}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: Endtext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 921462652}
+        m_TargetAssemblyTypeName: ObjectiveCounter, Assembly-CSharp
+        m_MethodName: d1o3complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -147854,6 +149358,7 @@ MonoBehaviour:
   playerMessageInteraction3: {fileID: 117120055}
   canTypeText: {fileID: 659279941}
   cannotTypeText: {fileID: 444031139}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &1943549137
 GameObject:
   m_ObjectHideFlags: 0
@@ -148068,6 +149573,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1487008406}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: ClientMessage2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -148485,6 +150026,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1487008406}
         m_TargetAssemblyTypeName: messageManager, Assembly-CSharp
         m_MethodName: ClientMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -149722,6 +151299,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 3371771}
   TextMessageFill: {fileID: 39991150}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1960511970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -152002,6 +153580,7 @@ MonoBehaviour:
   maxLetterToType: 20
   sendButton: {fileID: 960342801}
   TextMessageFill: {fileID: 602990264}
+  ComputerAudioManager: {fileID: 152681570}
 --- !u!224 &1976429346
 RectTransform:
   m_ObjectHideFlags: 0
@@ -154624,6 +156203,7 @@ MonoBehaviour:
   playerMessageInteraction3: {fileID: 725472204}
   canTypeText: {fileID: 1373979880}
   cannotTypeText: {fileID: 646245110}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &2024956506
 GameObject:
   m_ObjectHideFlags: 0
@@ -156283,6 +157863,7 @@ MonoBehaviour:
   cannotTypeText: {fileID: 1955513748}
   waitToText: {fileID: 2071894018}
   counter: {fileID: 921462652}
+  computerAudioManager: {fileID: 0}
 --- !u!1 &2047097811
 GameObject:
   m_ObjectHideFlags: 0
@@ -156593,6 +158174,54 @@ MonoBehaviour:
       - m_Target: {fileID: 845411449}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -158661,6 +160290,42 @@ MonoBehaviour:
       - m_Target: {fileID: 2044572407}
         m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
         m_MethodName: DonorMessage3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DonorMessageManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MessageSent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152681570}
+        m_TargetAssemblyTypeName: ComputerAudioManager, Assembly-CSharp
+        m_MethodName: MouseClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -168633,6 +170298,10 @@ MonoBehaviour:
   crouching: 0
   crouchTimer: 0
   pauseMenu: {fileID: 1001303711}
+  GameisOver: 0
+  mainLevelMusic: {fileID: 8300000, guid: 628ec67280a006444a8c31ffee83633c, type: 3}
+  gameOverMusic: {fileID: 8300000, guid: 56f4e2d63229f2744a1a2790da0abdeb, type: 3}
+  musicPlayer: {fileID: 7931322943813008039}
 --- !u!1 &4804199645102456184
 GameObject:
   m_ObjectHideFlags: 0
@@ -171270,6 +172939,8 @@ GameObject:
   - component: {fileID: 7852160331335162369}
   - component: {fileID: 5589523835079840839}
   - component: {fileID: 7931322943813008039}
+  - component: {fileID: 7931322943813008041}
+  - component: {fileID: 7931322943813008040}
   m_Layer: 0
   m_Name: Player Object
   m_TagString: Untagged
@@ -171721,7 +173392,121 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7931322943813008040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142736015863802044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e107dbc31c61ec846b339701a86d478f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAudio: {fileID: 7931322943813008041}
+  goreHandlingSfx1: {fileID: 8300000, guid: 4dbaf5be95aef334b9590d1f3f14360f, type: 3}
+  bloodSplatter1: {fileID: 8300000, guid: d23931ec8f1cf6346bb5173150769bab, type: 3}
+  wetSlicingSfx1: {fileID: 8300000, guid: 17680ea9b85978b4db24b8f5ff398e97, type: 3}
+  heartRateMonitor: {fileID: 8300000, guid: 4c859c783f4f2df41879a1d88c40e6ec, type: 3}
+--- !u!82 &7931322943813008041
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142736015863802044}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -12,6 +12,8 @@ public class TextingScript : MonoBehaviour
 
     [SerializeField] private Image TextMessageFill;
 
+    [SerializeField] private ComputerAudioManager ComputerAudioManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +31,7 @@ public class TextingScript : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 Type();
+                ComputerAudioManager.Type();
             }
         }
 
