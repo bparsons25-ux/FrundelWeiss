@@ -1,8 +1,5 @@
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class sheepInfomation : MonoBehaviour
 {

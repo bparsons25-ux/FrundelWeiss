@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PoliceOfficer : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PoliceOfficer : MonoBehaviour
     [SerializeField] private MoneyManager moneyManager;
     [SerializeField] private FrontDoor frontDoor;
     [SerializeField] private PlayerMovement pm;
+    
 
     [SerializeField] private GameObject transition;
 
@@ -19,6 +21,8 @@ public class PoliceOfficer : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject FinalPoliceText;
     public GameObject previousGameObject;
+
+    public GameObject GameEndScreen;
 
     private bool canTalk;
   
@@ -31,6 +35,7 @@ public class PoliceOfficer : MonoBehaviour
     {
         canTalk = true;
         transition.gameObject.SetActive(false);
+        GameEndScreen.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -121,9 +126,16 @@ public class PoliceOfficer : MonoBehaviour
     
     IEnumerator Transition()
     {
+        SceneManager.LoadScene(2);
+        func.CamLock();
+        func.PlayerFreeze();
         transition.gameObject.SetActive(true);
+        GameEndScreen.gameObject.SetActive(true);
         yield return new WaitForSeconds(factswaitTime);
-        counter.day10Complete();
         transition.gameObject.SetActive(false);
+        yield return new WaitForSeconds(DestroyWaitTime);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        
     }
 }
