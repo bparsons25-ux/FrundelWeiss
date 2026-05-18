@@ -622,6 +622,10 @@ public class ObjectiveCounter : MonoBehaviour
 
     [Header("dialogue")]
     [SerializeField] private GameObject day3SheepDialogue;
+    [SerializeField] private GameObject day17SheepDialogue;
+    [SerializeField] private GameObject day33SheepDialogue;
+    [SerializeField] private GameObject day45SheepDialogue;
+
 
     private float transTime = 7f;
 
@@ -2155,7 +2159,7 @@ private void Update()
             logOffReminder.gameObject.SetActive(false);
             dayCounter.dayCount = 14;
             frontDoor.canOpen = false;
-            Destroy(Police2.gameObject);
+            Destroy(Police1.gameObject);
             frontDoor.gameObject.SetActive(true);
             client2.gameObject.SetActive(true);
             startDayCount.ShowDate();
@@ -2214,14 +2218,15 @@ private void Update()
         if (dayCounter.dayCount == 17)
         {
             // sheep wail SFX goes here
-            //day17SheepDialogue.gameObject.SetActive(false);
+            day17SheepDialogue.gameObject.SetActive(false);
             dayCounter.dayCount = 20;
-            startDayCount.ShowDate();
+            frontDoor.gameObject.SetActive(true);
             policeAlert2.gameObject.SetActive(true);
             sheep2Trapped.gameObject.SetActive(true);
             frontDoor.gameObject.SetActive(true);
             frontDoor.canOpen = false;
             Sheep2.gameObject.SetActive(true);
+            startDayCount.ShowDate();
         }
     }
 

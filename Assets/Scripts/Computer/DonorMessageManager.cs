@@ -37,6 +37,8 @@ public class DonorMessageManager : MonoBehaviour
 
     [SerializeField] ComputerAudioManager computerAudioManager;
 
+    [SerializeField] private DayCounter dayCounter;
+
 
     private void Start()
     {
@@ -137,6 +139,28 @@ public class DonorMessageManager : MonoBehaviour
         playermessage4.gameObject.SetActive(true);
         playerMessageInteraction4 .gameObject.SetActive(false);
         cannotTypeText.gameObject.SetActive(true);
-        counter.d3o4complete();
+
+        if (dayCounter.dayCount == 3)
+        {
+            counter.d3o4complete();
+        }
+
+        if (dayCounter.dayCount == 16)
+        {
+            counter.d16o4();
+        }
+
+        if (dayCounter.dayCount == 32)
+        {
+            counter.d32o4();
+        }
+
+        if (dayCounter.dayCount == 44)
+        {
+            counter.d44o4();
+        }
+
+
+
     }
 }

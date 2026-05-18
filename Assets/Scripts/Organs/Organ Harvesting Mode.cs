@@ -39,6 +39,9 @@ public class OrganHarvestingMode : MonoBehaviour
     public GameObject harvestingUserInterface;
     [SerializeField] private GeneralFunctions func;
     public GameObject sheep1;
+    public GameObject sheep2;
+    public GameObject sheep3;
+    public GameObject sheep4;
 
 
     [Header("User Interface Objects")]
@@ -109,6 +112,11 @@ public class OrganHarvestingMode : MonoBehaviour
             {
                 sheep1.gameObject.SetActive(false);
             }
+
+            if (daycounter.dayCount == 20)
+            {
+                sheep2.gameObject.SetActive(false);
+            }
         }
 
         if (timeBeforeDeath < 0)
@@ -123,11 +131,17 @@ public class OrganHarvestingMode : MonoBehaviour
 
             if (daycounter.dayCount == 7)
             {
-
                 objectivecounter.d7o3complete();
                 sheepIsDead = true;
             }
-            
+
+
+            if (daycounter.dayCount == 20)
+            {
+                objectivecounter.d20o3();
+                sheepIsDead = true;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Q) && isHarvesting == true)
@@ -148,6 +162,18 @@ public class OrganHarvestingMode : MonoBehaviour
                 {
                     sheep1.gameObject.SetActive(false);
                 }
+            }
+
+            if (daycounter.dayCount == 20)
+            {
+                objectivecounter.d20o3();
+                sheepIsDead = true;
+
+                if (daycounter.dayCount == 20)
+                {
+                    sheep2.gameObject.SetActive(false);
+                }
+
             }
 
 

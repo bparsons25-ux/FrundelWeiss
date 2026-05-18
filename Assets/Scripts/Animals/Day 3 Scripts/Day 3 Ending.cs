@@ -6,6 +6,8 @@ public class Day3Ending : MonoBehaviour
     [SerializeField] private GameObject transition;
     [SerializeField] private ObjectiveCounter ObjectiveCounter;
 
+    [SerializeField] private DayCounter dayCounter;
+
 
     private float transitionTime = 5f;
 
@@ -23,7 +25,27 @@ public class Day3Ending : MonoBehaviour
     {
         transition.gameObject.SetActive(true);
         yield return new WaitForSeconds(transitionTime);
-        ObjectiveCounter.day4Complete();
+
+        if (dayCounter.dayCount == 4)
+        {
+            ObjectiveCounter.day4Complete();
+        }
+
+        if (dayCounter.dayCount == 17)
+        {
+            ObjectiveCounter.day17Complete();
+        }
+
+        if (dayCounter.dayCount == 33)
+        {
+            // ObjectiveCounter.day33Complete();
+        }
+
+        if (dayCounter.dayCount == 45)
+        {
+            // ObjectiveCounter.day45Complete();
+        }
+
         transition.gameObject.SetActive(false);
     }
 

@@ -68,9 +68,12 @@ public class PoliceOfficer : MonoBehaviour
             if (canTalk == false)
             {
                 talkingUI.SetActive(false);
-                func.MouseUnlock();
+                func.MouseLock();
                 func.CamUnlock();
-                func.PlayerFreeze();
+                func.PlayerFree();
+                pm.PauseActivate();
+
+
             }
         }
     }
@@ -79,6 +82,7 @@ public class PoliceOfficer : MonoBehaviour
     {
         canTalk = false;
         frontDoor.canOpen = false;
+        frontDoor.gameObject.SetActive(true);
     }
 
     public void Unlock()
@@ -89,23 +93,10 @@ public class PoliceOfficer : MonoBehaviour
         func.PlayerFree();
         pm.PauseActivate();
         canTalk = false;
-        counter.day10Complete();
-        StartCoroutine(Transition());
-        StartCoroutine(DestroyWait());
-
-
     }
 
-    public void GameOver()
-    {
-        StartCoroutine(GameOverwait());
-    }
 
-    IEnumerator DestroyWait()
-    {
-        yield return new WaitForSeconds(DestroyWaitTime);
-        Destroy(gameObject);
-    }
+
 
     IEnumerator GameOverwait()
     {
