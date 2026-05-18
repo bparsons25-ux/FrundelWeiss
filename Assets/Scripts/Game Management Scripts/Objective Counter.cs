@@ -749,7 +749,13 @@ public class ObjectiveCounter : MonoBehaviour
         day57IsComplete = false;
         day58IsComplete = false;
         day60IsComplete = false;
-       
+
+        Sheep2.gameObject.SetActive(false);
+        Sheep3.gameObject.SetActive(false);
+        Sheep4.gameObject.SetActive(false);
+
+        Customer1.gameObject.SetActive(false);
+        Customer2.gameObject.SetActive(false);
 
         livestockRoomDoor.gameObject.SetActive(true);
         

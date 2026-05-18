@@ -37,6 +37,11 @@ public class customer1 : MonoBehaviour
 
     [SerializeField] private GeneralFunctions func;
 
+    private bool leftKidneyDelivered;
+    private bool rightKidneyDelivered;
+
+    private int failedchances = 2;
+
     private void Start()
     {
         customerCountDown.gameObject.SetActive(false);
@@ -45,7 +50,9 @@ public class customer1 : MonoBehaviour
         waypointMovement1.enabled = false;
         waypointMovement2.enabled = false;
 
-        
+        leftKidneyDelivered = false;
+        rightKidneyDelivered = false;
+
     }
 
     private void Update()
@@ -100,6 +107,17 @@ public class customer1 : MonoBehaviour
             waypointMovement1.enabled = false;
         }
 
+        if (dayCounter.dayCount == 21)
+        {
+            if (failedchances == 0)
+            {
+                orderisStarted = false;
+                orderisCompleted = true;
+                MoveBack();
+                SuccessAlert();
+            }
+        }
+
 
 
         if (waypointMovement1.index > 0)
@@ -116,7 +134,12 @@ public class customer1 : MonoBehaviour
         {
             if (collision.CompareTag("Heart Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
             {
-                counter.d8o4complete();
+
+                if (dayCounter.dayCount == 8)
+                {
+                    counter.d8o4complete();
+                }
+
                 Destroy(collision.gameObject);
                 PickUpRaycastScript.canPickUp = true;
                 customerCountDown.gameObject.SetActive(false);
@@ -173,7 +196,46 @@ public class customer1 : MonoBehaviour
                 Debug.Log("Customer Destroyed");
             }
 
+            
 
+        }
+
+        if (dayCounter.dayCount == 21)
+        {
+            if (orderisCompleted == true)
+            {
+                if (collision.CompareTag("Liver Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
+                {
+                    Destroy(collision.gameObject);
+                    PickUpRaycastScript.canPickUp = true;
+                    // play wrong SFX
+                }
+
+                if (collision.CompareTag("Right Kidney Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
+                {
+                    Destroy(collision.gameObject);
+                    PickUpRaycastScript.canPickUp = true;
+                    leftKidneyDelivered = true;
+                    // Colour icon Green here
+                    // Play ping SFX
+                }
+
+                if (collision.CompareTag("Left Kidney Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
+                {
+                    Destroy(collision.gameObject);
+                    PickUpRaycastScript.canPickUp = true;
+                    rightKidneyDelivered = true;
+                    // Colour icon Green here
+                    // Play ping SFX
+                }
+
+                if (collision.CompareTag("Heart Jar") && orderCountdown.remainingTime > 0 && orderisStarted == true)
+                {
+                    Destroy(collision.gameObject);
+                    PickUpRaycastScript.canPickUp = true;
+                }
+
+            }
         }
 
     }
