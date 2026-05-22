@@ -160,7 +160,7 @@ public class MoneyManager : MonoBehaviour
     {
         money += 150;
         moneyText.text = "$" + money.ToString();
-        Debug.Log("Liver Sold");
+        Debug.Log("Bribed Officer");
     }
 
     public void taxesButtonNotInteract()
